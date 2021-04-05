@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!--
+* CoreUI Pro based Bootstrap Admin Template
+* @version v3.2.0
+* @link https://coreui.io/pro/
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* License (https://coreui.io/pro/license)
+-->
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>CoreUI Pro Bootstrap Admin Template</title>
+  <!-- Main styles for this application-->
+  <link href="dist/vendors/coreui/css/style.min.css" rel="stylesheet">
+  <link href="dist/vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
+  <link href="dist/vendors/fabric/style.css" rel="stylesheet">
+  <link href="dist/css/style.css" rel="stylesheet">
+</head>
+
+<body class="c-app">
+  <header class="vp-header">
+    <div class="vp-logo"><img src="dist/images/Logo-vp.svg" alt="VP logo"></div>
+    <div class="vp-header__right">
+      <div class="c-header-nav-item dropdown vp-notification">
+        <a class="c-header-nav-link vp-notification__bell" data-toggle="dropdown" href="#" role="button"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="ms-Icon ms-Icon--Ringer vp-notification__icon"></i>
+          <span class="badge badge-pill badge-danger vp-notification__new-noti">7</span></a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-2 vp-notification__dropdown">
+          <div class="dropdown-header bg-light vp-notification__title"><strong>You have 4 notifications</strong></div>
+          <a class="dropdown-item vp-notification__item" href="#">
+            <div class="message vp-notification__message">
+              <div class="mfe-3 float-left">
+                <div class="c-avatar"><img class="c-avatar-img" src="dist/images/avatars/7.jpg"
+                    alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+              </div>
+              <div class="vp-notification__info">
+                <span class="name">John Doe</span><small class="small text-muted float-right mt-1">Just
+                  now</small>
+              </div>
+              <div class="vp-notification__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt...</div>
+            </div>
+          </a>
+          <a class="dropdown-item vp-notification__item unread" href="#">
+            <div class="message vp-notification__message">
+              <div class="mfe-3 float-left">
+                <div class="c-avatar"><img class="c-avatar-img" src="dist/images/avatars/7.jpg"
+                    alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+              </div>
+              <div class="vp-notification__info">
+                <span class="name">John Doe</span><small class="small text-muted float-right mt-1">Just
+                  now</small>
+              </div>
+              <div class="vp-notification__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt...</div>
+            </div>
+          </a>
+          <a class="dropdown-item vp-notification__item unread" href="#">
+            <div class="message vp-notification__message">
+              <div class="mfe-3 float-left">
+                <div class="c-avatar"><img class="c-avatar-img" src="dist/images/avatars/7.jpg"
+                    alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+              </div>
+              <div class="vp-notification__info">
+                <span class="name">John Doe</span><small class="small text-muted float-right mt-1">Just
+                  now</small>
+              </div>
+              <div class="vp-notification__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt...</div>
+            </div>
+          </a>
+          <a class="dropdown-item vp-notification__item" href="#">
+            <div class="message vp-notification__message">
+              <div class="mfe-3 float-left">
+                <div class="c-avatar"><img class="c-avatar-img" src="dist/images/avatars/7.jpg"
+                    alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
+              </div>
+              <div class="vp-notification__info">
+                <span class="name">John Doe</span><small class="small text-muted float-right mt-1">Just
+                  now</small>
+              </div>
+              <div class="vp-notification__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt...</div>
+            </div>
+          </a>
+          <a class="dropdown-item text-center border-top" href="#"><strong>View all messages</strong></a>
+        </div>
+      </div>
+      <div class="c-header-nav-item dropdown">
+        <a class="c-header-nav-link vp-user " data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">
+          <span class="vp-user__name">NGUYEN VAN AN</span>
+          <div class="vp-user__profile profile-active">
+            <i class="ms-Icon ms-Icon--Contact vp-user__profile__icon"></i>
+          </div>
+        </a>
+        <div class="vp-user__dropdown dropdown-menu dropdown-menu-right pt-0">
+          <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div>
+          <a class="vp-user__item dropdown-item" href="#">
+            <i class="ms-Icon ms-Icon--Contact"></i>
+            Profile</a>
+          <a class="vp-user__item dropdown-item" href="#">
+            <i class="ms-Icon ms-Icon--Settings"></i>
+            Settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="vp-user__item dropdown-item" href="#">
+            <i class="ms-Icon ms-Icon--PowerButton"></i>
+            Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="c-sidebar c-sidebar-fixed vp-sidebar" id="sidebar">
+    <ul class="c-sidebar-nav">
+      <button class="c-header-toggler c-class-toggler vp-sidebar__toggler open-toggler" type="button"
+        data-target="#sidebar" data-class="vp-sidebar__show">
+        <i class="ms-Icon ms-Icon--DecreaseIndentMirrored"></i>
+      </button>
+      <button class="c-header-toggler c-class-toggler vp-sidebar__toggler close-toggler" type="button"
+        data-target="#sidebar" data-class="vp-sidebar__show">
+        <i class="ms-Icon ms-Icon--DecreaseIndent"></i>
+      </button>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--AutoRacing item-icon"></i> <span class="item-name">Quản lý công việc</span></a>
+      </li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--Copy item-icon"></i> <span class="item-name">Quản lý công việc</span></a></li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--TextDocument item-icon"></i> <span class="item-name">Lorem issump</span></a></li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--EditSolid12 item-icon"></i> <span class="item-name">Quản lý công việc</span></a>
+      </li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--Send item-icon"></i> <span class="item-name">Lorem issump</span></a></li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--SendMirrored item-icon"></i> <span class="item-name">Quản lý công việc</span></a>
+      </li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--BusinessCenterLogo item-icon"></i> <span class="item-name">Lorem issump</span></a>
+      </li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--Copy item-icon"></i> <span class="item-name">Quản lý công việc</span></a></li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--TextDocument item-icon"></i> <span class="item-name">Lorem issump</span></a></li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--AllCurrency item-icon"></i> <span class="item-name">Quản lý công việc</span></a>
+      </li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--Dataflows item-icon"></i> <span class="item-name">Lorem issump</span></a></li>
+      <li class="c-sidebar-nav-item vp-sidebar__item"><a class="c-sidebar-nav-link item-link" href="index.html">
+          <i class="ms-Icon ms-Icon--People item-icon"></i> <span class="item-name">Quản lý công việc</span></a></li>
+
+  </div>
+  </div>
+  <div class="c-wrapper vp-content vp-jm ">
+    <div class="vp-jm__content vp-job-detail">
+      <div class="row">
+        <div class="col-12">
+          <div class="vp-job-detail__header">
+            <div class="label-primary">
+              <i class="ms-Icon ms-Icon--EntitlementPolicy"></i>
+              CÔNG VĂN TNTC 0104 VV XIN MIỄN THUẾ VẬT LIỆU
+            </div>
+            <div class="vp-job-detail__actions">
+              <button class="vp-btn vp-btn--default vp-btn--action-detail-job" data-toggle="modal"
+                data-target="#acceptJob">Tiếp nhận </button>
+              <button class="vp-btn  vp-btn--action-detail-job-icon" data-toggle="modal" data-target="#deleteJob"><i
+                  class="ms-Icon ms-Icon--ChromeClose"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-xl-6">
+          <div class="vp-job-detail__block vp-job-detail__block--primary">
+            <div class="title">Thông tin văn bản</div>
+            <ul class="list-info">
+              <li class="list-info__item vp-100">
+                <div class="label vp-100">
+                  <i class="ms-Icon ms-Icon--AccountManagement"></i>
+                  Người trình:
+                  Nguyễn Văn An
+                </div>
+              </li>
+              <li class="list-info__item">
+                <div class="label">
+                  <i class="ms-Icon ms-Icon ms-Icon--ComplianceAudit"></i>
+                  Loại văn bản 1
+                </div>
+              </li>
+              <li class="list-info__item">
+                <div class="label">
+                  <i class="ms-Icon ms-Icon--FavoriteStarFill vp-text--danger"></i>
+                  Khẩn cấp
+                </div>
+              </li>
+              <li class="list-info__item">
+                <div class="label vp-100">
+                  <i class="ms-Icon ms-Icon ms-Icon--Clock"></i>
+                  Ngày văn bản đến: 07/03/2021
+                </div>
+              </li>
+              <li class="list-info__item">
+                <div class="label vp-100">
+                  Ngày văn bản có hiệu lực: 09/03/2021
+                </div>
+              </li>
+              <li class="list-info__item ">
+                <div class="label vp-100">
+                  <i class="ms-Icon ms-Icon ms-Icon--RegistryEditor"></i>
+                  Lĩnh vực tài chính
+                </div>
+              </li>
+              <li class="list-info__item ">
+                <div class="label vp-100">
+                  <i class="ms-Icon ms-Icon ms-Icon--HomeGroup"></i>
+                  Cơ quan phát hành văn bản
+                </div>
+              </li>
+              <li class="list-info__item ">
+                <div class="label vp-100">
+                  <i class="ms-Icon ms-Icon ms-Icon--MapLayers"></i>
+                  Nơi nhận văn bản
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="vp-job-detail__block vp-job-detail__block--content">
+            <p class="title"><i class="ms-Icon ms-Icon--KnowledgeArticle"></i> Nội dung </p>
+            <p class="content">Đề nghị duyệt mua các thiết bị ổ cắm, công tắc, mặt hộp của Panasonic, lấy từ NCC VSQ
+              (Phong), được giảm 40-50% so với giá niêm yết nhưng vẫn
+              không thấp hơn nhiều so với giá Vin giao ( ổ cắm âm sàn 35%), công tắc ổ cắm không so sánh được do giá
+              trong BOQ là hàng của Lonon</p>
+            <p class="quick-note mb-2">
+              <i class="ms-Icon ms-Icon--QuickNote mr-2"></i>
+              Ghi chú:
+              <span class="vp-text--danger">Đề nghị phòng KD phối hợp chặt chẽ với phòng KT để trình vật
+                tư</span>
+            </p>
+            <p class="comment mb-5">
+              <i class="ms-Icon ms-Icon--QuickNote mr-2"></i>
+              Ý kiến chỉ đạo:
+              <span class="vp-text--danger">Đồng ý. Đề nghị phòng Kế toán phối hợp chặt chẽ
+                tư</span>
+            </p>
+            <div class="attachments">
+              <p class="attachments__title"> Đính kèm file</p>
+              <ul class="list-attachment">
+                <li class="list-attachment__item pdf">
+                  <i class="ms-Icon ms-Icon--PDF"></i>
+                  Portable Document Format
+                </li>
+                <li class="list-attachment__item word">
+                  <i class="ms-Icon ms-Icon--WordLogo"></i>
+                  Word Document
+                </li>
+                <li class="list-attachment__item excel">
+                  <i class="ms-Icon ms-Icon--ExcelLogo"></i>
+                  Excel Worksheet
+                </li>
+                <li class="list-attachment__item power-point">
+                  <i class="ms-Icon ms-Icon--PowerPointLogo"></i>
+                  PowerPoint
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="vp-job-detail__block vp-job-detail__block--user">
+            <p class="title"><i class="ms-Icon ms-Icon--AccountManagement"></i> Người xét duyệt</p>
+            <ul class="users-progress">
+              <li class="users-progress__item">
+                <div class="info-user full-info">
+                  <div class="vp-user-icon user-active">
+                    <i class="ms-Icon ms-Icon--Contact "></i>
+                  </div>
+                  <div class="info-user__detail">
+                    <div class="infor-primary">
+                      <a href="#">Trần Đình Thủy </a>
+                      <span>thuydt@gmail.com</span>
+                    </div>
+                    <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                  </div>
+                </div>
+              </li>
+              <li class="users-progress__item">
+                <div class="info-user full-info">
+                  <div class="vp-user-icon user-active">
+                    <i class="ms-Icon ms-Icon--Contact "></i>
+                  </div>
+                  <div class="info-user__detail">
+                    <div class="infor-primary">
+                      <a href="#">Trần Đình Thủy </a>
+                      <span>thuydt@gmail.com</span>
+                    </div>
+                    <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="title mt-5"><i class="ms-Icon ms-Icon--AccountManagement"></i> Người tham vấn</p>
+            <ul class="users-progress">
+              <li class="users-progress__item">
+                <div class="info-user full-info">
+                  <div class="vp-user-icon user-active">
+                    <i class="ms-Icon ms-Icon--Contact "></i>
+                  </div>
+                  <div class="info-user__detail">
+                    <div class="infor-primary">
+                      <a href="#">Trần Đình Thủy </a>
+                      <span>thuydt@gmail.com</span>
+                    </div>
+                    <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                  </div>
+                </div>
+              </li>
+              <li class="users-progress__item">
+                <div class="info-user full-info">
+                  <div class="vp-user-icon user-active">
+                    <i class="ms-Icon ms-Icon--Contact "></i>
+                  </div>
+                  <div class="info-user__detail">
+                    <div class="infor-primary">
+                      <a href="#">Trần Đình Thủy </a>
+                      <span>thuydt@gmail.com</span>
+                    </div>
+                    <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 block-border-left">
+          <div class="vp-timeline pl-3">
+            <div class="vp-timeline__item">
+              <div class="timeline-item__left">
+                <div class="content">
+                  <p class="name">Nguyễn Văn An</p>
+                  <p class="vp-text--small mb-3">Chờ xử lý</p>
+                  <p class="vp-text--small">07/03/2021 14:03</p>
+                </div>
+              </div>
+              <div class="timeline-item__action">
+                <i class="ms-Icon ms-Icon--SingleColumnEdit"></i>
+              </div>
+              <div class="timeline-item__right">
+                <div class="vp-comment">
+                  <div class="info-user full-info small-avatar">
+                    <div class="vp-user-icon user-active">
+                      <i class="ms-Icon ms-Icon--Contact "></i>
+                    </div>
+                    <div class="info-user__detail">
+                      <div class="infor-primary">
+                        <a href="#">Trần Đình Thủy </a>
+                        <span>thuydt@gmail.com</span>
+                      </div>
+                      <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                    </div>
+                  </div>
+                  <div class="comment-content">
+                    <p class="content-detail">
+                      It is a long established fact that a reader will be distracted by the
+                      readable content of a page.</p>
+                    <div class="info-bottom">
+                      <span class="time">07/03/2021 18:45</span>
+                      <span class="reply"><i class="ms-Icon ms-Icon--Comment mr-2"></i>
+                        Trả lời
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="vp-timeline__item">
+              <div class="timeline-item__left">
+                <div class="content primary">
+                  <p class="name">Chờ Nguyễn Văn An xử lý</p>
+                  <p class="vp-text--small mb-3">Hạn xử lý: 15/04/2021</p>
+                  <p class="name">Chờ Nguyễn Văn An cho ý kiến</p>
+                  <p class="vp-text--small mb-3">Hạn xử lý: 15/04/2021</p>
+                </div>
+              </div>
+              <div class="timeline-item__action">
+                <i class="ms-Icon ms-Icon--TurnRight"></i>
+              </div>
+              <div class="timeline-item__right">
+
+              </div>
+            </div>
+            <div class="vp-timeline__item">
+              <div class="timeline-item__left">
+                <div class="content ">
+                  <p class="name">Nguyễn Văn An</p>
+                  <p class="vp-text--small mb-3">Từ chối</p>
+                  <p class="vp-text--small">07/03/2021 14:03</p>
+                </div>
+              </div>
+              <div class="timeline-item__action">
+                <i class="ms-Icon ms-Icon--Clear"></i>
+              </div>
+              <div class="timeline-item__right">
+                <div class="vp-comment">
+                  <div class="info-user full-info small-avatar">
+                    <div class="vp-user-icon user-active">
+                      <i class="ms-Icon ms-Icon--Contact "></i>
+                    </div>
+                    <div class="info-user__detail">
+                      <div class="infor-primary">
+                        <a href="#">Trần Đình Thủy </a>
+                        <span>thuydt@gmail.com</span>
+                      </div>
+                      <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                    </div>
+                  </div>
+                  <div class="comment-content">
+                    <p class="content-detail">
+                      It is a long established fact that a reader will be distracted by the
+                      readable content of a page.</p>
+                    <div class="info-bottom">
+                      <span class="time">07/03/2021 18:45</span>
+                      <span class="reply"><i class="ms-Icon ms-Icon--Comment mr-2"></i>
+                        Trả lời
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade vp-modal vp-modal--assign-job" id="assignJob" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="vp-modal__title">Giao việc</p>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
+                class="ms-Icon ms-Icon--StatusCircleErrorX"></i> </span></button>
+        </div>
+        <div class="modal-body">
+          <div class="row mb-4">
+            <div class="col-5">
+              <div class="info-user full-info small-avatar">
+                <div class="vp-user-icon user-active">
+                  <i class="ms-Icon ms-Icon--Contact "></i>
+                </div>
+                <div class="info-user__detail">
+                  <div class="infor-primary">
+                    <a href="#">Trần Đình Thủy </a>
+                    <span>thuydt@gmail.com</span>
+                  </div>
+                  <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="vp-form vp-form--input">
+                <div class="vp-input--text vp-input--icon">
+                  <i class="ms-Icon ms-Icon--KnowledgeArticle"></i>
+                  <input type="text" name="input-small" placeholder="Nội dung công việc">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="vp-form vp-form--input">
+                <div class="vp-input--date icon-clock">
+                  <input id="date-input" type="date" name="date-input" placeholder="Select date" value="2021-01-08">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-5">
+              <div class="info-user full-info small-avatar">
+                <div class="vp-user-icon user-active">
+                  <i class="ms-Icon ms-Icon--Contact "></i>
+                </div>
+                <div class="info-user__detail">
+                  <div class="infor-primary">
+                    <a href="#">Trần Đình Thủy </a>
+                    <span>thuydt@gmail.com</span>
+                  </div>
+                  <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="vp-form vp-form--input">
+                <div class="vp-input--text vp-input--icon">
+                  <i class="ms-Icon ms-Icon--KnowledgeArticle"></i>
+                  <input type="text" name="input-small" placeholder="Nội dung công việc">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="vp-form vp-form--input">
+                <div class="vp-input--date icon-clock">
+                  <input id="date-input" type="date" name="date-input" placeholder="Select date" value="2021-01-08">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-5">
+              <div class="info-user full-info small-avatar">
+                <div class="vp-user-icon user-active">
+                  <i class="ms-Icon ms-Icon--Contact "></i>
+                </div>
+                <div class="info-user__detail">
+                  <div class="infor-primary">
+                    <a href="#">Trần Đình Thủy </a>
+                    <span>thuydt@gmail.com</span>
+                  </div>
+                  <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="vp-form vp-form--input">
+                <div class="vp-input--text vp-input--icon">
+                  <i class="ms-Icon ms-Icon--KnowledgeArticle"></i>
+                  <input type="text" name="input-small" placeholder="Nội dung công việc">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="vp-form vp-form--input">
+                <div class="vp-input--date icon-clock">
+                  <input id="date-input" type="date" name="date-input" placeholder="Select date" value="2021-01-08">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn vp-btn vp-btn--primary mr-3" type="button">Xác nhận</button>
+          <button class="btn vp-btn vp-btn--default ml-2" type="button" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+      <!-- /.modal-content-->
+    </div>
+    <!-- /.modal-dialog-->
+  </div>
+  <div class="modal fade vp-modal vp-modal--delete-job" id="acceptJob" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
+                class="ms-Icon ms-Icon--StatusCircleErrorX"></i> </span></button>
+        </div>
+        <div class="modal-body">
+          <p class="vp-text--center">Bạn có chắc chắn muốn thực hiện này?</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn vp-btn vp-btn--primary mr-3" type="button">Xác nhận</button>
+          <button class="btn vp-btn vp-btn--default ml-2" type="button" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+      <!-- /.modal-content-->
+    </div>
+    <!-- /.modal-dialog-->
+  </div>
+  <!-- End modal -->
+  <!-- CoreUI and necessary plugins-->
+  <script src="dist/vendors/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
+  <!--[if IE]><!-->
+  <script src="dist/vendors/@coreui/icons/js/svgxuse.min.js"></script>
+  <!--<![endif]-->
+  <!-- Plugins and scripts required by this view-->
+  <script src="dist/vendors/@coreui/utils/js/coreui-utils.js"></script>
+  <script src="dist/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
+  <script src="dist/js/charts.js"></script>
+  <script src="dist/vendors/coreui/js/main.js"></script>
+</body>
+
+</html>
