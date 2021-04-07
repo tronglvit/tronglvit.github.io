@@ -1,0 +1,1 @@
+function handleAddReport(){var e=document.getElementById("create-report-inside-list");e.classList.add("show"),e.classList.remove("hide"),e.style.display="flex"}function handleCloseReport(){var e=document.getElementById("create-report-inside-list");e.classList.remove("show"),e.classList.add("hide"),setTimeout(()=>{e.style.display="none"},300)}

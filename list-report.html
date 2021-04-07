@@ -168,7 +168,7 @@
     </ul>
   </div>
   </div>
-  <div class="c-wrapper vp-content vp-content--scroll-content vp-jm">
+  <div class="c-wrapper vp-content vp-content--scroll-content vp-jm vp-content--list-report">
     <div class="vp-jm__top scroll-top">
       <button class="vp-btn vp-btn--primary vp-btn--large-icon" data-toggle="modal" data-target="#deleteJob">Danh sách
         công việc đến <i class="ms-Icon ms-Icon--ClipboardList vp-btn-icon"></i></button>
@@ -184,6 +184,7 @@
             </div>
           </div>
         </div>
+      </form>
     </div>
     <div class="vp-jm__content scroll-content nav-tabs-boxed vp-tabs--report">
       <div class="row">
@@ -206,14 +207,17 @@
 
               </div>
               <div class="list-action">
-                <button class="vp-btn vp-btn--icon vp-btn--icon--primary ">
+                <button class="vp-btn vp-btn--icon vp-btn--icon--primary" onclick="handleAddReport()">
                   <i class="ms-Icon ms-Icon--CalculatorAddition vp-text--primary"></i>
                   New
                 </button>
-                <button class="vp-btn vp-btn--icon  vp-btn--icon--primary">
-                  <i class="ms-Icon ms-Icon--Upload vp-text--primary"></i>
-                  Import
-                </button>
+                <label for="selectFile">
+                  <div class="vp-btn vp-btn--icon vp-btn--icon--primary">
+                    <i class="ms-Icon ms-Icon--Upload vp-text--primary"></i>
+                    Import
+                  </div>
+                  <input type="file" id="selectFile" name="selectFile" class="vp-hidden">
+                </label>
                 <button class="vp-btn vp-btn--icon  vp-btn--icon--primary ">
                   <i class="ms-Icon ms-Icon--Download vp-text--primary"></i>
                   Export
@@ -722,8 +726,6 @@
               </div>
             </div>
           </li>
-
-
         </ul>
         <ul class="list-document tab-pane" id="ReportNotSign" role="tabpanel">
           Lorem 1
@@ -732,7 +734,206 @@
           Lorem 2
         </ul>
       </div>
+    </div>
+    <div class="row hide" id="create-report-inside-list">
+      <div class="col-12">
+        <div class="vp-job-detail__header header-form-create">
+          <div class="label-primary">
+            <i class="ms-Icon ms-Icon--EntitlementPolicy"></i>
+            Thêm mới tờ trình
+          </div>
+          <div class="vp-job-detail__actions" onclick="handleCloseReport()">
+            <button class="vp-btn  vp-btn--action-detail-job-icon"><i class="ms-Icon ms-Icon--ChromeClose"></i>
+            </button>
+          </div>
+        </div>
 
+      </div>
+      <div class="col-12 col-xl-8">
+        <form class="form-horizontal  vp-form--create" action="" method="post">
+          <div class="form-group row">
+            <div class="col-md-12">
+              <div class="vp-input--icon form-item">
+                <i class="ms-Icon ms-Icon--SingleColumnEdit "></i>
+                <input class="form-control" id="input1-group1" type="text" name="input1-group1" placeholder="Tiêu đề"
+                  autocomplete="username">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="vp-input--select-icon form-item">
+                <i class="ms-Icon ms-Icon--KnowledgeArticle "></i>
+                <select class="form-control" id="select1" name="select1">
+                  <option value="0" disabled selected>Loại tờ trình</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="vp-form vp-form--input">
+                <div class="vp-input--date-select ">
+                  <input id="date-input" type="date" name="date-input" placeholder="Ngày trình" value="2021-01-08">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="vp-input--select-icon form-item">
+                <i class="ms-Icon ms-Icon--KeyPhraseExtraction "></i>
+                <select class="form-control" id="select1" name="select1">
+                  <option value="0" disabled selected>Dự án</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="vp-input--select-icon form-item">
+                <i class="ms-Icon ms-Icon--RegistryEditor "></i>
+                <select class="form-control" id="select1" name="select1">
+                  <option value="0" disabled selected>Lĩnh vực</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="vp-input--textarea form-item border-bottom-none">
+                <label for="">
+                  <i class="ms-Icon ms-Icon--MapLayers "></i>
+                  Nội dung
+                </label>
+                <textarea name="" id="" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-prior">
+                <p class="title">Mức độ ưu tiên</p>
+                <button class="vp-btn vp-btn--prior detault">
+                  <i class="ms-Icon ms-Icon--FavoriteStar"></i>
+                  Bình thường
+                </button>
+                <button class="vp-btn vp-btn--prior hight selected">
+                  <i class="ms-Icon ms-Icon--FavoriteStar"></i>
+                  Gấp
+                </button>
+                <button class="vp-btn vp-btn--prior emergency">
+                  <i class="ms-Icon ms-Icon--FavoriteStar"></i>
+                  Khẩn cấp
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-xl-4">
+              <div class="form-file">
+                <div class="input-file">
+                  <label for="selectFile">Chọn hoặc kéo thả file </label>
+                  <input type="file" name="selectFile" id="selectFile">
+                </div>
+                <ul class="list-file">
+                  <li class="list-file__item">
+                    <div class="progress" style="width: 40%;"></div>
+                    <button class="vp-btn vp-btn--remove-file">
+                      <i class="ms-Icon ms-Icon--CalculatorMultiply"></i>
+                    </button>
+                    <div class="info">
+                      <p class="title">tailieutuan2.jpg</p>
+                      <p class="capacity">152kb</p>
+                    </div>
+                    <i class="ms-Icon ms-Icon--ImportMirrored icon-upload"></i>
+                  </li>
+                  <li class="list-file__item">
+                    <div class="progress" style="width: 0%"></div>
+                    <button class="vp-btn vp-btn--remove-file">
+                      <i class="ms-Icon ms-Icon--CalculatorMultiply"></i>
+                    </button>
+                    <div class="info">
+                      <p class="title">tailieutuan2.jpg</p>
+                      <p class="capacity">152kb</p>
+                    </div>
+                    <i class="ms-Icon ms-Icon--ImportMirrored icon-upload"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-xl-4 block-border-left mt-5">
+        <div class="vp-job-detail__block vp-job-detail__block--user mt-0">
+          <p class="title"><i class="ms-Icon ms-Icon--AccountManagement"></i> Người xử lý</p>
+          <ul class="users-progress">
+            <li class="users-progress__item vp-100">
+              <div class="info-user full-info vp-100">
+                <div class="vp-user-icon user-active">
+                  <i class="ms-Icon ms-Icon--Contact "></i>
+                </div>
+                <div class="info-user__detail">
+                  <div class="infor-primary">
+                    <a href="#">Trần Đình Thủy </a>
+                    <span>thuydt@gmail.com</span>
+                  </div>
+                  <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                </div>
+              </div>
+            </li>
+            <li class="users-progress__item vp-100">
+              <div class="info-user full-info vp-100">
+                <div class="vp-user-icon user-active">
+                  <i class="ms-Icon ms-Icon--Contact "></i>
+                </div>
+                <div class="info-user__detail">
+                  <div class="infor-primary">
+                    <a href="#">Trần Đình Thủy </a>
+                    <span>thuydt@gmail.com</span>
+                  </div>
+                  <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="vp-btn vp-btn--icon-dash ml-2">
+            <i class="ms-Icon ms-Icon--CalculatorAddition"></i>
+          </button>
+          <p class="title mt-5"><i class="ms-Icon ms-Icon--AccountManagement"></i> Người phối hợp xử lý</p>
+          <ul class="users-progress">
+            <li class="users-progress__item vp-100">
+              <div class="info-user full-info vp-100">
+                <div class="vp-user-icon user-active">
+                  <i class="ms-Icon ms-Icon--Contact "></i>
+                </div>
+                <div class="info-user__detail">
+                  <div class="infor-primary">
+                    <a href="#">Trần Đình Thủy </a>
+                    <span>thuydt@gmail.com</span>
+                  </div>
+                  <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                </div>
+              </div>
+            </li>
+            <li class="users-progress__ite vp-100m">
+              <div class="info-user full-info vp-100">
+                <div class="vp-user-icon user-active">
+                  <i class="ms-Icon ms-Icon--Contact "></i>
+                </div>
+                <div class="info-user__detail">
+                  <div class="infor-primary">
+                    <a href="#">Trần Đình Thủy </a>
+                    <span>thuydt@gmail.com</span>
+                  </div>
+                  <p class="info-more">Trưởng phòng kế toán - Phòng kế toán</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="vp-btn vp-btn--icon-dash mt-3 ml-2">
+            <i class="ms-Icon ms-Icon--CalculatorAddition"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -768,6 +969,7 @@
   <script src="dist/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
   <script src="dist/js/charts.js"></script>
   <script src="dist/vendors/coreui/js/main.js"></script>
+  <script src="dist/js/script.js"></script>
 </body>
 
 </html>
