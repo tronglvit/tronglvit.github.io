@@ -9,7 +9,7 @@
   <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
   <meta name="author" content="Łukasz Holeczek">
   <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-  <title>Macins</title>
+  <title>Shop online</title>
   <!-- Main styles for this application-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,326 +20,600 @@
 
 </head>
 
-<body>
-  <div class="sidebar">
-    <!-- Nav -->
-    <nav class="nav">
-      <div class="nav__item active">
-        <div class="nav__icon">
-          <span class=" gg-smartphone-shake"></span>
+<body class="page-home">
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <span class="hotline">Support online: +84 868616968</span>
+        <ul class="header__menu">
+          <li class="menu-item">
+            <a href="#">Hướng dẫn</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Thông tin chính sách</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__content">
+        <div class="header__content__left">
+          <div class="logo">
+            <img src="dist/images/logo.png" alt="">
+          </div>
+          <div class="form-search-header">
+            <span class="gg-search icon-search"></span>
+            <input type="text" placeholder="Nhập tên của hàng, sản phẩm">
+          </div>
+          <div class="icon-menu-mobile">
+            <span class="gg-menu-right"></span>
+          </div>
 
-        </div>
-        <span class="nav__title">Mobile</span>
-      </div>
-      <div class="nav__item">
-        <div class="nav__icon">
-          <span class="gg-cast"></span>
-        </div>
-        <span class="nav__title">Website</span>
-      </div>
-      <div class="nav__item">
-        <div class="nav__icon">
-          <span class="gg-stack"></span>
-        </div>
-        <span class="nav__title">Elements</span>
-      </div>
-    </nav>
-    <!-- End nav -->
-    <div class="sidebar__bottom">
-      <p class="company">FlutterSc,</p>
-      <p class="year">© 2021. All rights reserved</p>
-    </div>
-  </div>
-  <div class="header">
-    <div class="logo">
-      <img src="./dist/images/icons/layers.svg" alt="">
-      <div class="logo__title">FlutterSc.</div>
-    </div>
-    <div class="header__content">
-      <div class="form-search">
-        <input type="text" placeholder="Search for source code, design ui...">
-        <span class="icon gg-search"></span>
-      </div>
-      <div class="header__content__right">
-        <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <span class="icon gg-sun"></span>
-          </label>
-        </div>
-        <!-- <div class="user-logged-in">
-          <img src="./dist/images/avatar.png" alt="" class="avatar">
-        </div> -->
-        <div class="actions">
-          <button class="btn btn--link">Sign in</button>
-          <button class="btn btn--primary">Sign up</button>
-        </div>
-        <!-- Button show hide menu mobile -->
-        <button class="btn btn--toggle-mobile show" onclick="showMenuMobile()"><span class="gg-menu"></span></button>
-        <button class="btn btn--toggle-mobile hide" onclick="hideMenuMobile()"><span class="gg-close"></span></button>
-      </div>
-    </div>
-    <div class="nav-mobile" id="menu-mobile">
-      <div class="nav-mobile__content">
-        <div class="form-search-mobile">
-          <input type="text" placeholder="Search for source code, design ui...">
-          <span class="icon gg-search"></span>
-        </div>
-        <!-- If logged in --->
-        <div class="info-user">
-          <img src="./dist/images/avatar.png" alt="" class="avatar">
-          <div class="info_detail">
-            <h5 class="name">Phan Trong Bien</h5>
-            <p class="email">phantrongbien@gmail.com</p>
-          </div>
-        </div>
-        <!-- End -->
-        <div class="nav-mobile__actions ">
-          <button class="btn btn--primary upload" onclick="showModalUploadSource()">Upload</button>
-          <!-- <button class="btn btn--primary">Sign in</button>
-          <button class="btn btn--light_grey">Sign up</button> -->
-        </div>
-        <nav class="nav">
-          <div class="nav__item active">
-            <div class="nav__icon">
-              <span class=" gg-smartphone-shake"></span>
-            </div>
-            <span class="nav__title">Mobile</span>
-          </div>
-          <div class="nav__item">
-            <div class="nav__icon">
-              <span class="gg-cast"></span>
-            </div>
-            <span class="nav__title">Website</span>
-          </div>
-          <div class="nav__item">
-            <div class="nav__icon">
-              <span class="gg-stack"></span>
-            </div>
-            <span class="nav__title">Elements</span>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <div class="content_home">
-    <div class="product">
-      <div class="product__item" onclick="showModalDetailSource()">
-        <img src="./dist/images/Rectangle9.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Dashboard Concept</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <i class="icon gg-heart"></i>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/concept.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Finance Dashboard
-            Design</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/concept2.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Task Manager Dashboard</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/finance.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Dashboard Concept</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/finance2.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Task Manager Dashboard</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/task-manager.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Dashboard Concept</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/task-manager2.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Finance Dashboard
-            Design</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/task-manager3.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Task Manager Dashboard</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/finance.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Task Manager Dashboard</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content_home__load_more">
-      <button class="btn btn--load-more"><span class="gg-menu-right-alt"></span> Loading more </button>
-    </div>
-  </div>
-
-  <div class="modal " id="view-source">
-    <div class="modal__dialog">
-      <div class="modal__close" onclick="hideModalDetailSource()">
-        <span class="gg-close"></span>
-      </div>
-      <div class="modal__content">
-        <div class="source">
-          <div class="source__top">
-            <div class="source__top__left">
-              <div class="author">
-                <img src="./dist/images/avatar.png" alt="">
-                <div class="source__info">
-                  <p class="name">Task Manager Dashboard</p>
-                  <div class="author_info">
-                    <span class="name-author">Bien.phantrong</span>
-                    <div class="public">Public: 15/06/2021</div>
-                  </div>
+          <!-- Mobile menu -->
+          <!-- Thêm class "active" vào menu-mobile để hiển thị -->
+          <div class="menu-mobile ">
+            <div class="menu-mobile__content">
+              <div class="user-info">
+                <img src="dist/images/Product.png" alt="">
+                <div class="info-detail">
+                  <p class="name">PhanTrongBien</p>
+                  <p class="email">phantrongbien@gmail.com</p>
                 </div>
+                <button class="btn btn--log-out">
+                  <span class="gg-log-off"></span>
+                </button>
               </div>
-            </div>
-            <div class="source__top__right">
-              <button class="btn btn--light_grey"><span class="gg-heart-default"></span>Like</button>
-              <button class="btn btn--light_red"><span class="gg-heart-default"></span>555</button>
+
+              <!-- <div class="actions">
+                <button class="btn btn--action-user">
+                  <span class="gg-user-add icon"></span>
+                  Đăng nhập
+                </button>
+                <button class="btn btn--action-user">
+                  <span class="gg-user-add icon"></span>
+                  Đăng ký
+                </button>
+              </div> -->
+              <ul class="menu-mobile__detail">
+                <li class="menu-item">
+                  <a href="#">Hướng dẫn</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Thông tin chính sách</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="source__content">
-            <div class="content__left">
-              <img src="./dist/images/image-product-modal.png" alt="">
+        </div>
+
+        <div class="header__content__right">
+          <button class="btn btn--action-user">
+            <span class="gg-user-add icon"></span>
+            Đăng nhập
+          </button>
+          <button class="btn btn--action-user">
+            <span class="gg-user-add icon"></span>
+            Đăng ký
+          </button>
+          <!-- User sau khi đăng nhập -->
+          <!-- <div class="user-info">
+            <img src="dist/images/Product.png" alt="">
+            <div class="info-detail">
+              <p class="name">PhanTrongBien</p>
+              <p class="email">phantrongbien@gmail.com</p>
             </div>
-            <div class="content__right">
-              <button class="btn btn--primary large">Download source.zip</button>
-              <div class="content__row author">
-                <span class="label">Author:</span> <a href="#" class="value">AR Shakir</a>
+            <div class="list-menu-down">
+              <div class="item">
+                <span class="gg-user"></span>
+                Thông tin tài khoản
               </div>
-              <div class="content__row github">
-                <span class="label">Github :</span> <a href="#" class="value">
-                  https://github.com/ibrierley/task-man...</a>
+              <div class="item">
+                <span class="gg-log-off"></span>
+                Đăng xuất
               </div>
-              <div class="content__row category">
-                <span class="label">Categories: </span> <a href="#" class="value"> Mobile App</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="filter-top">
+    <div class="container">
+      <div class="filter-top__content">
+        <div class="category">
+          <span class="gg-menu-left icon"></span>
+          <select name="category" id="category" class="category__select">
+            <option selected disabled>Danh mục</option>
+            <option value="th">Quần dài</option>
+            <option value="ap">Áo phông</option>
+          </select>
+        </div>
+        <ul class="shop-outstanding">
+          <li class="shop-outstanding__item">
+            <span>Cửa hàng top</span>
+          </li>
+          <li class="shop-outstanding__item">
+            <span>Cửa hàng nổi bật</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="slide">
+      <div class="slide__primary">
+        <span class="gg-chevron-left previous"></span>
+        <img src="dist/images/slider.png" alt="">
+        <span class="gg-chevron-right next"></span>
+      </div>
+      <div class="slide__second">
+        <div class="slide__second__item">
+          <img src="dist/images/slider-2.png" alt="">
+        </div>
+        <div class="slide__second__item">
+          <img src="dist/images/slider-3.png" alt="">
+        </div>
+        <div class="slide__second__item">
+          <img src="dist/images/slider-4.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="intro">
+      <div class="intro__item">
+        <img src="dist/images/delivery-truck.svg" alt="">
+        <div class="info">
+          <p class="title">Free Shipping & return</p>
+          <p class="desc">Free shipping on orders over 99$</p>
+        </div>
+      </div>
+      <div class="intro__item">
+        <img src="dist/images/support.svg" alt="">
+        <div class="info">
+          <p class="title">Free Shipping & return</p>
+          <p class="desc">Free shipping on orders over 99$</p>
+        </div>
+      </div>
+      <div class="intro__item">
+        <img src="dist/images/wallet.svg" alt="">
+        <div class="info">
+          <p class="title">Free Shipping & return</p>
+          <p class="desc">Free shipping on orders over 99$</p>
+        </div>
+      </div>
+    </div>
+    <div class="outstanding-product">
+      <div class="outstanding-product__tab">
+        <div class="tab-item active">
+          Cửa Hàng Nổi Bật
+        </div>
+        <div class="tab-item">
+          Cửa Hàng Mới Nhất
+        </div>
+      </div>
+      <div class="list-product">
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
               </div>
-              <div class="description">
-                <div class="description__title">
-                  <span>Description</span>
-                </div>
-                <p class="description__content">
-                  Flutter Flutter allows you to build beautiful native
-                  apps on iOS and Android Platforms from a single
-                  codebase.
-                  The main goal of this repository is to find free
-                  open source apps and start contributing to it.
-                  Feel free to contribute to the list,
-                  any suggestions are always welcomed!
-                </p>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
               </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="view-more">
+          <button class="btn btn--view-more">
+            XEM TOÀN BỘ
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="top-selling">
+      <div class="top-selling__top">
+        <h4 class="top-selling__title">Top Selling Products</h4>
+        <div class="top-selling__tab">
+          <div class="tab-item active">
+            Tất Cả
+          </div>
+          <div class="tab-item">
+            Đồ Điện Tử
+          </div>
+          <div class="tab-item">
+            Thiết Bị Văn Phòng
+          </div>
+          <div class="tab-item">
+            May Mặc
+          </div>
+          <div class="tab-item">
+            Du Lịch
+          </div>
+        </div>
+      </div>
+      <div class="list-product">
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__img">
+            <img src="dist/images/Product.png" alt="">
+          </div>
+          <div class="product__info">
+            <p class="category">Điện tử - thiết bị</p>
+            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
+              điện tử Nam Cường</a>
+            <div class="rate">
+              <div class="star">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star-active.svg">
+                <img src="dist/images/star.svg">
+              </div>
+              <span class="total-customer-view">450 khách đã xem</span>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="social">
+      <div class="social__content">
+        <div class="social__content__left">
+          <h5 class="title">Shop Social</h5>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting the industry's
+            standard </p>
+          <ul class="list-social">
+            <li class="item-social facebook">
+              <img src="dist/images/facebook.svg" alt="">
+            </li>
+            <li class="item-social twitter">
+              <img src="dist/images/twitter.svg" alt="">
+            </li>
+            <li class="item-social instagram">
+              <img src="dist/images/instagram.svg" alt="">
+            </li>
+            <li class="item-social youtube">
+              <img src="dist/images/youtube.svg" alt="">
+            </li>
+            <li class="item-social pinterest">
+              <img src="dist/images/pinterest.svg" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="social__content__right">
+          <h5 class="title">Shop Social</h5>
+          <p class="and"> and</p>
+          <p class="desc">receive <span class="text-primary">$20 coupon</span> for first shopping</p>
+          <div class="form-email">
+            <input type="text" placeholder="Enter your email address">
+            <button><span class="gg-arrow-right"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <script src="dist/js/script.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__top__block">
+          <img src="dist/images/logo-black.png" alt="" class="logo">
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard </p>
+          <div class="phone-call">
+            <img src="dist/images/phone-call.svg" alt="">
+            <div class="info">
+              <p class="question">Got Question? Call us 24/7</p>
+              <a href="#" class="phone-number">+123 456 789</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__top__block">
+          <p class="title">Useful Link</p>
+          <ul class="list-item">
+            <li class="item">
+              <a href="#">About Shop</a>
+            </li>
+            <li class="item">
+              <a href="#">Our Service</a>
+            </li>
+            <li class="item">
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__top__block">
+          <p class="title">Customer Service</p>
+          <ul class="list-item">
+            <li class="item">
+              <a href="#">Payment Method</a>
+            </li>
+            <li class="item">
+              <a href="#">Returns</a>
+            </li>
+            <li class="item">
+              <a href="#">Shipping</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__top__block">
+          <p class="title">My Account</p>
+          <ul class="list-item">
+            <li class="item">
+              <a href="#">Sign In</a>
+            </li>
+            <li class="item">
+              <a href="#">View Cart</a>
+            </li>
+            <li class="item">
+              <a href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="copyright">Copyright © 2021 Molla Store. All Rights Reserved.
+
+          Terms Of Use
+          Privacy Policy</span>
+        <div class="payment-method">
+          <img src="dist/images/paypal.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

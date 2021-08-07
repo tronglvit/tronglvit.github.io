@@ -1,0 +1,445 @@
+/* ==========================================================================
+   # START BREAKPOINT SETTING
+   ==========================================================================
+*/
+
+@mixin m-breakpoint-up($breakpoint) {
+
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    // Write the media query.
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+
+    // If the breakpoint doesn't exist in the map.
+  }
+
+  @else {
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+//
+//  RESPOND BELOW
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// @include respond-below(sm) {}
+@mixin m-breakpoint-down($breakpoint) {
+
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    // Write the media query.
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+
+    // If the breakpoint doesn't exist in the map.
+  }
+
+  @else {
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+//
+//  RESPOND BETWEEN
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// @include respond-between(sm, md) {}
+@mixin m-breakpoint-only($lower, $upper) {
+
+  // If both the lower and upper breakpoints exist in the map.
+  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+    // Get the lower and upper breakpoints.
+    $lower-breakpoint: map-get($breakpoints, $lower);
+    $upper-breakpoint: map-get($breakpoints, $upper);
+
+    // Write the media query.
+    @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
+      @content;
+    }
+
+    // If one or both of the breakpoints don't exist.
+  }
+
+  @else {
+
+    // If lower breakpoint is invalid.
+    @if (map-has-key($breakpoints, $lower)==false) {
+      // Log a warning.
+      @warn 'Your lower breakpoint was invalid: #{$lower}.';
+    }
+
+    // If upper breakpoint is invalid.
+    @if (map-has-key($breakpoints, $upper)==false) {
+      // Log a warning.
+      @warn 'Your upper breakpoint was invalid: #{$upper}.';
+    }
+  }
+}
+
+/* ==========================================================================
+ # END BREAKPOINT SETTING
+ ==========================================================================
+*/
+/* ==========================================================================
+   # START MIXIN SETTING
+   ==========================================================================
+*/
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+
+@mixin css-transition($all, $str, $ease-in-out) {
+  -webkit-transition: $str, $all, $ease-in-out;
+  -khtml-transition: $str, $all, $ease-in-out;
+  -moz-transition: $str, $all, $ease-in-out;
+  -ms-transition: $str, $all, $ease-in-out;
+  -o-transition: $str, $all, $ease-in-out;
+  transition: $str, $all, $ease-in-out;
+}
+
+@mixin background-gradient($startColor, $endColor) {
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+  background-image: -webkit-linear-gradient(top, $startColor, $endColor);
+  background-image: -moz-linear-gradient(top, $startColor, $endColor);
+  background-image: -ms-linear-gradient(top, $startColor, $endColor);
+  background-image: -o-linear-gradient(top, $startColor, $endColor);
+  background-image: linear-gradient(top, $startColor, $endColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}');
+}
+
+@mixin background-horizontal($startColor, $endColor) {
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
+  background-image: -webkit-linear-gradient(left, $startColor, $endColor);
+  background-image: -moz-linear-gradient(left, $startColor, $endColor);
+  background-image: -ms-linear-gradient(left, $startColor, $endColor);
+  background-image: -o-linear-gradient(left, $startColor, $endColor);
+  background-image: linear-gradient(left, $startColor, $endColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', gradientType='1');
+}
+
+@mixin background-opacity($color, $opacity) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+@mixin background-images($a, $startColor, $endColor) {
+  background-image: -moz-linear-gradient($a, $startColor, $endColor);
+  background-image: -o-linear-gradient($a, $startColor, $endColor);
+  background-image: -webkit-linear-gradient($a, $startColor, $endColor);
+  background-image: linear-gradient($a, $startColor, $endColor);
+}
+
+@mixin position-overlay($position, $tops, $lefts, $bottoms, $rights) {
+  position: $position;
+  top: $tops;
+  left: $lefts;
+  bottom: $bottoms;
+  right: $rights;
+}
+
+@mixin border-radius($radius) {
+  @include css3-prefix("border-radius", $radius);
+}
+
+@mixin font-face($fontFamily, $eotFileSrc, $woffFileSrc, $ttfFileSrc, $svgFileSrc, $svgFontID) {
+  font-family: $fontFamily;
+  src: url($eotFileSrc) format("eot"), url($woffFileSrc) format("woff"), url($ttfFileSrc) format("truetype"),
+    url($svgFileSrc+$svgFontID) format("svg");
+}
+
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0, 0, 0, 0.4)) {
+  text-shadow: $x $y $blur $color;
+}
+
+@mixin css-transform ($content) {
+  -webkit-transform: $content;
+  -moz-transform: $content;
+  -ms-transform: $content;
+  -o-transform: $content;
+  transform: $content;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+// Making Shapes
+
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  background-color: $color;
+  border-radius: $width/2;
+  background-clip: padding-box;
+}
+
+@mixin triangle($width, $dir, $color) {
+  @if $dir==up {
+    width: 0;
+    height: 0;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-bottom: $width solid $color;
+  }
+
+  @else if $dir==down {
+    width: 0;
+    height: 0;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $width solid $color;
+  }
+
+  @else if $dir==left {
+    width: 0;
+    height: 0;
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+    border-right: $width solid $color;
+  }
+
+  @else if $dir==right {
+    width: 0;
+    height: 0;
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+    border-left: $width solid $color;
+  }
+}
+
+//Placeholders
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+//box shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset: "") {
+  -webkit-box-shadow: $top $left $blur $color #{$inset};
+  -moz-box-shadow: $top $left $blur $color #{$inset};
+  box-shadow: $top $left $blur $color #{$inset};
+}
+
+//transform
+@mixin transformtxt($x, $y) {
+  transform: translateX($x) translateY($y);
+  -webkit-transform: translateX($x) translateY($y);
+  -ms-transform: translateX($x) translateY($y);
+  -o-transform: translateX($x) translateY($y);
+}
+
+@mixin background-size($x) {
+  -webkit-background-size: $x;
+  -moz-background-size: $x;
+  -o-background-size: $x;
+  background-size: $x;
+}
+
+//line ccc
+@mixin border-bottom {
+  border-bottom: 1px solid #cccccc;
+}
+
+//padding
+@mixin padding-both {
+  padding-left: 4.6875%;
+  padding-right: 4.6875%;
+}
+
+//calc
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+/*Hiển thị số dòng theo mong muốn với dấu ...*/
+@mixin multiLineEllipsis($lineHeight: 1.2rem, $lineCount: 1, $bgColor: white) {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  margin-right: -1.2rem;
+  padding-right: 1.2rem;
+
+  &:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+    background: $bgColor;
+  }
+
+  /* points in the end */
+}
+
+/*
+Cách sử dụng:
+.block-with-text {
+    @include multiLineEllipsis($lineHeight: 1.2rem, $lineCount: 3, $bgColor: white);
+}
+*/
+@mixin lineEllipsis($line-height, $lines-to-show) {
+  position: relative;
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: $line-height * $lines-to-show;
+  /* Fallback for non-webkit */
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+//Display:flex
+@mixin vp-flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+}
+
+@mixin vp-flex-vertical($position) {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  align-items: $position;
+}
+
+@mixin vp-flex-center() {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@mixin set-font($font, $font-weight, $line-height, $color) {
+  font: {
+    size: $font;
+    weight: $font-weight;
+  }
+
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin customScrollTrack($width, $color, $radius) {
+  &::-webkit-scrollbar-thumb {
+    background: $color;
+    border-radius: $radius;
+  }
+
+  &::-webkit-scrollbar {
+    width: $width;
+
+    &:horizontal {
+      height: $width;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color;
+    cursor: pointer;
+  }
+}
+
+@mixin showNumberLine($number) {
+  -webkit-line-clamp: $number;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* ==========================================================================
+   # END MIXIN SETTING
+   ==========================================================================
+*/

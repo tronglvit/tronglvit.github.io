@@ -1,0 +1,169 @@
+/* ==========================================================================
+   # START FUNCTION SETTING
+   ==========================================================================
+*/
+
+
+/*Start build Color*/
+@function color($color-name) {
+    @return var(--color-#{$color-name});
+}
+
+/*End build Color*/
+
+/*Start build Width*/
+@function width($with, $width-variant:null) {
+
+    // z-index variant is optional
+    @if ($width-variant !=null) {
+        // map inception, need two names
+        @return var(--width-#{$with}-#{$width-variant});
+    }
+
+    @else {
+        // single-level z-index, one name
+        @return var(--width-#{$width-variant});
+
+    }
+}
+
+/*Start build Width*/
+@function height($height, $height-variant:null) {
+
+    // z-index variant is optional
+    @if ($height-variant !=null) {
+        // map inception, need two names
+        @return var(--height-#{$height}-#{$height-variant});
+    }
+
+    @else {
+        // single-level z-index, one name
+        @return var(--height-#{$height-variant});
+
+    }
+}
+
+/*Start build Padding*/
+@function padding($padding, $padding-variant:null) {
+
+    // z-index variant is optional
+    @if ($padding-variant !=null) {
+        // map inception, need two names
+        @return var(--padding-#{$padding}-#{$padding-variant});
+    }
+
+    @else {
+        // single-level z-index, one name
+        @return var(--padding-#{$padding-variant});
+
+    }
+}
+
+
+/*Start map_get variable css*/
+@function get-map($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+
+    @return $map;
+}
+
+/*End map_get variable css*/
+
+
+/*KEY FRAME*/
+
+/*Keyframe opacity */
+@include keyframes(showAddReport) {
+    from {
+        opacity: .6;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@include keyframes(hideAddReport) {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+@include keyframes(waveEffect) {
+    100% {
+        top: -6px;
+        right: -6px;
+        bottom: -6px;
+        left: -6px;
+        border-width: 6px;
+        opacity: .2;
+        background-color: rgba(color(rgbablack), .15);
+    }
+}
+
+@include keyframes(shownavbar) {
+    from {
+        right: -70vw;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@include keyframes(fadeEffect) {
+    100% {
+        opacity: 0;
+    }
+}
+
+@include keyframes(rotate45) {
+    from {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    to {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@include keyframes(rotate-45) {
+    from {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+/* ==========================================================================
+   # END FUNCTION SETTING
+   ==========================================================================
+*/
