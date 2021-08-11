@@ -1,0 +1,1 @@
+$(".owl-carousel").owlCarousel({loop:!0,nav:!0,navText:["<div class='gg-arrow-left'></div>","<div class='gg-arrow-right'></div>"],responsive:{0:{items:1},600:{items:1},1000:{items:1}}}),$("#open-menu-mobile").click(function(e){e.stopPropagation(),$(".menu-mobile").addClass("active")}),$("body").click(function(e){$(".menu-mobile").removeClass("active")});

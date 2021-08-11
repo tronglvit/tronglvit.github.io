@@ -2,618 +2,519 @@
 <html lang="en">
 
 <head>
-  <base href="./">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
   <meta name="author" content="Łukasz Holeczek">
   <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-  <title>Shop online</title>
+  <title>ROBOINVEST</title>
   <!-- Main styles for this application-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
+  <lin
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
-  <link href="dist/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/vendor/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/vendor/owl/css/owl.theme.default.min.css">
+    <link href="dist/css/style.css" rel="stylesheet">
 
 </head>
 
-<body class="page-home">
+<body>
+  <div class="background-top">
+    <div class="background-top__left" style="background-image: url(dist/images/04-Ellipse.svg);">
+    </div>
+    <div class="background-top__right">
+      <div class="box-alpha" style="background-image: url(dist/images/05-Ellipse-Overlay-Right.svg);"></div>
+      <div class="box-image" style="background-image: url(dist/images/05-Image-Right.png);"></div>
+    </div>
+  </div>
   <header class="header">
     <div class="container">
-      <div class="header__top">
-        <span class="hotline">Support online: <a href="#"> +84 868616968</a> </span>
-        <ul class="header__menu">
-          <li class="menu-item">
-            <a href="#">Hướng dẫn</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Blog</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Thông tin chính sách</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__content">
-        <div class="header__content__left">
-          <div class="logo">
-            <img src="dist/images/logo.png" alt="">
-          </div>
-          <div class="form-search-header">
-            <span class="gg-search icon-search"></span>
-            <input type="text" placeholder="Nhập tên của hàng, sản phẩm">
-          </div>
-          <div class="icon-menu-mobile">
-            <span class="gg-menu-right"></span>
-          </div>
-
-          <!-- Mobile menu -->
-          <!-- Thêm class "active" vào menu-mobile để hiển thị -->
-          <div class="menu-mobile ">
-            <div class="menu-mobile__content">
-              <div class="user-info">
-                <img src="dist/images/Product.png" alt="">
-                <div class="info-detail">
-                  <p class="name">PhanTrongBien</p>
-                  <p class="email">phantrongbien@gmail.com</p>
+      <div class="row">
+        <div class="col-12">
+          <div class="header__detail">
+            <div class="header__left">
+              <div class="logo">
+                <img src="dist/images/logo.svg" alt="">
+              </div>
+              <div class="nav-bar">
+                <div class="nav-item">
+                  <a href="#">Giới thiệu</a>
                 </div>
-                <button class="btn btn--log-out">
-                  <span class="gg-log-off"></span>
-                </button>
+                <div class="nav-item">
+                  <a href="#">Kết quả đầu tư</a>
+                </div>
+                <div class="nav-item">
+                  <a href="#">Gói sản phẩm</a>
+                </div>
               </div>
-
-              <!-- <div class="actions">
-                <button class="btn btn--action-user">
-                  <span class="gg-user-add icon"></span>
-                  Đăng nhập
-                </button>
-                <button class="btn btn--action-user">
-                  <span class="gg-user-add icon"></span>
-                  Đăng ký
-                </button>
-              </div> -->
-              <ul class="menu-mobile__detail">
-                <li class="menu-item">
-                  <a href="#">Hướng dẫn</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Blog</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">Thông tin chính sách</a>
-                </li>
-              </ul>
+            </div>
+            <div class="header__right">
+              <div class="actions">
+                <button class="button button--white outlined">Đăng ký</button>
+                <button class="button button--primary">Đăng nhập</button>
+              </div>
+              <div class="menu-mobile">
+                <span class="gg-menu-right" id="open-menu-mobile"></span>
+                <div class="menu-mobile__detail">
+                  <div class="content">
+                    <div class="actions">
+                      <button class="button button--white outlined">Đăng ký</button>
+                      <button class="button button--primary">Đăng nhập</button>
+                    </div>
+                    <div class="nav-bar">
+                      <div class="nav-item">
+                        <a href="#">Giới thiệu</a>
+                      </div>
+                      <div class="nav-item">
+                        <a href="#">Kết quả đầu tư</a>
+                      </div>
+                      <div class="nav-item">
+                        <a href="#">Gói sản phẩm</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="header__content__right">
-          <button class="btn btn--action-user">
-            <span class="gg-user-add icon"></span>
-            Đăng nhập
-          </button>
-          <button class="btn btn--action-user">
-            <span class="gg-user-add icon"></span>
-            Đăng ký
-          </button>
-          <!-- User sau khi đăng nhập -->
-          <!-- <div class="user-info">
-            <img src="dist/images/Product.png" alt="">
-            <div class="info-detail">
-              <p class="name">PhanTrongBien</p>
-              <p class="email">phantrongbien@gmail.com</p>
-            </div>
-            <div class="list-menu-down">
-              <div class="item">
-                <span class="gg-user"></span>
-                Thông tin tài khoản
-              </div>
-              <div class="item">
-                <span class="gg-log-off"></span>
-                Đăng xuất
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
   </header>
 
-  <div class="filter-top">
+  <section class="content-top">
     <div class="container">
-      <div class="filter-top__content">
-        <div class="category">
-          <span class="gg-menu-left icon"></span>
-          <select name="category" id="category" class="category__select">
-            <option selected disabled>Danh mục</option>
-            <option value="th">Quần dài</option>
-            <option value="ap">Áo phông</option>
-          </select>
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="info">
+            <h1 class="title">Tạo ra lợi nhuận và vững vàng trước biến động của thị trường với RoboInvest</h1>
+            <div class="read-more">
+              <span class="read-more__title">Tìm hiểu thêm</span>
+              <button class="read-more__button"><span class="gg-arrow-down"></span></button>
+            </div>
+          </div>
         </div>
-        <ul class="shop-outstanding">
-          <li class="shop-outstanding__item">
-            <span>Cửa hàng top</span>
-          </li>
-          <li class="shop-outstanding__item">
-            <span>Cửa hàng nổi bật</span>
-          </li>
-        </ul>
+        <div class="col-12 col-lg-7">
+          <div class="image-intro">
+            <img src="dist/images/laptop.png" alt="">
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+  <section class="content-middle">
+    <div class="background-ellipse"></div>
+    <div class="content-middle__top">
+      <div class="background-img" style="background-image: url('./dist/images/01-Goc.jpg');"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="list-image">
+              <div class="img img-1">
+                <img src="dist/images/Image 2.png" alt="">
+              </div>
+              <div class="img img-2">
+                <img src="dist/images/Mask Group.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 offset-lg-1 col-lg-5">
+            <div class="info">
+              <h3 class="title">
+                Cho phép người dùng sao chép danh mục đầu tư
+              </h3>
+              <p class="desc">
+                RoboInvest thiết lập danh mục đầu tư mẫu mang tính phòng thủ trước những biến động của thị trường và
+                cho phép người dùng sao chép chúng.
+                Ngoài ra, ứng dụng đưa ra thêm những tín hiệu mua bán chứng khoán để hỗ trợ người dùng đầu tư
+                hiệu quả hơn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-middle__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="item-outstanding">
+              <img src="dist/images/icons/icon-1.svg" alt="" class="icon">
+              <h4 class="title">Nâng cao hiệu quả đầu tư</h4>
+              <p class="desc">Phương pháp đầu tư đa dạng giúp ứng dụng đưa ra được nhiều cổ phiếu
+                có
+                tiềm
+                năng tăng giá </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="item-outstanding">
+              <img src="dist/images/icons/icon-2.svg" alt="" class="icon">
+              <h4 class="title">Kiểm soát yếu tố cảm xúc</h4>
+              <p class="desc">Sử dụng công nghệ, robot để phân tích, xử lý dữ liệu lớn và đưa ra tín hiệu
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="item-outstanding">
+              <img src="dist/images/icons/icon-3.svg" alt="" class="icon">
+              <h4 class="title">Tiết kiệm thời gian, công sức</h4>
+              <p class="desc">Tạo ra danh mục mẫu cùng các tín hiệu mua bán để NĐT tham khảo sao chép
+                giao
+                dịch
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="investment-results">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-10">
+          <h4 class="title">Kết quả đầu tư</h4>
+          <p class="desc">Biểu đồ thể hiện sự thay đổi về giá trị tài sản được quy ra tính trên một đơn vị đầu <br> tư
+            của một tài khoản cá nhân sử dụng RobotInvest tư vấn theo thời gian </p>
+          <div class="box-chart">
+          </div>
+          <h4 class="title-compare">
+            So sánh kết quả đầu tư với VN Direct
+          </h4>
+          <div class="box-chart small">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-middle bellow">
+    <div class="background-ellipse"></div>
+    <div class="content-middle__top">
+      <div class="background-img" style="background-image: url('./dist/images/02-Goc.jpg');"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="info">
+              <h3 class="title">
+                Lấy giá trị nội tại <br> làm nền tảng đầu tư
+              </h3>
+              <p class="desc">
+                Robo Invest tập trung vào các cổ phiếu tốt, đầu ngành. <br> Ứng dụng sẽ đầu tư nắm giữ khi
+                giá
+                cổ phiếu thấp hơn <br> giá trị nội tại của doanh nghiệp và đầu cơ lướt sóng khi <br> giá
+                cổ phiếu
+                cao hơn giá trị nội tại của doanh nghiệp <br> nhưng vẫn có tiềm năng tăng giá.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 offset-lg-1">
+            <div class="img-center">
+              <img src="dist/images/Mask Group.png" alt="">
+            </div>
+          </div>
 
-    </div>
-  </div>
-  <div class="container">
-    <div class="slide">
-      <div class="slide__primary">
-        <span class="gg-chevron-left previous"></span>
-        <img src="dist/images/slider.png" alt="">
-        <span class="gg-chevron-right next"></span>
-      </div>
-      <div class="slide__second">
-        <div class="slide__second__item">
-          <img src="dist/images/slider-2.png" alt="">
-        </div>
-        <div class="slide__second__item">
-          <img src="dist/images/slider-3.png" alt="">
-        </div>
-        <div class="slide__second__item">
-          <img src="dist/images/slider-4.png" alt="">
         </div>
       </div>
     </div>
-    <div class="intro">
-      <div class="intro__item">
-        <img src="dist/images/delivery-truck.svg" alt="">
-        <div class="info">
-          <p class="title">Free Shipping & return</p>
-          <p class="desc">Free shipping on orders over 99$</p>
-        </div>
-      </div>
-      <div class="intro__item">
-        <img src="dist/images/support.svg" alt="">
-        <div class="info">
-          <p class="title">Free Shipping & return</p>
-          <p class="desc">Free shipping on orders over 99$</p>
-        </div>
-      </div>
-      <div class="intro__item">
-        <img src="dist/images/wallet.svg" alt="">
-        <div class="info">
-          <p class="title">Free Shipping & return</p>
-          <p class="desc">Free shipping on orders over 99$</p>
-        </div>
-      </div>
-    </div>
-    <div class="outstanding-product">
-      <div class="outstanding-product__tab">
-        <div class="tab-item active">
-          Cửa Hàng Nổi Bật
-        </div>
-        <div class="tab-item">
-          Cửa Hàng Mới Nhất
-        </div>
-      </div>
-      <div class="list-product">
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
+  </section>
+  <section class="slide-primary" style="background-image: url('./dist/images/03-Goc.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-10">
+          <h4 class="title">Nhà đầu tư nói gì về RoboInvest</h4>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="content">
+                <div class="content__detail">
+                  “Ngày nay việc ứng dụng công nghệ vào lĩnh vực tài chính là vô <br> cùng thiết yếu, và đầu tư chứng
+                  khoán
+                  không phải ngoại lệ. Với <br> RoboInvest, tôi càng tự tin hơn vào những quyết định đầu tư trong <br>
+                  thị trường
+                  tài chính của bản thân mình.”
+                </div>
+                <div class="author">
+                  <img src="dist/images/author1.jpg" alt="">
+                  <p class="name">Đỗ Thanh</p>
+                  <p class="desc">Lập trình viên, 32 tuổi, nhà đầu tư cá nhân</p>
+                </div>
               </div>
-              <span class="total-customer-view">450 khách đã xem</span>
             </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
+            <div class="item">
+              <div class="content">
+                <div class="content__detail">
+                  “Ngày nay việc ứng dụng công nghệ vào lĩnh vực tài chính là vô <br> cùng thiết yếu, và đầu tư chứng
+                  khoán
+                  không phải ngoại lệ. Với <br> RoboInvest, tôi càng tự tin hơn vào những quyết định đầu tư trong <br>
+                  thị trường
+                  tài chính của bản thân mình.”
+                </div>
+                <div class="author">
+                  <img src="dist/images/author1.jpg" alt="">
+                  <p class="name">Lee </p>
+                  <p class="desc">Lập trình viên, 32 tuổi, nhà đầu tư cá nhân</p>
+                </div>
               </div>
-              <span class="total-customer-view">450 khách đã xem</span>
             </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
+            <div class="item">
+              <div class="content">
+                <div class="content__detail">
+                  “Ngày nay việc ứng dụng công nghệ vào lĩnh vực tài chính là vô <br> cùng thiết yếu, và đầu tư chứng
+                  khoán
+                  không phải ngoại lệ. Với <br> RoboInvest, tôi càng tự tin hơn vào những quyết định đầu tư trong <br>
+                  thị trường
+                  tài chính của bản thân mình.”
+                </div>
+                <div class="author">
+                  <img src="dist/images/author1.jpg" alt="">
+                  <p class="name">Nguyen Tien</p>
+                  <p class="desc">Lập trình viên, 32 tuổi, nhà đầu tư cá nhân</p>
+                </div>
               </div>
-              <span class="total-customer-view">450 khách đã xem</span>
             </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
+            <div class="item">
+              <div class="content">
+                <div class="content__detail">
+                  “Ngày nay việc ứng dụng công nghệ vào lĩnh vực tài chính là vô <br> cùng thiết yếu, và đầu tư chứng
+                  khoán
+                  không phải ngoại lệ. Với <br> RoboInvest, tôi càng tự tin hơn vào những quyết định đầu tư trong <br>
+                  thị trường
+                  tài chính của bản thân mình.”
+                </div>
+                <div class="author">
+                  <img src="dist/images/author1.jpg" alt="">
+                  <p class="name">Đỗ Thanh</p>
+                  <p class="desc">Lập trình viên, 32 tuổi, nhà đầu tư cá nhân</p>
+                </div>
               </div>
-              <span class="total-customer-view">450 khách đã xem</span>
             </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="view-more">
-          <button class="btn btn--view-more">
-            XEM TOÀN BỘ
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="top-selling">
-      <div class="top-selling__top">
-        <h4 class="top-selling__title">Top Selling Products</h4>
-        <div class="top-selling__tab">
-          <div class="tab-item active">
-            Tất Cả
-          </div>
-          <div class="tab-item">
-            Đồ Điện Tử
-          </div>
-          <div class="tab-item">
-            Thiết Bị Văn Phòng
-          </div>
-          <div class="tab-item">
-            May Mặc
-          </div>
-          <div class="tab-item">
-            Du Lịch
-          </div>
-        </div>
-      </div>
-      <div class="list-product">
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product__img">
-            <img src="dist/images/Product.png" alt="">
-          </div>
-          <div class="product__info">
-            <p class="category">Điện tử - thiết bị</p>
-            <a href="#" class="title">Cửa hàng điện thoại - thiết bị
-              điện tử Nam Cường</a>
-            <div class="rate">
-              <div class="star">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star-active.svg">
-                <img src="dist/images/star.svg">
-              </div>
-              <span class="total-customer-view">450 khách đã xem</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="social">
-      <div class="social__content">
-        <div class="social__content__left">
-          <h5 class="title">Shop Social</h5>
-          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting the industry's
-            standard </p>
-          <ul class="list-social">
-            <li class="item-social facebook">
-              <img src="dist/images/facebook.svg" alt="">
-            </li>
-            <li class="item-social twitter">
-              <img src="dist/images/twitter.svg" alt="">
-            </li>
-            <li class="item-social instagram">
-              <img src="dist/images/instagram.svg" alt="">
-            </li>
-            <li class="item-social youtube">
-              <img src="dist/images/youtube.svg" alt="">
-            </li>
-            <li class="item-social pinterest">
-              <img src="dist/images/pinterest.svg" alt="">
-            </li>
-          </ul>
-        </div>
-        <div class="social__content__right">
-          <h5 class="title">Shop Social</h5>
-          <p class="and"> and</p>
-          <p class="desc">receive <span class="text-primary">$20 coupon</span> for first shopping</p>
-          <div class="form-email">
-            <input type="text" placeholder="Enter your email address">
-            <button><span class="gg-arrow-right"></span></button>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="price">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 offset-lg-2 col-lg-8">
+          <div class="box-title">
+            <img src="dist/images/icons/Left Arrow Icon.svg" alt="">
+            <p>BẠN ĐÃ SẴN SÀNG NẮM BẮT CÁC <br> CƠ HỘI ĐẦU TƯ CÙNG ROBOINVEST</p>
+            <img src="dist/images/icons/Right Arrow Icon.svg" alt="">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="price__detail">
+            <h5 class="price__detail__title">
+              Bảng giá sản phẩm, dịch vụ
+            </h5>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 block-info">
+          <div class="list-info">
+            <div class="info-item">
+              Robot sử dụng phương pháp đầu tư để tư vấn
+            </div>
+            <div class="info-item">
+              Phạm vi tư vấn
+            </div>
+            <div class="info-item">
+              Mức giá
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 block-package">
+          <div class="package-top" style="background-image: url('./dist/images/Mask\ Group\ \(2\).png');">
+            <img src="dist/images/icons/Icon Silver.svg" alt="">
+            <p class="title">Gói Bạc</p>
+          </div>
+          <div class="package-info">
+            <div class="info-item">
+              <p class="desc">Đầu tư tăng trưởng, đầu cơ lướt sóng</p>
+            </div>
+            <div class="info-item">
+              <p class="desc">50 mã có vốn hóa thị trường cũng như thanh khoản cao nhất (VN50)</p>
+            </div>
+            <div class="info-item">
+              <button class="button button--primary">1.5 triệu/tháng</button>
+              <p class="desc">hoặc <span class="text-primary text-bold">miễn phí</span> sử dụng khi có tài khoản chứng
+                khoán trên
+                5 tỉ giao dịch ở VPS và được
+                broker của Robo
+                Invest quản lý tài khoản</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 block-package">
+          <div class="package-top" style="background-image: url('./dist/images/Mask\ Group\ \(3\).png">
+            <img src="dist/images/icons/Icon Silver.svg" alt="">
+            <p class="title">Gói Vàng</p>
+          </div>
+          <div class="package-info">
+            <div class="info-item">
+              <p class="desc">Đầu tư tăng trưởng, đầu cơ lướt sóng</p>
+            </div>
+            <div class="info-item">
+              <p class="desc">80 mã có vốn hóa thị trường cũng như thanh khoản cao nhất (VN80)</p>
+            </div>
+            <div class="info-item">
+              <button class="button button--primary">2.5 triệu/tháng</button>
+              <p class="desc">hoặc <span class="text-primary text-bold">miễn phí</span> sử dụng khi có tài khoản chứng
+                khoán trên
+                10 tỉ giao dịch ở VPS và được
+                broker của Robo Invest quản lý tài khoản</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 block-package">
+          <div class="package-top" style="background-image: url('./dist/images/Mask\ Group\ \(4\).png">
+            <img src="dist/images/icons/Icon Silver.svg" alt="">
+            <p class="title">Gói Kim Cương</p>
+          </div>
+          <div class="package-info">
+            <div class="info-item">
+              <p class="desc">Đầu tư giá trị, đầu tư tăng trưởng, đầu tư định lượng và đầu cơ lướt sóng</p>
+            </div>
+            <div class="info-item">
+              <p class="desc">80 mã có vốn hóa thị trường cũng như thanh khoản cao nhất (VN80)</p>
+            </div>
+            <div class="info-item">
+              <button class="button button--primary">50 triệu/tháng</button>
+              <p class="desc">hoặc <span class="text-primary text-bold">miễn phí</span> sử dụng khi có tài khoản chứng
+                khoán trên
+                50 tỉ giao dịch ở VPS và được
+                broker của Robo Invest quản lý tài khoản</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-12 offset-lg-1 col-lg-10">
+          <div class="payment_method">
+            <h5 class="title">Tài khoản chuyển tiền</h5>
+            <p class="method">
+              Quý khách vui lòng chuyển khoản với nội dung <span class="text-bold">RoboInvest_ Tên_ SĐT_Gói Dịch
+                Vụ</span> <br>
+              Ví dụ <span class="text-bold">RoboInvest_Minh_03892834748_KimCuong</span> về tài khoản <br>
+
+            </p>
+            <p class="note">
+              Ghi chú: Đóng tối thiểu 3 tháng/ lần
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trial" style="background-image: url('./dist/images/background-footer.png');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="info">
+            <h5 class="title">Trải nghiệm ngay RoboInvest</h5>
+            <p class="desc">Động lực mỗi ngày là nhìn thấy danh mục đầu tư của khách hàng tăng trưởng</p>
+            <div class="actions">
+              <button class="button button--primary large-width">Đăng nhập</button>
+              <button class="button button--primary large-width outlined">Đăng ký</button>
+            </div>
+            <div class="contacts">
+              <div class="item">
+                <div class="icon">
+                  <img src="dist/images/icons/phone.svg" alt="">
+                </div>
+                +84 9996789
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <img src="dist/images/icons/email.svg" alt="">
+                </div>
+                roboinvest@gmail.com
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <img src="dist/images/icons/location.svg" alt="">
+                </div>
+                32 Đại Từ, Hoàng Mai, Hà Nội
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <img src="dist/images/icons/facebook.svg" alt="">
+                </div>
+                RoboInvest Fanpage
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="background">
+            <div class="background__img">
+              <img src="./dist/images/multidevices-2 1.png" alt="">
+            </div>
+            <div class="background__circle"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
-      <div class="footer__top">
-        <div class="footer__top__block">
-          <img src="dist/images/logo-black.png" alt="" class="logo">
-          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard </p>
-          <div class="phone-call">
-            <img src="dist/images/phone-call.svg" alt="">
-            <div class="info">
-              <p class="question">Got Question? Call us 24/7</p>
-              <a href="#" class="phone-number">+123 456 789</a>
+      <div class="row">
+        <div class="col-12">
+          <div class="footer__top">
+            <div class="menu">
+              <div class="item">
+                <a href="#">Giới thiệu</a>
+              </div>
+              <div class="item">
+                <a href="#">Kết quả đầu tư</a>
+              </div>
+              <div class="item">
+                <a href="#">Tư vấn đầu tư</a>
+              </div>
+              <div class="item">
+                <a href="#">Gói sản phẩm</a>
+              </div>
+            </div>
+            <div class="social">
+              <div class="item">
+                <a href=""><img src="dist/images/icons/facebook-white.svg" alt=""></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="dist/images/icons/twitter-white.svg" alt=""></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="dist/images/icons/instagram-white.svg" alt=""></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="footer__top__block">
-          <p class="title">Useful Link</p>
-          <ul class="list-item">
-            <li class="item">
-              <a href="#">About Shop</a>
-            </li>
-            <li class="item">
-              <a href="#">Our Service</a>
-            </li>
-            <li class="item">
-              <a href="#">FAQ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__top__block">
-          <p class="title">Customer Service</p>
-          <ul class="list-item">
-            <li class="item">
-              <a href="#">Payment Method</a>
-            </li>
-            <li class="item">
-              <a href="#">Returns</a>
-            </li>
-            <li class="item">
-              <a href="#">Shipping</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__top__block">
-          <p class="title">My Account</p>
-          <ul class="list-item">
-            <li class="item">
-              <a href="#">Sign In</a>
-            </li>
-            <li class="item">
-              <a href="#">View Cart</a>
-            </li>
-            <li class="item">
-              <a href="#">Help</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span class="copyright">Copyright © 2021 Molla Store. All Rights Reserved.
-
-          Terms Of Use
-          Privacy Policy</span>
-        <div class="payment-method">
-          <img src="dist/images/paypal.png" alt="">
-        </div>
       </div>
     </div>
+    <div class="footer__bottom">
+      Copyright © 2018 AppsLand. Template Made by RoboInvest
+    </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./dist/vendor/owl/js/owl.carousel.min.js"></script>
+  <script src="./dist/js/script.js"></script>
+
 </body>
 
 </html>
