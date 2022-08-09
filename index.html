@@ -9,646 +9,436 @@
   <meta name="description" content="VHEC">
   <meta name="author" content="Lee">
   <meta name="keyword" content="VHEC">
-  <title>VHEC</title>
+  <title>The Tailent Brief</title>
   <!-- Main styles for this application-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./dist/css/owl/owl.carousel.min.css" />
 
-  <link href="dist/css/style.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="dist/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
   <script src="./dist/js/owl/owl.carousel.min.js"></script>
-</head>
 
 <body>
-  <div id="particles-js" class="vhec-top">
-    <img src="dist/images/wave.svg" alt="" class="bg-bottom">
-    <!-- <img src="dist/images/earth-bg.svg" alt="" class="bg-right"> -->
-    <!-- <img src="dist/images/Asset_1.svg" alt="" class="bg-earth-right"> -->
 
-    <div class="vhec-header" id="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="vhec-header__detail">
-              <div class="logo">
-                <img src="dist/images/logo.svg" alt="">
-              </div>
-              <div class="vhec-menu">
-                <div class="vhec-menu__item active">
-                  <a href="">VHECについて</a>
-                </div>
-                <div class="vhec-menu__item">
-                  <a href="services.html">業務内容</a>
-                </div>
-                <div class="vhec-menu__item">
-                  <a href="services.html">開発の取り組み</a>
-                </div>
-                <div class="vhec-menu__item">
-                  <a href="services.html">開発モデル</a>
-                </div>
-                <div class="vhec-menu__item">
-                  <a href="services.html">開発事例</a>
-                </div>
-                <div class="vhec-menu__item">
-                  <a href="services.html">問い合わせ</a>
-                </div>
-              </div>
-              <div class="vhec-language">
-                <div class="vhec-language__selected active">
-                  <img src="dist/images/flag-vn.svg" alt="">VN
-                </div>
-                <div class="vhec-language__selected">
-                  <img src="dist/images/2560px-Japan_flag_-_variant.png" alt="">JP
-                </div>
-              </div>
-              <div class="vhec-menu-mobile">
-                <button class="menu__icon" id="btn-menu-mobile">
-                  <i class="gg-menu"></i>
-                </button>
-                <div class="vhec-menu-mobile__detail" id="menu-mobile-detail">
-                  <div class="overlay" id="overlay-menu"></div>
-                  <div class="vhec-menu-mobile__item active">
-                    VHECについて
-                  </div>
-                  <div class="vhec-menu-mobile__item">
-                    業務内容
-                  </div>
-                  <div class="vhec-menu-mobile__item">
-                    開発の取り組み
-                  </div>
-                  <div class="vhec-menu-mobile__item">
-                    開発モデル
-                  </div>
-                  <div class="vhec-menu-mobile__item">
-                    開発事例
-                  </div>
-                  <div class="vhec-menu-mobile__item">
-                    問い合わせ
-                  </div>
-                </div>
-              </div>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header__detail">
+            <div class="logo">
+              <img src="dist/images/logo-svg.svg" alt="">
             </div>
-
+            <ul class="right">
+              <li class="right__item">
+                <span>The talent</span>
+                <img src="dist/images/arrow-right.svg" alt="">
+              </li>
+              <li class="right__item">
+                <span>Đại diện độc quyền</span>
+                <img src="dist/images/arrow-right.svg" alt="">
+              </li>
+              <li class="right__item">
+                <span>Chia sẻ doanh thu</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </header>
+  <section class="slide-primary">
+    <img class="background" src="dist/images/slide-primary.png" alt="">
+    <img src="dist/images/logo-large.svg" alt="" class="img-center">
+  </section>
+  <section class="meet-talent">
+    <h1 class="meet-talent__title">Meet The <span>Talent</span></h1>
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="vhec-top__info">
-            <div class="vhec-top__info__detail">
-              <div class="content">
-                <h1>
-                  <span>VietNam</span>
-                  <span>Hi-tech </span> <br>
-                  <span>Engineering</span> <span>Company</span>
-                </h1>
+        <div class="col-6 col-lg-3">
+          <article class="meet-talent-post image">
+            <a href="#">
+              <img src="dist/images/kieuanh.png" alt="">
+              <div class="bottom">
+                <span>Ca nương Kiều Anh</span>
               </div>
-              <div class="description">
-                <h2>
-                  VHECは技術イノベーションによって発展する会社となり、最高レベルの顧客満足度の実現を約束する。また社員が自身の専門職や精神生活において可能性を最大限に発揮できる快適な作業環境を提供し、社会貢献や日本とベトナムのエンジニアリングの架け橋となることを目標とする。
-                </h2>
-                <h2>VHECの社員は若くパワー溢れる熱意と行動力を持って、ベトナムの人々や子供たちの生活レベルの向上、よりよいコミュニティ、より良いベトナムを目指し、社会的役割を果たす。</h2>
+            </a>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="meet-talent-post image">
+            <a href="#">
+              <img src="dist/images/hoaithu.png" alt="">
+              <div class="bottom">
+                <span>Vũ Thu Hoài</span>
               </div>
-              <div class="actions">
-                <button class="vhec-btn vhec-btn--primary" id="block-1">詳細</button>
-                <button class="vhec-btn vhec-btn--white-primary" id="block-2">サービス</button>
+            </a>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="meet-talent-post image">
+            <a href="#">
+              <img src="dist/images/nhanphan.png" alt="">
+              <div class="bottom">
+                <span>Mike Nhân Phan</span>
               </div>
-            </div>
-            <div class="info__right">
-              <img src="dist/images/circle-line.png" alt="" class="circle-line">
-              <div class="wave"></div>
-              <div class="list-domain">
-                <div class="text-center">
-                  VHEC
-                </div>
-                <div class="item">
-                  <img src="dist/images/ito.svg" alt="">
-                </div>
-                <div class="item">
-                  <img src="dist/images/erp.svg" alt="">
-                </div>
-                <div class="item">
-                  <img src="dist/images/lot.svg" alt="">
-                </div>
-                <div class="item">
-                  <img src="dist/images/automotive.svg" alt="">
-                </div>
-                <div class="item">
-                  <img src="dist/images/rpa.svg" alt="">
-                </div>
+            </a>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="meet-talent-post image">
+            <a href="#">
+              <img src="dist/images/theanh.png" alt="">
+              <div class="bottom">
+                <span>Thế Anh</span>
               </div>
-            </div>
-          </div>
+            </a>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="meet-talent-post text">
+            <a href="#">
+              <div class="top">
+                <span>Who</span>
+              </div>
+              <div class="bottom">
+                <span>???</span>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="meet-talent-post text">
+            <a href="#">
+              <div class="top">
+                <span>is</span>
+              </div>
+              <div class="bottom">
+                <span>???</span>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="meet-talent-post text">
+            <a href="#">
+              <div class="top">
+                <span>Next</span>
+              </div>
+              <div class="bottom">
+                <span>???</span>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="meet-talent-post text">
+            <a href="#">
+              <div class="top">
+                <span>?</span>
+              </div>
+              <div class="bottom">
+                <span>???</span>
+              </div>
+            </a>
+          </article>
         </div>
       </div>
     </div>
-  </div>
-  <section class="vhec-the-number" id="block-detail-1">
+  </section>
+  <section class="join-with-us" style="background-image:url('dist/images/background-center.png') ;">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="section-title">
-            <div class="section-title__detail">
-              <h2>会社情報</h2>
+          <h3 class="title"><span>Let’s join</span> with us</h3>
+          <form action="" class="form">
+            <div class="form__item">
+              <input type="text" placeholder="Họ và tên">
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 col-xl-6">
-          <h2 class="vhec-the-number__title">
-            メンバーのご紹介
-          </h2>
-          <p class="vhec-the-number__description">We build readymade websites, mobile applications, <br>
-            and elaborate online business services.</p>
-          <ul class="vhec-the-number__list">
-            <li class="vhec-the-number__item">
-              <span class="number"> 120+</span>
-              <h4 class="text">クライアント数</h4>
-            </li>
-            <li class="vhec-the-number__item">
-              <span class="number">80+</span>
-              <h4 class="text">プロジェクト数</h4>
-            </li>
-            <li class="vhec-the-number__item">
-              <span class="number">150+</span>
-              <h4 class="text">従業員</h4>
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-lg-6 col-xl-6">
-          <div class="vhec-the-number__images">
-            <div class="list-img">
-              <img src="dist/images/company.png" alt="">
+            <div class="form__item">
+              <input type="text" placeholder="Số điện thoại">
             </div>
-            <p class="description">VHECに在籍しているのエンジニアの8割は東京大学に匹敵するともいわれている
-              ベトナムトップの理系総合大学「ハノイ工科大学」出身であり、
-              また、全社員へ日本語教育を常に実施し、日本での大学出身エンジニアや
-              日本での職務経験をもつブリッジSEが在籍しているため円滑な
-              日本語での意思疎通が可能です。</p>
+            <div class="form__item">
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="form__item">
+              <input type="text" placeholder="Link Facebook/ Instagram/ Youtube,...">
+            </div>
+            <button>submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="talent">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="logo"><img src="dist/images/logo-large.svg" alt=""></div>
+          <div class="text">
+            <span>Đồng hành cùng các <b>Talent/<br> KOL/KOC</b> trong việc thương mại <br> hóa hình ảnh và tiếp cận đến
+              các <br>
+              nhãn
+              hàng
+              tiềm năng.</span>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="vhec-domain" id="block-detail-2">
+  <section class="who-we-are" style="background-image:url('dist/images/background-1.png') ;">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-            <div class="section-title__detail">
-              <h2>VHEC提供サービス</h2>
-            </div>
-          </div>
+        <div class="col-12 col-lg-6">
+          <h3 class="title">
+            <span>CHÚNG TÔI</span> <br>
+            LÀ AI?
+          </h3>
         </div>
-        <div class="col-12">
-          <ul class="vhec-domain__top">
-            <div class="vhec-domain__top__item">
-              <img src="dist/images/icon-1.svg" alt="" class="icon">
-              <span>コンサルティング</span>
-            </div>
-            <div class="vhec-domain__top__item">
-              <img src="dist/images/icon-2.svg" alt="" class="icon">
-              <span>デジタルト ランスフォーメーション</span>
-            </div>
-            <div class="vhec-domain__top__item">
-              <img src="dist/images/icon-3.svg" alt="" class="icon">
-              <span>SIサービス</span>
-            </div>
-          </ul>
-          <div class="vhec-domain__detail">
-            <img src="dist/images/roket.svg" alt="" class="rocket">
-            <div class="list-domain">
-              <div class="earth-2">
-                <img src="dist/images/earth-2.svg" alt="">
-              </div>
-
-              <div class="item">
-                <img src="dist/images/ito.svg" alt="">
-                <span>ITO</span>
-              </div>
-              <div class="item">
-                <img src="dist/images/erp.svg" alt="">
-                <span>ERP</span>
-              </div>
-              <div class="item">
-                <img src="dist/images/lot.svg" alt="">
-                <span>AI - loT</span>
-              </div>
-
-              <div class="item">
-                <img src="dist/images/automotive.svg" alt="">
-                <span>AUTOMOTIVE</span>
-              </div>
-              <div class="item">
-                <img src="dist/images/rpa.svg" alt="">
-                <span>RPA</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <section class="vhec-technology" style="background-image:url('./dist/images/background-block-center.svg') ;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title dark">
-            <div class="section-title__detail">
-              <h2>VHECの能力-技術</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="block-technology">
-            <img src="dist/images/icon-block-text-1.svg" alt="" class="icon-title">
-            <h5 class="title">言語
-            </h5>
-            <p class="description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
-            <ul class="list-tech">
-              <li class="list-tech__item">
-                <img src="dist/images/java.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/php.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/csharp.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/vuejs.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/reactjs.svg" alt="">
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="block-technology">
-            <img src="dist/images/icon-text-block-2.svg" alt="" class="icon-title">
-            <h5 class="title">データベース
-            </h5>
-            <p class="description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
-            <ul class="list-tech">
-              <li class="list-tech__item">
-                <img src="dist/images/SQLite.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/msql.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/Mysql.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/Postgre.svg" alt="">
-              </li>
-
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="block-technology">
-            <img src="dist/images/icon-text-block-3.svg" alt="" class="icon-title">
-            <h5 class="title">オペレーティング
-            </h5>
-            <p class="description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
-            <ul class="list-tech">
-              <li class="list-tech__item">
-                <img src="dist/images/apple-svgrepo-com 1.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/linux-svgrepo-com 1.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/windows-svgrepo-com 1.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/android.svg" alt="">
-              </li>
-
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="block-technology">
-            <img src="dist/images/icon-text-block-4.svg" alt="" class="icon-title">
-            <h5 class="title">クラウド
-            </h5>
-            <p class="description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
-            <ul class="list-tech">
-              <li class="list-tech__item">
-                <img src="dist/images/aws-svgrepo-com 1.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/google-cloud-platform-svgrepo-com 1.svg" alt="">
-              </li>
-              <li class="list-tech__item">
-                <img src="dist/images/microsoft-azure-svgrepo-com 1.svg" alt="">
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="vhec-technology__flow">
-            <h4 class="flow-title">
-              対応可能工程
-            </h4>
-            <ul class="flow-list">
-              <li class="flow-list__item">
-                要件定義
-              </li>
-              <li class="flow-list__item">
-                <img src="dist/images/line-arrow.svg" alt="">
-              </li>
-              <li class="flow-list__item">
-                設計
-              </li>
-              <li class="flow-list__item">
-                <img src="dist/images/line-arrow.svg" alt="">
-              </li>
-              <li class="flow-list__item">
-                開発
-              </li>
-              <li class="flow-list__item">
-                <img src="dist/images/line-arrow.svg" alt="">
-              </li>
-              <li class="flow-list__item">
-                テスト
-              </li>
-              <li class="flow-list__item">
-                <img src="dist/images/line-arrow.svg" alt="">
-              </li>
-              <li class="flow-list__item">
-                運用保守
-              </li>
-            </ul>
-            <button class="vhec-btn vhec-btn--primary">詳細</button>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="vhec-japan" style="background-image:url('./dist/images/bg-3.svg') ;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-            <div class="section-title__detail">
-              <h2>VHECの能力ー日本語</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-lg-5">
-          <div class="vhec-japan__proficiency" style="background-image:url('./dist/images/bg-4.svg') ;">
-            <h5 class="title">Japanese Language Proficiency</h5>
-            <ul class="list-proficiency">
-              <li class="list-proficiency__item">
-                <img src="dist/images/mail.svg" alt="">メール
-              </li>
-              <li class="list-proficiency__item">
-                <img src="dist/images/chat.svg" alt="">チャット
-              </li>
-              <li class="list-proficiency__item">
-                <img src="dist/images/document-text-outline 1.svg" alt="">ドキュメント
-              </li>
-              <li class="list-proficiency__item">
-                <img src="dist/images/settings-outline 1.svg" alt="">管理ツール,
-                Redmine,
-                Backlog
-              </li>
-              <li class="list-proficiency__item">
-                <img src="dist/images/meeting-svgrepo-com 1.svg" alt="">TV会議,
-                定例会,
-                通常会議
-              </li>
-            </ul>
-
-          </div>
-        </div>
-        <div class="col-12 col-lg-7">
-          <div class="vhec-japan__detail">
-            <h4 class="title">日本語
-            </h4>
-            <ul class="list-level">
-              <li class="list-level__item">
-                <span>N1</span>
-                幅広い場面で使われる日本語を理解することができる
-              </li>
-              <li class="list-level__item">
-                <span>N3</span>
-                日常的な場面で使われる日本語をある程度理解することができる。
-              </li>
-              <li class="list-level__item">
-                <span>N2</span>
-                日常的な場面で使われる日本語の理解に加え、より幅広い場面で使 <br>
-                われる日本語をある程度理解することができる。
-              </li>
-            </ul>
-            <ul class="level__detail">
-              <li class="level__detail__item">
-                <div class="text">
-                  <span>N1</span>
-                  <span>16%</span>
-                </div>
-                <div class="progress_bar">
-                  <div class="active" style="width: 40%"></div>
-                </div>
-              </li>
-              <li class="level__detail__item">
-                <div class="text">
-                  <span>N2</span>
-                  <span>18%</span>
-                </div>
-                <div class="progress_bar">
-                  <div class="active" style="width: 18%"></div>
-                </div>
-              </li>
-              <li class="level__detail__item">
-                <div class="text">
-                  <span>N3</span>
-                  <span>22%</span>
-                </div>
-                <div class="progress_bar">
-                  <div class="active" style="width: 22%"></div>
-                </div>
-              </li>
-              <li class="level__detail__item">
-                <div class="text">
-                  <span>その他</span>
-                  <span>44%</span>
-                </div>
-                <div class="progress_bar">
-                  <div class="active" style="width: 44%"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="vhec-slide vhec-slide-index">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="owl-carousel owl-theme" id="carousel">
-            <div class="vhec-slide__item"> <img src="dist/images/neo-lap.png" alt=""> </div>
-            <div class="vhec-slide__item"> <img src="dist/images/iaccess.png" alt=""> </div>
-            <div class="vhec-slide__item"> <img src="dist/images/ncsa.png" alt=""> </div>
-            <div class="vhec-slide__item"> <img src="dist/images/hitachi.png" alt=""> </div>
-            <div class="vhec-slide__item"> <img src="dist/images/neo-lap.png" alt=""> </div>
-            <div class="vhec-slide__item"> <img src="dist/images/iaccess.png" alt=""> </div>
-            <div class="vhec-slide__item"> <img src="dist/images/ncsa.png" alt=""> </div>
-            <div class="vhec-slide__item"> <img src="dist/images/hitachi.png" alt=""> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="vhec-contact" style="background-image:url('./dist/images/background-contact.png') ;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-            <div class="section-title__detail">
-              <h2>お問い合わせ</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <h4 class="title">
-            Start Working With Us
-          </h4>
-          <p class="description">
-            ベトナムオフショア開発に関するご質問、VHECの視察、VHECへシステム開発のご相談、<br>
-            システム開発の見積依頼など、お気軽にお問い合わせください。
-          </p>
-          <button class="vhec-btn vhec-btn--primary">お問い合わせ</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer style="background-image:url('./dist/images/bg-footer.svg')">
-    <div class="container">
-      <div class="detail">
-        <div class="map-location">
-          <img src="dist/images/location.svg" alt="">
-        </div>
-        <div class="location-detail">
-          <div class="location-detail__block">
-            <div class="location-item">
-              <div class="title">ハノイ本社</div>
-              <div class="detail-item">
-                <img src="dist/images/building-icon.svg" alt="">
-                <span>23 Floor, Viwaseen Building, 48 To Huu Street,
-                  Nam Tu Liem District, Ha Noi City, Viet Nam</span>
-              </div>
-              <div class="detail-item">
-                <img src="dist/images/phone-icon.svg" alt="">
-                <span>+84-9-4345-5215</span>
-              </div>
-              <div class="detail-item">
-                <img src="dist/images/mail-2-icon.svg" alt="">
-                <span>contact@vhec.vn</span>
-              </div>
-            </div>
-          </div>
-          <div class="location-detail__block">
-            <div class="location-item">
-              <div class="title">東京都営業所</div>
-              <div class="detail-item">
-                <img src="dist/images/building-icon.svg" alt="">
-                <span>〒162‒0844東京都新宿区市谷八幡町2-1
-                  DS市ヶ谷ビル3階
-                  インディビジュアルシステムズ株式会社
-                  VHECのパートナー兼日本法人代理</span>
-              </div>
-              <div class="detail-item">
-                <img src="dist/images/phone-icon.svg" alt="">
-                <span> +81-80-4089-4479</span>
-              </div>
-              <div class="detail-item">
-                <img src="dist/images/mail-2-icon.svg" alt="">
-                <span>contact@vhec.vn</span>
-              </div>
-            </div>
-            <div class="location-item">
-              <div class="title">東京都営業所</div>
-              <div class="detail-item">
-                <img src="dist/images/building-icon.svg" alt="">
-                <span>〒520-0047 滋賀県大津市浜大津4-2-15
-                  浜大津SSビル4F
-                  株式会社HONKI　
-                  VHECのパートナー兼日本法人代理</span>
-              </div>
-              <div class="detail-item">
-                <img src="dist/images/phone-icon.svg" alt="">
-                <span>+81-80-4089-4479</span>
-              </div>
-              <div class="detail-item">
-                <img src="dist/images/mail-2-icon.svg" alt="">
-                <span>contact@vhec.vn</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <div class="col-12">
-          <div class="detail">
-            <span class="left">© VHEC 2022. All rights reserved</span>
+        <div class="col-12 col-lg-6">
+          <div class="content">
+            <span>The Talent nằm trong chuỗi dự án trực thuộc <b>The A List - influencer marketing agency</b> có
+              chi
+              nhánh tại Hà Nội và TP. HCM <br>
+              Trong gần <b>5 năm hoạt động</b>, The A List: <br>
+            </span>
             <ul>
-              <li>よくある質問</li>
-              <li>プライバシーポリシー</li>
+              <li>
+                Đối tác của hơn <b>110++ nhãn hàng</b> tại Việt Nam, trong đó có các tập đoàn lớn như: Unilever,
+                Masan,
+                Vingroup, Viettel
+              </li>
+              <li>
+                Hợp tác với hơn <b>10,000++ influencers</b>
+              </li>
+              <li>
+                Ký kết hơn <b>25++ hợp đồng</b> hàng tháng
+              </li>
+              <li>
+                Nhiều campaign lọt vào <b>top 10 BXH Buzzmetrics Social Index</b>
+              </li>
             </ul>
+            <div class="actions">
+              <button>See more</button>
+              <a href="#">
+                <img src="dist/images/arrow-right-large.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="talent-benefit">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <h3 class="title">
+            Lợi ích đặc biệt <br>
+            <span> khi tham gia the talent
+            </span>
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <article class="talent-benefit__post" id="card">
+            <div class="detail">
+              <div class="box-img front">
+                <img src="dist/images/alpha-1.png" alt="">
+              </div>
+              <ul class="back">
+                <li>
+                  Xử lý paperwork chuẩn chỉnh, bao gồm: thuế, bảo hiểm xã hội, hợp đồng các job
+                </li>
+                <li>
+                  Được sản xuất & tư vấn nội dung sao cho đạt hiệu quả, và thỏa mãn nhu cầu khách hàng (ekip quay +
+                  chụp, ekip makeup) ⇒ tăng sản lượng book khi khách cũ quay lại
+                </li>
+                <li>
+                  Tư vấn xử lý khủng hoảng truyền thông nếu có
+                </li>
+              </ul>
+              <div class="bottom">
+                <img src="dist/images/arrow-right-black.svg" alt="" class="icon">
+                <span>Quản lý <br>
+                  chuyên nghiệp</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-lg-4">
+          <article class="talent-benefit__post" id="card-2">
+            <div class="detail">
+              <div class="box-img front">
+                <img src="dist/images/alpha-2.png" alt="">
+              </div>
+              <ul class="back">
+                <li>
+                  Xử lý paperwork chuẩn chỉnh, bao gồm: thuế, bảo hiểm xã hội, hợp đồng các job
+                </li>
+                <li>
+                  Được sản xuất & tư vấn nội dung sao cho đạt hiệu quả, và thỏa mãn nhu cầu khách hàng (ekip quay +
+                  chụp, ekip makeup) ⇒ tăng sản lượng book khi khách cũ quay lại
+                </li>
+                <li>
+                  Tư vấn xử lý khủng hoảng truyền thông nếu có
+                </li>
+              </ul>
+              <div class="bottom">
+                <img src="dist/images/arrow-right-black.svg" alt="" class="icon">
+                <span>Quản lý <br>
+                  chuyên nghiệp</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-lg-4">
+          <article class="talent-benefit__post" id="card-3">
+            <div class="detail">
+              <div class="box-img front">
+                <img src="dist/images/alpha-3.png" alt="">
+              </div>
+              <ul class="back">
+                <li>
+                  Xử lý paperwork chuẩn chỉnh, bao gồm: thuế, bảo hiểm xã hội, hợp đồng các job
+                </li>
+                <li>
+                  Được sản xuất & tư vấn nội dung sao cho đạt hiệu quả, và thỏa mãn nhu cầu khách hàng (ekip quay +
+                  chụp, ekip makeup) ⇒ tăng sản lượng book khi khách cũ quay lại
+                </li>
+                <li>
+                  Tư vấn xử lý khủng hoảng truyền thông nếu có
+                </li>
+              </ul>
+              <div class="bottom">
+                <img src="dist/images/arrow-right-black.svg" alt="" class="icon">
+                <span>HỖ TRỢ <br>
+                  THÔNG TỪ HỆ SINH
+                  THÁI ĐA DẠNG
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="actions">
+          <button>See more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ecosystem" style="background-image:url('dist/images/background-2.png') ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="title">Hệ sinh thái của <br>
+            <span>the talent</span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ecosystem-list">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-10">
+          <div class="ecosystem-list__detail">
+            <div class="owl-carousel owl-theme" id="carousel">
+              <div class="item">
+                <ul>
+                  <li>
+                    <img src="dist/images/bross.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="dist/images/the-influencer.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="dist/images/the-alist.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="dist/images/sponsor.svg" alt="">
+                  </li>
+                </ul>
+                <div class="content">
+                  <span class="text">Công ty giải trí tư vấn chiến lược phát triển cho các talents và sản <br> xuất các
+                    show
+                    âm
+                    nhạc với format khác biệt như In The Moonlight, <br> Soul Of The Forest, Hay Fest.- Glamping music
+                    festival</span>
+                </div>
+              </div>
+              <div class="item">
+                <ul>
+                  <li>
+                    <img src="dist/images/bross.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="dist/images/the-influencer.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="dist/images/the-alist.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="dist/images/sponsor.svg" alt="">
+                  </li>
+                </ul>
+                <div class="content">
+                  <span class="text">Công ty giải trí tư vấn chiến lược phát triển cho các talents và sản <br> xuất các
+                    show
+                    âm
+                    nhạc với format khác biệt như In The Moonlight, <br> Soul Of The Forest, Hay Fest.- Glamping music
+                    festival</span>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="left prev"><span class="gg-arrow-right"></span></button>
+              <button class="right next"><span class="gg-arrow-right "></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer__detail">
+            <div class="left">
+              <div class="text">
+                Contact <br>
+                with us
+              </div>
+            </div>
+            <div class="right">
+              <span><b>Ms. Thao Tran - (+84) 387804955</b> <br>
+                Email: tranphuongthao@thetalent.vn <br>
+                Địa chỉ: Số 15 ngách 84 ngõ 34 Hoàng Cầu, phường Ô Chợ Dừa, quận Đống Đa, Hà Nội</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <a href="#" id="top">
-    <i class="gg-arrow-up"></i>
-  </a>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="dist/js/script.js"></script>
 
-  <!-- scripts -->
-  <script src="/dist/js/praticles/particles.min.js"></script>
-  <script src="/dist/js/praticles/js/app.js"></script>
 
-  <!-- stats.js -->
-  <script src="/dist/js/praticles/js/lib/stats.js"></script>
+  <!-- scripts -->
+
+</body>
 
 </body>
 
