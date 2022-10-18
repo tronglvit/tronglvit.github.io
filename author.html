@@ -17,43 +17,12 @@
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
   <link href="dist/css/style.css" rel="stylesheet">
-  <script type="text/javascript"
-    src="http://yellowfin.amperfii.io/JsAPI/v3?reportUUID=8fb84dc7-9e61-426d-be1a-629f310104f9&height=500"></script>
+
 </head>
 
 <body>
-  <div id="2130913-asdsad8-21930123-asdads”"></div>
-  <div class="sidebar">
-    <!-- Nav -->
-    <nav class="nav">
-      <div class="nav__item active">
-        <div class="nav__icon">
-          <span class=" gg-smartphone-shake"></span>
-
-        </div>
-        <span class="nav__title">Mobile</span>
-      </div>
-      <div class="nav__item">
-        <div class="nav__icon">
-          <span class="gg-cast"></span>
-        </div>
-        <span class="nav__title">Website</span>
-      </div>
-      <div class="nav__item">
-        <div class="nav__icon">
-          <span class="gg-stack"></span>
-        </div>
-        <span class="nav__title">Elements</span>
-      </div>
-    </nav>
-    <!-- End nav -->
-    <div class="sidebar__bottom">
-      <p class="company">FlutterSc,</p>
-      <p class="year">© 2021. All rights reserved</p>
-    </div>
-  </div>
   <div class="header">
-    <div class="logo">
+    <div class="logo no-border">
       <img src="./dist/images/icons/layers.svg" alt="">
       <div class="logo__title">FlutterSc.</div>
     </div>
@@ -69,66 +38,30 @@
             <span class="icon gg-sun"></span>
           </label>
         </div>
-        <!-- <div class="user-logged-in">
+        <div class="user-logged-in">
           <img src="./dist/images/avatar.png" alt="" class="avatar">
-        </div> -->
+        </div>
         <div class="actions">
-          <button class="btn btn--link">Sign in</button>
-          <button class="btn btn--primary">Sign up</button>
+          <button class="btn btn--primary upload" onclick="showModalUploadSource()">Upload</button>
         </div>
-        <!-- Button show hide menu mobile -->
-        <button class="btn btn--toggle-mobile"><span class="gg-menu"></span></button>
-        <!-- <button class="btn btn--toggle-mobile"><span class="gg-close"></span></button> -->
-        <!-- End -->
       </div>
     </div>
-    <div class="nav-mobile">
-      <div class="nav-mobile__content">
-        <div class="form-search-mobile">
-          <input type="text" placeholder="Search for source code, design ui...">
-          <span class="icon gg-search"></span>
-        </div>
-        <!-- If logged in --->
-        <div class="info-user">
-          <img src="./dist/images/avatar.png" alt="" class="avatar">
-          <div class="info_detail">
-            <h5 class="name">Phan Trong Bien</h5>
-            <p class="email">phantrongbien@gmail.com</p>
-          </div>
-        </div>
-        <!-- End -->
-        <div class="nav-mobile__actions ">
-          <button class="btn btn--primary upload" onclick="showModalUploadSource()">Upload source</button>
-          <!-- <button class="btn btn--primary">Sign in</button>
-          <button class="btn btn--light_grey">Sign up</button> -->
-        </div>
-        <nav class="nav">
-          <div class="nav__item active">
-            <div class="nav__icon">
-              <span class=" gg-smartphone-shake"></span>
-            </div>
-            <span class="nav__title">Mobile</span>
-          </div>
-          <div class="nav__item">
-            <div class="nav__icon">
-              <span class="gg-cast"></span>
-            </div>
-            <span class="nav__title">Website</span>
-          </div>
-          <div class="nav__item">
-            <div class="nav__icon">
-              <span class="gg-stack"></span>
-            </div>
-            <span class="nav__title">Elements</span>
-          </div>
-        </nav>
-      </div>
-    </div>
+
   </div>
 
-  <div class="content_home">
+  <div class="content_profile">
+    <div class="profile_info">
+      <img src="./dist/images/avatar.png" alt="" class="avatar">
+      <div class="info_detail">
+        <h5 class="name">Phan Trong Bien</h5>
+        <p class="desc"><span class="position">Ui/ux designer & Fe developer</span><span class="location">VietNam</span>
+        </p>
+        <a href="#" class="website">phantrongbien.com</a>
+        <h4 class="intro">Yo, I`m Bien. UX/UI and Product Designer.</h4>
+      </div>
+    </div>
     <div class="product">
-      <div class="product__item" onclick="showModalDetailSource()">
+      <div class="product__item">
         <img src="./dist/images/Rectangle9.png" alt="">
         <div class="product__info">
           <h2 class="product__title">Dashboard Concept</h2>
@@ -275,73 +208,13 @@
         </div>
       </div>
     </div>
-    <div class="content_home__load_more">
-      <button class="btn btn--load-more"><span class="gg-menu-right-alt"></span> Loading more </button>
-    </div>
   </div>
-
-  <div class="modal " id="view-source">
-    <div class="modal__dialog">
-      <div class="modal__close" onclick="hideModalDetailSource()">
-        <span class="gg-close"></span>
-      </div>
-      <div class="modal__content">
-        <div class="source">
-          <div class="source__top">
-            <div class="source__top__left">
-              <div class="author">
-                <img src="./dist/images/avatar.png" alt="">
-                <div class="source__info">
-                  <p class="name">Task Manager Dashboard</p>
-                  <div class="author_info">
-                    <span class="name-author">Bien.phantrong</span>
-                    <div class="public">Public: 15/06/2021</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="source__top__right">
-              <button class="btn btn--light_grey"><span class="gg-heart-default"></span>Like</button>
-              <button class="btn btn--light_red"><span class="gg-heart-default"></span>555</button>
-            </div>
-          </div>
-          <div class="source__content">
-            <div class="content__left">
-              <img src="./dist/images/image-product-modal.png" alt="">
-            </div>
-            <div class="content__right">
-              <button class="btn btn--primary large">Download source.zip</button>
-              <div class="content__row author">
-                <span class="label">Author:</span> <a href="#" class="value">AR Shakir</a>
-              </div>
-              <div class="content__row github">
-                <span class="label">Github :</span> <a href="#" class="value">
-                  https://github.com/ibrierley/task-man...</a>
-              </div>
-              <div class="content__row category">
-                <span class="label">Categories: </span> <a href="#" class="value"> Mobile App</a>
-              </div>
-              <div class="description">
-                <div class="description__title">
-                  <span>Description</span>
-                </div>
-                <p class="description__content">
-                  Flutter Flutter allows you to build beautiful native
-                  apps on iOS and Android Platforms from a single
-                  codebase.
-                  The main goal of this repository is to find free
-                  open source apps and start contributing to it.
-                  Feel free to contribute to the list,
-                  any suggestions are always welcomed!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <footer class="footer">
+    <div class="footer__info">
+      <p class="company">FlutterSc,</p>
+      <p class="year">© 2021. All rights reserved</p>
     </div>
-
-  </div>
+  </footer>
   <script src="dist/js/script.js"></script>
 </body>
 
