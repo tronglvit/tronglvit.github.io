@@ -6,334 +6,249 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
-  <meta name="author" content="Łukasz Holeczek">
-  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-  <title>Macins</title>
+  <meta name="description" content="VHEC">
+  <meta name="author" content="Lee">
+  <meta name="keyword" content="VHEC">
+  <title>VHEC</title>
   <!-- Main styles for this application-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./dist/css/owl/owl.carousel.min.css" />
+
   <link href="dist/css/style.css" rel="stylesheet">
-  <!-- <script type="text/javascript"
-    src="https://yellowfinbi.amperfii.io/JsAPI/v3?dashUUID=e7409ff2-f846-44e1-a603-b78ec51b20b9&username=admin@yellowfin.com.au&password=Dashboard9Blue!"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./dist/js/owl/owl.carousel.min.js"></script>
 </head>
 
 <body>
-  <div id="2130913-asdsad8-21930123-asdads”"></div>
-  <div class="sidebar">
-    <!-- Nav -->
-    <nav class="nav">
-      <div class="nav__item active">
-        <div class="nav__icon">
-          <span class=" gg-smartphone-shake"></span>
+  <div id="particles-js" class="vhec-top">
+    <img src="dist/images/wave.svg" alt="" class="bg-bottom">
+    <!-- <img src="dist/images/earth-bg.svg" alt="" class="bg-right"> -->
+    <!-- <img src="dist/images/Asset_1.svg" alt="" class="bg-earth-right"> -->
 
-        </div>
-        <span class="nav__title">Mobile</span>
-      </div>
-      <div class="nav__item">
-        <div class="nav__icon">
-          <span class="gg-cast"></span>
-        </div>
-        <span class="nav__title">Website</span>
-      </div>
-      <div class="nav__item">
-        <div class="nav__icon">
-          <span class="gg-stack"></span>
-        </div>
-        <span class="nav__title">Elements</span>
-      </div>
-    </nav>
-    <!-- End nav -->
-    <div class="sidebar__bottom">
-      <p class="company">FlutterSc,</p>
-      <p class="year">© 2021. All rights reserved</p>
-    </div>
-  </div>
-  <div class="header">
-    <div class="logo">
-      <img src="./dist/images/icons/layers.svg" alt="">
-      <div class="logo__title">FlutterSc.</div>
-    </div>
-    <div class="header__content">
-      <div class="form-search">
-        <input type="text" placeholder="Search for source code, design ui...">
-        <span class="icon gg-search"></span>
-      </div>
-      <div class="header__content__right">
-        <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <span class="icon gg-sun"></span>
-          </label>
-        </div>
-        <!-- <div class="user-logged-in">
-          <img src="./dist/images/avatar.png" alt="" class="avatar">
-        </div> -->
-        <div class="actions">
-          <button class="btn btn--link">Sign in</button>
-          <button class="btn btn--primary">Sign up</button>
-        </div>
-        <!-- Button show hide menu mobile -->
-        <button class="btn btn--toggle-mobile"><span class="gg-menu"></span></button>
-        <!-- <button class="btn btn--toggle-mobile"><span class="gg-close"></span></button> -->
-        <!-- End -->
-      </div>
-    </div>
-    <div class="nav-mobile">
-      <div class="nav-mobile__content">
-        <div class="form-search-mobile">
-          <input type="text" placeholder="Search for source code, design ui...">
-          <span class="icon gg-search"></span>
-        </div>
-        <!-- If logged in --->
-        <div class="info-user">
-          <img src="./dist/images/avatar.png" alt="" class="avatar">
-          <div class="info_detail">
-            <h5 class="name">Phan Trong Bien</h5>
-            <p class="email">phantrongbien@gmail.com</p>
-          </div>
-        </div>
-        <!-- End -->
-        <div class="nav-mobile__actions ">
-          <button class="btn btn--primary upload" onclick="showModalUploadSource()">Upload source</button>
-          <!-- <button class="btn btn--primary">Sign in</button>
-          <button class="btn btn--light_grey">Sign up</button> -->
-        </div>
-        <nav class="nav">
-          <div class="nav__item active">
-            <div class="nav__icon">
-              <span class=" gg-smartphone-shake"></span>
-            </div>
-            <span class="nav__title">Mobile</span>
-          </div>
-          <div class="nav__item">
-            <div class="nav__icon">
-              <span class="gg-cast"></span>
-            </div>
-            <span class="nav__title">Website</span>
-          </div>
-          <div class="nav__item">
-            <div class="nav__icon">
-              <span class="gg-stack"></span>
-            </div>
-            <span class="nav__title">Elements</span>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <div class="content_home">
-    <div class="product">
-      <div class="product__item" onclick="showModalDetailSource()">
-        <img src="./dist/images/Rectangle9.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Dashboard Concept</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <i class="icon gg-heart"></i>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/concept.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Finance Dashboard
-            Design</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/concept2.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Task Manager Dashboard</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/finance.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Dashboard Concept</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/finance2.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Task Manager Dashboard</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/task-manager.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Dashboard Concept</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/task-manager2.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Finance Dashboard
-            Design</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/task-manager3.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Task Manager Dashboard</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product__item">
-        <img src="./dist/images/finance.png" alt="">
-        <div class="product__info">
-          <h2 class="product__title">Task Manager Dashboard</h2>
-          <div class="info__right">
-            <div class="right_item">
-              <span class="icon gg-heart"></span>
-              <span class="value">1202</span>
-            </div>
-            <div class="right_item">
-              <span class="icon gg-eye-alt"></span>
-              <span class="value">1202</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content_home__load_more">
-      <button class="btn btn--load-more"><span class="gg-menu-right-alt"></span> Loading more </button>
-    </div>
-  </div>
-
-  <div class="modal " id="view-source">
-    <div class="modal__dialog">
-      <div class="modal__close" onclick="hideModalDetailSource()">
-        <span class="gg-close"></span>
-      </div>
-      <div class="modal__content">
-        <div class="source">
-          <div class="source__top">
-            <div class="source__top__left">
-              <div class="author">
-                <img src="./dist/images/avatar.png" alt="">
-                <div class="source__info">
-                  <p class="name">Task Manager Dashboard</p>
-                  <div class="author_info">
-                    <span class="name-author">Bien.phantrong</span>
-                    <div class="public">Public: 15/06/2021</div>
+    <div class="vhec-header" id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="vhec-header__detail">
+              <div class="logo">
+                <img src="dist/images/logo.svg" alt="">
+              </div>
+              <div class="vhec-menu">
+                <div class="vhec-menu__item active">
+                  <a href="">VHECについて</a>
+                </div>
+                <div class="vhec-menu__item">
+                  <a href="services.html">業務内容</a>
+                </div>
+                <div class="vhec-menu__item">
+                  <a href="services.html">開発の取り組み</a>
+                </div>
+                <div class="vhec-menu__item">
+                  <a href="services.html">開発モデル</a>
+                </div>
+                <div class="vhec-menu__item">
+                  <a href="services.html">開発事例</a>
+                </div>
+                <div class="vhec-menu__item">
+                  <a href="services.html">問い合わせ</a>
+                </div>
+              </div>
+              <div class="vhec-language">
+                <div class="vhec-language__selected active">
+                  <img src="dist/images/flag-vn.svg" alt="">VN
+                </div>
+                <div class="vhec-language__selected">
+                  <img src="dist/images/2560px-Japan_flag_-_variant.png" alt="">JP
+                </div>
+              </div>
+              <div class="vhec-menu-mobile">
+                <button class="menu__icon" id="btn-menu-mobile">
+                  <i class="gg-menu"></i>
+                </button>
+                <div class="vhec-menu-mobile__detail" id="menu-mobile-detail">
+                  <div class="overlay" id="overlay-menu"></div>
+                  <div class="vhec-menu-mobile__item active">
+                    VHECについて
+                  </div>
+                  <div class="vhec-menu-mobile__item">
+                    業務内容
+                  </div>
+                  <div class="vhec-menu-mobile__item">
+                    開発の取り組み
+                  </div>
+                  <div class="vhec-menu-mobile__item">
+                    開発モデル
+                  </div>
+                  <div class="vhec-menu-mobile__item">
+                    開発事例
+                  </div>
+                  <div class="vhec-menu-mobile__item">
+                    問い合わせ
                   </div>
                 </div>
               </div>
             </div>
-            <div class="source__top__right">
-              <button class="btn btn--light_grey"><span class="gg-heart-default"></span>Like</button>
-              <button class="btn btn--light_red"><span class="gg-heart-default"></span>555</button>
-            </div>
+
           </div>
-          <div class="source__content">
-            <div class="content__left">
-              <img src="./dist/images/image-product-modal.png" alt="">
-            </div>
-            <div class="content__right">
-              <button class="btn btn--primary large">Download source.zip</button>
-              <div class="content__row author">
-                <span class="label">Author:</span> <a href="#" class="value">AR Shakir</a>
-              </div>
-              <div class="content__row github">
-                <span class="label">Github :</span> <a href="#" class="value">
-                  https://github.com/ibrierley/task-man...</a>
-              </div>
-              <div class="content__row category">
-                <span class="label">Categories: </span> <a href="#" class="value"> Mobile App</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="vhec-top__info">
+            <div class="vhec-top__info__detail">
+              <div class="content">
+                <h1>
+                  <span>VietNam</span>
+                  <span>Hi-tech </span> <br>
+                  <span>Engineering</span> <span>Company</span>
+                </h1>
               </div>
               <div class="description">
-                <div class="description__title">
-                  <span>Description</span>
+                <h2>
+                  VHECは技術イノベーションによって発展する会社となり、最高レベルの顧客満足度の実現を約束する。また社員が自身の専門職や精神生活において可能性を最大限に発揮できる快適な作業環境を提供し、社会貢献や日本とベトナムのエンジニアリングの架け橋となることを目標とする。
+                </h2>
+                <h2>VHECの社員は若くパワー溢れる熱意と行動力を持って、ベトナムの人々や子供たちの生活レベルの向上、よりよいコミュニティ、より良いベトナムを目指し、社会的役割を果たす。</h2>
+              </div>
+              <div class="actions">
+                <button class="vhec-btn vhec-btn--primary" id="block-1">詳細</button>
+                <button class="vhec-btn vhec-btn--white-primary" id="block-2">サービス</button>
+              </div>
+            </div>
+            <div class="info__right">
+              <img src="dist/images/circle-line.png" alt="" class="circle-line">
+              <div class="wave"></div>
+              <div class="list-domain">
+                <div class="text-center">
+                  VHEC
                 </div>
-                <p class="description__content">
-                  Flutter Flutter allows you to build beautiful native
-                  apps on iOS and Android Platforms from a single
-                  codebase.
-                  The main goal of this repository is to find free
-                  open source apps and start contributing to it.
-                  Feel free to contribute to the list,
-                  any suggestions are always welcomed!
-                </p>
+                <div class="item">
+                  <img src="dist/images/ito.svg" alt="">
+                </div>
+                <div class="item">
+                  <img src="dist/images/erp.svg" alt="">
+                </div>
+                <div class="item">
+                  <img src="dist/images/lot.svg" alt="">
+                </div>
+                <div class="item">
+                  <img src="dist/images/automotive.svg" alt="">
+                </div>
+                <div class="item">
+                  <img src="dist/images/rpa.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="vhec-the-number" id="block-detail-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <div class="section-title__detail">
+              <h2>会社情報</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-6">
+          <h2 class="vhec-the-number__title">
+            メンバーのご紹介
+          </h2>
+          <p class="vhec-the-number__description">We build readymade websites, mobile applications, <br>
+            and elaborate online business services.</p>
+          <ul class="vhec-the-number__list">
+            <li class="vhec-the-number__item">
+              <span class="number"> 120+</span>
+              <h4 class="text">クライアント数</h4>
+            </li>
+            <li class="vhec-the-number__item">
+              <span class="number">80+</span>
+              <h4 class="text">プロジェクト数</h4>
+            </li>
+            <li class="vhec-the-number__item">
+              <span class="number">150+</span>
+              <h4 class="text">従業員</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-6">
+          <div class="vhec-the-number__images">
+            <div class="list-img">
+              <img src="dist/images/company.png" alt="">
+            </div>
+            <p class="description">VHECに在籍しているのエンジニアの8割は東京大学に匹敵するともいわれている
+              ベトナムトップの理系総合大学「ハノイ工科大学」出身であり、
+              また、全社員へ日本語教育を常に実施し、日本での大学出身エンジニアや
+              日本での職務経験をもつブリッジSEが在籍しているため円滑な
+              日本語での意思疎通が可能です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vhec-domain" id="block-detail-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <div class="section-title__detail">
+              <h2>VHEC提供サービス</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="vhec-domain__top">
+            <div class="vhec-domain__top__item">
+              <img src="dist/images/icon-1.svg" alt="" class="icon">
+              <span>コンサルティング</span>
+            </div>
+            <div class="vhec-domain__top__item">
+              <img src="dist/images/icon-2.svg" alt="" class="icon">
+              <span>デジタルト ランスフォーメーション</span>
+            </div>
+            <div class="vhec-domain__top__item">
+              <img src="dist/images/icon-3.svg" alt="" class="icon">
+              <span>SIサービス</span>
+            </div>
+          </ul>
+          <div class="vhec-domain__detail">
+            <img src="dist/images/roket.svg" alt="" class="rocket">
+            <div class="list-domain">
+              <div class="earth-2">
+                <img src="dist/images/earth-2.svg" alt="">
+              </div>
+
+              <div class="item">
+                <img src="dist/images/ito.svg" alt="">
+                <span>ITO</span>
+              </div>
+              <div class="item">
+                <img src="dist/images/erp.svg" alt="">
+                <span>ERP</span>
+              </div>
+              <div class="item">
+                <img src="dist/images/lot.svg" alt="">
+                <span>AI - loT</span>
+              </div>
+
+              <div class="item">
+                <img src="dist/images/automotive.svg" alt="">
+                <span>AUTOMOTIVE</span>
+              </div>
+              <div class="item">
+                <img src="dist/images/rpa.svg" alt="">
+                <span>RPA</span>
               </div>
             </div>
           </div>
@@ -341,8 +256,400 @@
       </div>
     </div>
 
-  </div>
+  </section>
+  <section class="vhec-technology" style="background-image:url('./dist/images/background-block-center.svg') ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title dark">
+            <div class="section-title__detail">
+              <h2>VHECの能力-技術</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="block-technology">
+            <img src="dist/images/icon-block-text-1.svg" alt="" class="icon-title">
+            <h5 class="title">言語
+            </h5>
+            <p class="description">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.</p>
+            <ul class="list-tech">
+              <li class="list-tech__item">
+                <img src="dist/images/java.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/php.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/csharp.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/vuejs.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/reactjs.svg" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="block-technology">
+            <img src="dist/images/icon-text-block-2.svg" alt="" class="icon-title">
+            <h5 class="title">データベース
+            </h5>
+            <p class="description">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.</p>
+            <ul class="list-tech">
+              <li class="list-tech__item">
+                <img src="dist/images/SQLite.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/msql.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/Mysql.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/Postgre.svg" alt="">
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="block-technology">
+            <img src="dist/images/icon-text-block-3.svg" alt="" class="icon-title">
+            <h5 class="title">オペレーティング
+            </h5>
+            <p class="description">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.</p>
+            <ul class="list-tech">
+              <li class="list-tech__item">
+                <img src="dist/images/apple-svgrepo-com 1.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/linux-svgrepo-com 1.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/windows-svgrepo-com 1.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/android.svg" alt="">
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="block-technology">
+            <img src="dist/images/icon-text-block-4.svg" alt="" class="icon-title">
+            <h5 class="title">クラウド
+            </h5>
+            <p class="description">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.</p>
+            <ul class="list-tech">
+              <li class="list-tech__item">
+                <img src="dist/images/aws-svgrepo-com 1.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/google-cloud-platform-svgrepo-com 1.svg" alt="">
+              </li>
+              <li class="list-tech__item">
+                <img src="dist/images/microsoft-azure-svgrepo-com 1.svg" alt="">
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="vhec-technology__flow">
+            <h4 class="flow-title">
+              対応可能工程
+            </h4>
+            <ul class="flow-list">
+              <li class="flow-list__item">
+                要件定義
+              </li>
+              <li class="flow-list__item">
+                <img src="dist/images/line-arrow.svg" alt="">
+              </li>
+              <li class="flow-list__item">
+                設計
+              </li>
+              <li class="flow-list__item">
+                <img src="dist/images/line-arrow.svg" alt="">
+              </li>
+              <li class="flow-list__item">
+                開発
+              </li>
+              <li class="flow-list__item">
+                <img src="dist/images/line-arrow.svg" alt="">
+              </li>
+              <li class="flow-list__item">
+                テスト
+              </li>
+              <li class="flow-list__item">
+                <img src="dist/images/line-arrow.svg" alt="">
+              </li>
+              <li class="flow-list__item">
+                運用保守
+              </li>
+            </ul>
+            <button class="vhec-btn vhec-btn--primary">詳細</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vhec-japan" style="background-image:url('./dist/images/bg-3.svg') ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <div class="section-title__detail">
+              <h2>VHECの能力ー日本語</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="vhec-japan__proficiency" style="background-image:url('./dist/images/bg-4.svg') ;">
+            <h5 class="title">Japanese Language Proficiency</h5>
+            <ul class="list-proficiency">
+              <li class="list-proficiency__item">
+                <img src="dist/images/mail.svg" alt="">メール
+              </li>
+              <li class="list-proficiency__item">
+                <img src="dist/images/chat.svg" alt="">チャット
+              </li>
+              <li class="list-proficiency__item">
+                <img src="dist/images/document-text-outline 1.svg" alt="">ドキュメント
+              </li>
+              <li class="list-proficiency__item">
+                <img src="dist/images/settings-outline 1.svg" alt="">管理ツール,
+                Redmine,
+                Backlog
+              </li>
+              <li class="list-proficiency__item">
+                <img src="dist/images/meeting-svgrepo-com 1.svg" alt="">TV会議,
+                定例会,
+                通常会議
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="vhec-japan__detail">
+            <h4 class="title">日本語
+            </h4>
+            <ul class="list-level">
+              <li class="list-level__item">
+                <span>N1</span>
+                幅広い場面で使われる日本語を理解することができる
+              </li>
+              <li class="list-level__item">
+                <span>N3</span>
+                日常的な場面で使われる日本語をある程度理解することができる。
+              </li>
+              <li class="list-level__item">
+                <span>N2</span>
+                日常的な場面で使われる日本語の理解に加え、より幅広い場面で使 <br>
+                われる日本語をある程度理解することができる。
+              </li>
+            </ul>
+            <ul class="level__detail">
+              <li class="level__detail__item">
+                <div class="text">
+                  <span>N1</span>
+                  <span>16%</span>
+                </div>
+                <div class="progress_bar">
+                  <div class="active" style="width: 40%"></div>
+                </div>
+              </li>
+              <li class="level__detail__item">
+                <div class="text">
+                  <span>N2</span>
+                  <span>18%</span>
+                </div>
+                <div class="progress_bar">
+                  <div class="active" style="width: 18%"></div>
+                </div>
+              </li>
+              <li class="level__detail__item">
+                <div class="text">
+                  <span>N3</span>
+                  <span>22%</span>
+                </div>
+                <div class="progress_bar">
+                  <div class="active" style="width: 22%"></div>
+                </div>
+              </li>
+              <li class="level__detail__item">
+                <div class="text">
+                  <span>その他</span>
+                  <span>44%</span>
+                </div>
+                <div class="progress_bar">
+                  <div class="active" style="width: 44%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vhec-slide vhec-slide-index">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="owl-carousel owl-theme" id="carousel">
+            <div class="vhec-slide__item"> <img src="dist/images/neo-lap.png" alt=""> </div>
+            <div class="vhec-slide__item"> <img src="dist/images/iaccess.png" alt=""> </div>
+            <div class="vhec-slide__item"> <img src="dist/images/ncsa.png" alt=""> </div>
+            <div class="vhec-slide__item"> <img src="dist/images/hitachi.png" alt=""> </div>
+            <div class="vhec-slide__item"> <img src="dist/images/neo-lap.png" alt=""> </div>
+            <div class="vhec-slide__item"> <img src="dist/images/iaccess.png" alt=""> </div>
+            <div class="vhec-slide__item"> <img src="dist/images/ncsa.png" alt=""> </div>
+            <div class="vhec-slide__item"> <img src="dist/images/hitachi.png" alt=""> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vhec-contact" style="background-image:url('./dist/images/background-contact.png') ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <div class="section-title__detail">
+              <h2>お問い合わせ</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h4 class="title">
+            Start Working With Us
+          </h4>
+          <p class="description">
+            ベトナムオフショア開発に関するご質問、VHECの視察、VHECへシステム開発のご相談、<br>
+            システム開発の見積依頼など、お気軽にお問い合わせください。
+          </p>
+          <button class="vhec-btn vhec-btn--primary">お問い合わせ</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="background-image:url('./dist/images/bg-footer.svg')">
+    <div class="container">
+      <div class="detail">
+        <div class="map-location">
+          <img src="dist/images/location.svg" alt="">
+        </div>
+        <div class="location-detail">
+          <div class="location-detail__block">
+            <div class="location-item">
+              <div class="title">ハノイ本社</div>
+              <div class="detail-item">
+                <img src="dist/images/building-icon.svg" alt="">
+                <span>23 Floor, Viwaseen Building, 48 To Huu Street,
+                  Nam Tu Liem District, Ha Noi City, Viet Nam</span>
+              </div>
+              <div class="detail-item">
+                <img src="dist/images/phone-icon.svg" alt="">
+                <span>+84-9-4345-5215</span>
+              </div>
+              <div class="detail-item">
+                <img src="dist/images/mail-2-icon.svg" alt="">
+                <span>contact@vhec.vn</span>
+              </div>
+            </div>
+          </div>
+          <div class="location-detail__block">
+            <div class="location-item">
+              <div class="title">東京都営業所</div>
+              <div class="detail-item">
+                <img src="dist/images/building-icon.svg" alt="">
+                <span>〒162‒0844東京都新宿区市谷八幡町2-1
+                  DS市ヶ谷ビル3階
+                  インディビジュアルシステムズ株式会社
+                  VHECのパートナー兼日本法人代理</span>
+              </div>
+              <div class="detail-item">
+                <img src="dist/images/phone-icon.svg" alt="">
+                <span> +81-80-4089-4479</span>
+              </div>
+              <div class="detail-item">
+                <img src="dist/images/mail-2-icon.svg" alt="">
+                <span>contact@vhec.vn</span>
+              </div>
+            </div>
+            <div class="location-item">
+              <div class="title">東京都営業所</div>
+              <div class="detail-item">
+                <img src="dist/images/building-icon.svg" alt="">
+                <span>〒520-0047 滋賀県大津市浜大津4-2-15
+                  浜大津SSビル4F
+                  株式会社HONKI　
+                  VHECのパートナー兼日本法人代理</span>
+              </div>
+              <div class="detail-item">
+                <img src="dist/images/phone-icon.svg" alt="">
+                <span>+81-80-4089-4479</span>
+              </div>
+              <div class="detail-item">
+                <img src="dist/images/mail-2-icon.svg" alt="">
+                <span>contact@vhec.vn</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="col-12">
+          <div class="detail">
+            <span class="left">© VHEC 2022. All rights reserved</span>
+            <ul>
+              <li>よくある質問</li>
+              <li>プライバシーポリシー</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" id="top">
+    <i class="gg-arrow-up"></i>
+  </a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="dist/js/script.js"></script>
+
+  <!-- scripts -->
+  <script src="/dist/js/praticles/particles.min.js"></script>
+  <script src="/dist/js/praticles/js/app.js"></script>
+
+  <!-- stats.js -->
+  <script src="/dist/js/praticles/js/lib/stats.js"></script>
+
 </body>
 
 </html>
