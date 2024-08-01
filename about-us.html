@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="I.Space">
+    <meta name="author" content="TrongLV">
+    <meta name="keyword" content="I.Space">
+    <title>i.space</title>
+    <!-- Main styles for this application-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link href="dist/css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="about-us">
+    <header class="header" id="header">
+        <div class="header__detail">
+            <div class="logo">
+                <img src="./dist/images/logo.svg" alt="">
+            </div>
+            <div class="header__right" id="header-content">
+                <div class="header__menu">
+                    <div class="search" id="search-form">
+                        <div class="search-btn" id="search-btn">
+                            <svg width="24" height="28" viewBox="0 0 24 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.7112 0.000213463C9.23714 -0.00955901 7.78022 0.316331 6.45084 0.953181C5.12146 1.59003 3.95457 2.52113 3.03851 3.6759C2.12245 4.83067 1.48126 6.17881 1.16364 7.61813C0.846026 9.05746 0.860295 10.5502 1.20531 11.9832C1.55032 13.4162 2.21706 14.7519 3.15498 15.889C4.0929 17.0261 5.27737 17.9347 6.61865 18.5461C7.95993 19.1575 9.42284 19.4555 10.8964 19.4177C12.37 19.3798 13.8156 19.007 15.1237 18.3275L21.3465 27.4346C21.4406 27.572 21.5608 27.6895 21.7003 27.7805C21.8398 27.8714 21.9959 27.934 22.1597 27.9647C22.3234 27.9953 22.4916 27.9934 22.6546 27.9591C22.8175 27.9247 22.9721 27.8586 23.1096 27.7645C23.247 27.6704 23.3646 27.5502 23.4555 27.4107C23.5465 27.2712 23.6091 27.1151 23.6398 26.9514C23.6704 26.7877 23.6685 26.6195 23.6341 26.4566C23.5998 26.2936 23.5336 26.139 23.4395 26.0016L17.2357 16.8756C18.6869 15.5616 19.7061 13.8388 20.1592 11.9343C20.6122 10.0297 20.4777 8.03262 19.7735 6.20595C19.0694 4.37928 17.8284 2.80867 16.2141 1.70094C14.5998 0.5932 12.6879 0.00026866 10.7301 0.000213463H10.7112ZM10.7112 17.1962C9.21937 17.1962 7.7611 16.7538 6.5207 15.9251C5.28031 15.0964 4.31354 13.9185 3.74265 12.5403C3.17176 11.1622 3.02237 9.64572 3.31341 8.18269C3.60445 6.71967 4.32285 5.3758 5.37772 4.32102C6.43259 3.26624 7.77657 2.54793 9.23972 2.25692C10.7029 1.9659 12.2195 2.11526 13.5977 2.68611C14.976 3.25695 16.154 4.22363 16.9828 5.46392C17.8116 6.70421 18.2539 8.1624 18.2539 9.65408C18.2539 11.6544 17.4592 13.5727 16.0447 14.9871C14.6302 16.4016 12.7116 17.1962 10.7112 17.1962Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <div class="search-input">
+                            <input type="text" placeholder="Tìm kiếm..." autofocus>
+                        </div>
+                        <div class="close-search" id="close-search">
+                            <img src="./dist/images/close.svg" alt="Close search">
+                        </div>
+                    </div>
+                    <div class="header__content" id="menu-content">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link ">Trang chủ</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="projects.html" class="menu__link">Các dự án</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about-us.html" class="menu__link active">Về chúng tôi</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="news.html" class="menu__link">Tin tức</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contact-us.html" class="menu__link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__actions">
+                    <div class="toggle-menu" id="toggle-menu">
+                        <div class="toggle-menu__btn" id="toggle-menu-btn">
+                            <img src="./dist/images/menu.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="languages">
+                        <div class="languages__item active">
+                            E
+                        </div>
+                        <div class="languages__item ">
+                            V
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about-us__banner">
+        <img src="./dist/images/banner-about-us.png" alt="">
+        <div class="banner-box-content">
+            <h1 class="banner-title">
+                CÙNG CHẠM VÀO THIÊN NHIÊN !
+            </h1>
+            <p class="banner-description">-Interactive space design-</p>
+        </div>
+    </section>
+    <section class="about-us__intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro__box-title">
+                        <div class="intro__title">
+                            VỀ CHÚNG TÔI
+                        </div>
+                        <div class="intro__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <div class="intro__box-img">
+                        <img src="./dist/images/about-us-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="intro__box-info">
+                        <div class="intro__box-info__block">
+                            <div class="block-info__box-title">
+                                <div class="icon">
+                                    <img src="./dist/images/about-us-user-icon.svg" alt="">
+                                </div>
+                                <div class="block-info__title">
+                                    Giới thiệu
+                                </div>
+                            </div>
+                            <div class="block-info__description">
+                                Công ty thiết kế không gian tương tác (Interactive Space Design Company
+                                Limited)
+                                viết tắt là Interactive Space Design (I-Space) được thành lập bởi Ông
+                                Hoàng
+                                Thạch Hưng và cộng sự vào tháng 08 năm 2023. <br><br>
+                                Công ty hoạt động chủ yếu ở lĩnh vực tư vấn thiết kế xây dựng các
+                                công
+                                trình vừa và nhỏ, bao gồm: Quy hoạch không gian kiến trúc cảnh quan,
+                                thiết
+                                kế kiến trúc - cảnh quan Ecolodge, Retreat, Famrstay,...; thiết kế - thi công
+                                kiến trúc, cảnh quan công trình dân dụng... <br><br>
+
+                                I-Space có các thành viên chủ chốt gồm các kiến trúc sư, kỹ sư hoạt
+                                động
+                                về lĩnh vực kiến trúc và cảnh quan; phối hợp và làm việc cùng các nhà
+                                chuyên môn trong nhiều lĩnh vực, bao gồm: Quy hoạch cảnh quan, kiến trúc
+                                cảnh
+                                quan, kiến trúc, xây dựng, tư vấn môi trường, quản lý dự án... <br><br>
+                            </div>
+                        </div>
+                        <div class="intro__box-info__block">
+                            <div class="block-info__box-title">
+                                <div class="icon">
+                                    <img src="./dist/images/about-us-eye-icon.svg" alt="">
+                                </div>
+                                <div class="block-info__title">
+                                    Tầm nhìn
+                                </div>
+                            </div>
+
+                            <div class="sub-block">
+                                <div class="sub-block__title">Đổi mới</div>
+                                <div class="sub-block__description">Đề cao giá trị sáng tạo, khuyến khích tư duy đột
+                                    phá, tạo ra các ý tưởng mới và giải pháp thiết kế độc đáo.</div>
+                            </div>
+                            <div class="sub-block">
+                                <div class="sub-block__title">Sáng tạo</div>
+                                <div class="sub-block__description">Khuyến khích và sẵn lòng thử nghiệm các phương pháp,
+                                    công nghệ, giải pháp mới để nâng cao hiệu quả và chất lượng của công việc.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us__strategy">
+        <div class="about-us__strategy__background">
+            <img src="dist/images/about-us-3.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-us__strategy__title">
+                        CHIẾN LƯỢC
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="strategy-item">
+                        <div class="strategy-item__info">
+                            <div class="strategy-item__no">1</div>
+                            <div class="strategy-item__title">Chất lượng & Chuyên nghiệp</div>
+                        </div>
+                        <div class="strategy-item__description">
+                            Cam kết đảm bảo chất lượng cao và tiêu chuẩn chuyên nghiệp trong mọi khía cạnh công việc, từ
+                            quá trình thiết kế đến thi công và hoàn thiện dự án.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="strategy-item">
+                        <div class="strategy-item__info">
+                            <div class="strategy-item__no">2</div>
+                            <div class="strategy-item__title">Không gian sáng tạo bền vững</div>
+                        </div>
+                        <div class="strategy-item__description">
+                            Cam kết thiết kế và xây dựng các không gian tương tác sáng tạo, đồng thời tuân thủ các
+                            nguyên tắc bền vững trong việc sử dụng tài nguyên và bảo vệ môi trường. </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="strategy-item">
+                        <div class="strategy-item__info">
+                            <div class="strategy-item__no">3</div>
+                            <div class="strategy-item__title">Tập trung vào người dùng</div>
+                        </div>
+                        <div class="strategy-item__description">
+                            Đặt người dùng làm trung tâm của quá trình thiết kế; lắng nghe và hiểu rõ nhu cầu, mong muốn
+                            và trải nghiệm của khách hàng để tạo ra những không gian tương tác tốt nhất mang tính cá
+                            nhân hóa cao. </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="strategy-item">
+                        <div class="strategy-item__info">
+                            <div class="strategy-item__no">4</div>
+                            <div class="strategy-item__title">Đa dạng và tích hợp</div>
+                        </div>
+
+                        <div class="strategy-item__description">
+                            Chúng tôi tin tưởng vào giá trị của sự đa dạng và tích hợp trong thiết kế không gian tương
+                            tác: Khám phá và kết hợp các yếu tố kiến trúc, cảnh quan, công nghệ, trải nghiệm để tạo ra
+                            những không gian phong phú và đa chiều. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-us__founder">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-us__founder__title">BAN ĐIỀU HÀNH TẠI I-SPACE</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="founder-item">
+                        <div class="founder-item__info">
+                            <div class="avatar">
+                                <img src="dist/images/about-us-user-1.png" alt="">
+                            </div>
+                            <div class="info-user">
+                                <div class="name">Ông Hoàng Thạch Hưng</div>
+                                <div class="position">
+                                    CEO/ Founder
+                                </div>
+                            </div>
+                        </div>
+                        <div class="founder-item__description">
+                            Ông cố gắng, nỗ lực theo đuổi kiến trúc tác động đến tinh thần, sử dụng các vật liệu truyền
+                            thống tại địa phương tạo ra những công trình không chỉ với hình khối ấn tượng mà còn có thể
+                            liên kết được với con người về ký ức, cùng những cảm nhận giác quan khác.
+                        </div>
+                    </div>
+                    <div class="founder-item">
+                        <div class="founder-item__info">
+                            <div class="avatar">
+                                <img src="dist/images/about-us-user-2.png" alt="">
+                            </div>
+                            <div class="info-user">
+                                <div class="name">KTS. Trần Thị Bích Loan</div>
+                                <div class="position">
+                                    Co - Founder
+                                </div>
+                            </div>
+                        </div>
+                        <div class="founder-item__description">
+                            Với quan niệm sự cảm nhận có trước, hình khối đến sau - trật tự này tạo ra mối liên kết, gắn
+                            bó sự hiện hữu không chỉ với hình khối vật chất mà còn với thị giác, và các giác quan. Cô
+                            hình thành mong muốn phá vỡ sự cô lập trong các không gian kiến trúc thông thường - hướng
+                            tới lối kiến trúc thân thiện với nhiều không gian xanh linh hoạt.
+                        </div>
+                    </div>
+                    <div class="founder-item">
+                        <div class="founder-item__info">
+                            <div class="avatar">
+                                <img src="dist/images/about-us-user-3.png" alt="">
+                            </div>
+                            <div class="info-user">
+                                <div class="name">KTS. Nguyễn Viết Luân</div>
+                                <div class="position">
+                                    Co - Founder
+                                </div>
+                            </div>
+                        </div>
+                        <div class="founder-item__description">
+                            Trong thiết kế, anh đặt con người cùng những nhu cầu sinh hoạt của họ ở vị trí trọng tâm.
+                            Anh quan tâm và mong muốn tạo ra các không gian giúp người sử dụng đi vào bên trong - tập
+                            trung để cho thế giới nội tâm hoàn toàn trong sáng của người dùng xuất hiện, hoàn toàn tách
+                            biệt với
+                            bên ngoài. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer__social">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank"><img src="./dist/images/email.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="./dist/images/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="./dist/images/instagram.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer__info">
+                        <p class="footer__info__title">Interactive Space Design</p>
+                        <ul>
+                            <li>
+                                <span>VP. 227- CT4, Tòa C1, Nghĩa Tân, Cầu Giấy, Hà Nội.</span>
+                            </li>
+                            <li>
+                                <span>VƯ. Ngã 3 cầu Liễn Sơn, Đồng Tĩnh, Tam Hương, Vĩnh Phúc.</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>T. 0869 755 999</p>
+                            </li>
+                            <li>
+                                <p>E. info.ispacedesign@gmail.com</p>
+                            </li>
+
+                            <li>
+                                <p>Fb. facebook.com/i.space.home</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>MST: 0110459163 </p>
+                            </li>
+                            <li>
+                                <p>©Copyright.ispace2024</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="dist/js/script.js"></script>
+    <!-- scripts -->
+
+</body>
+
+</html>
