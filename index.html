@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="I.Space">
+  <meta name="author" content="TrongLV">
+  <meta name="keyword" content="I.Space">
+  <title>i.space</title>
+  <!-- Main styles for this application-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <link href="dist/css/style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="home" id="home">
+  <header class="header" id="header">
+    <div class="header__detail">
+      <div class="logo">
+        <!-- <img src="./dist/images/logo.svg" alt=""> -->
+        <svg width="55" height="60" viewBox="0 0 55 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.6261 0H17.7236V26.6667H21.6261V0Z" fill="currentColor" />
+          <path
+            d="M14.7185 60C10.8149 60 7.07123 58.4509 4.31097 55.6934C1.5507 52.936 0 49.1961 0 45.2965C0 41.3969 1.5507 37.657 4.31097 34.8995C7.07123 32.1421 10.8149 30.593 14.7185 30.593H21.6005V34.5669H14.6987C12.591 34.5708 10.5317 35.1988 8.78116 36.3714C7.03059 37.544 5.66723 39.2087 4.86337 41.1551C4.05952 43.1015 3.85123 45.2423 4.26483 47.3069C4.67843 49.3715 5.69535 51.2673 7.18711 52.7548C8.67886 54.2422 10.5785 55.2546 12.646 55.6639C14.7135 56.0732 16.856 55.8612 18.8029 55.0545C20.7498 54.2478 22.4136 52.8828 23.5842 51.1318C24.7548 49.3808 25.3795 47.3225 25.3795 45.217V19.7442C25.3795 15.848 26.9275 12.1111 29.6835 9.35423C32.4394 6.59735 36.178 5.04591 40.0782 5.04065H40.2771C44.1298 5.04591 47.8229 6.57851 50.5452 9.30185C53.2676 12.0252 54.7967 15.7166 54.7967 19.5653V19.7442C54.7947 23.5392 53.3239 27.1865 50.692 29.9232C48.06 32.6599 44.4707 34.2739 40.6749 34.4278H33.2957V30.4539H40.0981C42.9274 30.4539 45.6411 29.3325 47.6436 27.3357C49.6461 25.339 50.7737 22.6302 50.779 19.8038V19.6249C50.7737 16.8494 49.6677 14.189 47.7031 12.2264C45.7384 10.2638 43.0754 9.15891 40.297 9.15366H40.0981C37.2722 9.15891 34.5636 10.2827 32.5654 12.2788C30.5672 14.275 29.4423 16.9808 29.4371 19.8038V45.2965C29.4318 49.1945 27.8794 52.9313 25.1203 55.6876C22.3612 58.4439 18.6205 59.9947 14.7185 60Z"
+            fill="currentColor" />
+        </svg>
+
+      </div>
+      <div class="header__right" id="header-content">
+        <div class="header__menu">
+
+          <div class="header__content" id="menu-content">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="index.html" class="menu__link active">Trang chủ</a>
+              </li>
+              <li class="menu__item">
+                <a href="projects.html" class="menu__link">Các dự án</a>
+              </li>
+              <li class="menu__item">
+                <a href="about-us.html" class="menu__link">Về chúng tôi</a>
+              </li>
+              <li class="menu__item">
+                <a href="news.html" class="menu__link">Tin tức</a>
+              </li>
+              <li class="menu__item">
+                <a href="contact-us.html" class="menu__link">Liên hệ</a>
+              </li>
+              <div class="languages">
+                EN
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="header__actions">
+          <div class="toggle-menu" id="toggle-menu">
+            <div class="toggle-menu__btn" id="toggle-menu-btn">
+              <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 18.0094L0 18.0094" stroke="currentColor" stroke-width="4" stroke-miterlimit="10" />
+                <path d="M24 9.9906L0 9.9906" stroke="currentColor" stroke-width="4" stroke-miterlimit="10" />
+                <path d="M24 1.99054L0 1.99054" stroke="currentColor" stroke-width="4" stroke-miterlimit="10" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="home__banner" id="home-banner">
+    <video autoplay loop>
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" />
+    </video>
+  </div>
+
+  <section class="home__services">
+    <div class="container">
+      <div class="home__services__detail">
+        <div class="col-12">
+          <h2 class="home__services__title">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+        </div>
+        <div class="services">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="services__item">
+                <div class="services__img">
+                  <img src="./dist/images/services-1.png" alt="">
+                </div>
+                <div class="services__content">
+                  <p class="services__title">
+                    Công trình dân dụng
+                  </p>
+                  <p class="services__description">
+                    Tư vấn thiết kế mới và tư vấn cải tạo kiến trúc nhà ở dân dụng.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="services__item">
+                <div class="services__img">
+                  <img src="./dist/images/services-2.png" alt="">
+                </div>
+                <div class="services__content">
+                  <p class="services__title">
+                    Cảnh quan sân vườn
+                  </p>
+                  <p class="services__description">
+                    Tư vấn, thiết kế, thi công cảnh quan, sân vườn Villa, biệt thự và các công trình vừa và nhỏ khác.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12  col-md-4">
+              <div class="services__item">
+                <div class="services__img">
+                  <img src="./dist/images/services-3.png" alt="">
+                </div>
+                <div class="services__content">
+                  <p class="services__title">
+                    Retreat - Ecolodge
+                  </p>
+                  <p class="services__description">
+                    Tư vấn, thiết kế kiến trúc và cảnh quan các công trình: Ecolodge, Retreat, Homestay, Farmstay ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="home__services__img-primary">
+          <img src="./dist/images/home-1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="home__services__block-info">
+      <div class="box-img">
+        <img src="./dist/images/home-2.png" alt="">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-6 col-12 col-lg-6">
+            <div class="box-content">
+              <p class="box-content__title">Chăm sóc sức khoẻ tinh thần!</p>
+              <p class="box-content__description">
+                Quan niệm Kiến trúc như một đền thờ nuôi dưỡng tinh thần thể chất cũng như tâm hồn - Chúng tôi nghiên
+                cứu nhu cầu, thói quen, hành vi tương tác của con người - nhằm kiến tạo các không gian sống năng động,
+                mang tính cá nhân hoá cao. <br> <br>
+                Chúng tôi đề cao sự sáng tạo, khuyến khích tư duy đột phá, tạo ra các ý tưởng mới, và giải pháp thiết kế
+                độc đáo. Ngoài ra, các cá nhân trong tập thể I-Space đều sẵn lòng thử nghiệm các phương pháp, công nghệ
+                mới để nâng cao hiệu quả và chất lượng của công việc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home__services__block-info block-right">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="box-content">
+              <p class="box-content__title">Nuôi dưỡng tâm hồn!</p>
+              <p class="box-content__description">
+                Dành sự quan tâm đặc biệt của mình trong việc kết nối con người với thiên nhiên theo những cách sâu sắc,
+                thú vị - Chúng tôi giải quyết những thách thức về không gian xanh trong bối cảnh toàn cầu về đô thị hóa,
+                khủng hoảng khí hậu và tuyệt chủng đa dạng sinh học. <br> <br>
+                Chúng tôi đề cao sự hoà hợp giữa không gian nhân tạo, hệ sinh thái địa phương và nhu cầu của người dùng.
+                Bên cạnh đó, chúng tôi cũng đề cao việc sử dụng hệ thực vật bản địa, vật liệu địa phương - hướng tới một
+                xây dựng bền vững với mức chi phí tối ưu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-img">
+        <img src="./dist/images/home-3.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="home__contact" style="background-image: url('./dist/images/banner-home-2.png');">
+  </section>
+  <section class="home__project">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="home__project__title">Một số dự án nổi bật</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4 col-xl-4">
+          <div class="project-item">
+            <a href="project-detail.html">
+              <div class="box-img">
+                <img src="./dist/images/project-1.png" alt="">
+                <ul class="list-code small">
+                  <li class="code fill">
+                    <span>I</span>
+                  </li>
+                  <li class="code fill">
+                    <span>A</span>
+                  </li>
+                  <li class="code">
+                    <span>L</span>
+                  </li>
+                </ul>
+                <div class="logo-project">
+                  <img src="./dist/images/logo-white.svg" alt="">
+                </div>
+              </div>
+              <div class="box-info">
+                <p class="title">Hanoi house</p>
+                <div class="description">
+                  <p>Láng Hạ - Hà Nội (2023)</p>
+                  <p>Quy mô: 37m2</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-4">
+          <div class="project-item">
+            <a href="project-detail.html">
+              <div class="box-img">
+                <img src="./dist/images/project-2.png" alt="">
+                <ul class="list-code small">
+                  <li class="code">
+                    <span>I</span>
+                  </li>
+                  <li class="code ">
+                    <span>A</span>
+                  </li>
+                  <li class="code fill">
+                    <span>L</span>
+                  </li>
+                </ul>
+                <div class="logo-project">
+                  <img src="./dist/images/logo-white.svg" alt="">
+                </div>
+              </div>
+              <div class="box-info">
+                <p class="title">West lake Roof garden</p>
+                <div class="description">
+                  <p>Hồ Tây - Hà Nội (2022)</p>
+                  <p>Quy mô: 110m2</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-4">
+          <div class="project-item">
+            <a href="project-detail.html">
+              <div class="box-img">
+                <img src="./dist/images/project-3.png" alt="">
+                <ul class="list-code small">
+                  <li class="code ">
+                    <span>I</span>
+                  </li>
+                  <li class="code fill">
+                    <span>A</span>
+                  </li>
+                  <li class="code fill">
+                    <span>L</span>
+                  </li>
+                </ul>
+                <div class="logo-project">
+                  <img src="./dist/images/logo-white.svg" alt="">
+                </div>
+              </div>
+              <div class="box-info">
+                <p class="title">Y Tý Ecolodge</p>
+                <div class="description">
+                  <p>Y Tý - Lào Cai (2022)</p>
+                  <p>Quy mô: 7000m2</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="home__project__view-more">
+            <a href="projects.html">Xem thêm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer__social">
+            <ul>
+              <li>
+                <a href="#" target="_blank"><img src="./dist/images/email.svg" alt=""></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><img src="./dist/images/facebook.svg" alt=""></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><img src="./dist/images/instagram.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="footer__info">
+            <p class="footer__info__title">Interactive Space Design</p>
+            <ul>
+              <li>
+                <span>VP. 227- CT4, Tòa C1, Nghĩa Tân, Cầu Giấy, Hà Nội.</span>
+              </li>
+              <li>
+                <span>VƯ. Ngã 3 cầu Liễn Sơn, Đồng Tĩnh, Tam Hương, Vĩnh Phúc.</span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p>T. 0869 755 999</p>
+              </li>
+              <li>
+                <p>E. info.ispacedesign@gmail.com</p>
+              </li>
+
+              <li>
+                <p>Fb. facebook.com/i.space.home</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p>MST: 0110459163 </p>
+              </li>
+              <li>
+                <p>©Copyright.ispace2024</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Script -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="dist/js/script.js"></script>
+  <!-- scripts -->
+
+</body>
+
+</html>
