@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Travel</title>
+    <!-- Main styles for this application-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="
+  https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.css
+  " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/vendors/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/vendors/owl/css/owl.theme.default.min.css">
+    <link href="dist/css/style.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__top__detail">
+                            <div class="left">
+                                <div class="phone">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <a href="tel:19008493">086 632 1992</a>
+                                </div>
+                                <span> - Từ 08:00 -
+                                    17:30 hằng ngày
+                                </span>
+                            </div>
+                            <div class="right">
+                                <div class="socials">
+                                    <div class="socials__item">
+                                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href=""><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__bottom">
+                        <div class="logo">
+                            <a href="/"><img src="./dist/images/logo-ka.png" alt="Travel Logo"></a>
+                        </div>
+                        <div class="header__bottom__right">
+                            <div class="menu">
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Tour trong nước
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền bắc</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Hà Nội</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hạ Long</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sapa</span>
+                                                </li>
+                                                <li>
+                                                    <span>Ninh Bình</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền Trung</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Phan Thiết</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nha Trang</span>
+                                                </li>
+                                                <li>
+                                                    <span>Đà Lạt</span>
+                                                </li>
+                                                <li>
+                                                    <span>Tây Nguyên</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền Nam</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Phú Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Miền Tây</span>
+                                                </li>
+                                                <li>
+                                                    <span>Côn Đảo</span>
+                                                </li>
+                                                <li>
+                                                    <span>TP. Hồ Chí Minh</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Chùm tour</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Mùa Vu Lan</span>
+                                                </li>
+                                                <li>
+                                                    <span>Team Building</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sinh Nhật Công Ty</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hộ nghị khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Tour nước ngoài
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Á</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Trung Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nhật Bản</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hàn Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Singapore</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Âu</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Anh</span>
+                                                </li>
+                                                <li>
+                                                    <span>Châu Âu</span>
+                                                </li>
+                                                <li>
+                                                    <span>Thổ Nhĩ Kỳ</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Mỹ</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Úc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Mỹ</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nam Phi</span>
+                                                </li>
+                                                <li>
+                                                    <span>Canada</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Chùm tour</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Mùa Vu Lan</span>
+                                                </li>
+                                                <li>
+                                                    <span>Team Building</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sinh Nhật Công Ty</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hộ nghị khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Dịch vụ du lịch
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Thuê xe</div>
+                                            <ul>
+                                                <li>
+                                                    <span>4 chỗ</span>
+                                                </li>
+                                                <li>
+                                                    <span>7 chỗ</span>
+                                                </li>
+                                                <li>
+                                                    <span>Limousine</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Vé máy bay</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Vé nội địa</span>
+                                                </li>
+                                                <li>
+                                                    <span>Vé quốc tế</span>
+                                                </li>
+                                                <li>
+                                                    <span>Đổi vé</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Bảo hiểm du lịch</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Bảo hiểm khách lẻ</span>
+                                                </li>
+                                                <li>
+                                                    <span>Bảo hiểm khách đoàn</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Visa</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Visa ngắn ngày</span>
+                                                </li>
+                                                <li>
+                                                    <span>Visa dài ngày</span>
+                                                </li>
+                                                <li>
+                                                    <span>Visa công tác</span>
+                                                </li>
+                                                <li>
+                                                    <span>Visa thăm thân</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item active">
+                                    <a href="contact.html" class="menu__item__link">
+                                        Liên hệ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn-menu-toggle" id="toggle-menu">
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </div>
+                            <div class="menu-mobile">
+                                <div class="menu-mobile__content">
+                                    <button id="close-menu">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </button>
+                                    <ul>
+                                        <li>
+                                            <a href="filter-tour.html">Tour trong nước</a>
+                                        </li>
+                                        <li>
+                                            <a href="filter-tour.html">Tour nước ngoài</a>
+                                        </li>
+                                        <li>
+                                            <a href="filter-tour.html">Dịch vụ du lịch</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" class="active">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="contact" style="background-image: url('./dist/images/bg-contact.png');">
+        <div class="container">
+
+            <div class="contact__form">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="block-title center">
+                            <h3 class="title">Liên hệ với chúng tôi</h3>
+                            <div class="description">Để có thể đáp ứng được các yêu cầu và đóng góp ý kiến của quý
+                                khách,
+                                xin vui lòng gửi thông tin hoặc gọi đến hotline các chi nhánh bên dưới để liên hệ một
+                                cách
+                                nhanh chóng
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="block-info">
+                            <div class="contact__title-block">
+                                Mạng lưới chi nhánh
+                            </div>
+                            <div class="block-info__item">
+                                <div class="box-icon">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                </div>
+                                <span>
+                                    Số 01 ngõ 180 Đình Thôn, Mỹ Đình, Nam Từ Liêm, Hà Nội
+                                </span>
+                            </div>
+                            <div class="block-info__item">
+                                <div class="box-icon">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+                                <a href="tel:0866321992" class="value">086 632 1992</a>
+                            </div>
+                            <div class="block-info__item">
+                                <div class="box-icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </div>
+                                <a href="mailto:khanhantraval01@gmail.com" class="value">khanhantraval01@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 offset-lg-1 col-lg-7">
+                        <div class="block-contact">
+                            <div class="contact__title-block">
+                                Thông tin liên lạc
+                            </div>
+                            <div class="contact__form__detail">
+                                <div class="form-item">
+                                    <label for="#">Họ và tên <span>*</span></label>
+                                    <input type="text" placeholder="Nhập họ tên">
+                                </div>
+                                <div class="form-item">
+                                    <label for="#">Email <span>*</span></label>
+                                    <input type="text" placeholder="Nhập email">
+                                </div>
+                                <div class="form-item">
+                                    <label for="#">Số điện thoại <span>*</span></label>
+                                    <input type="text" placeholder="Nhập số điện thoại">
+                                </div>
+                                <div class="form-item">
+                                    <label for="#">Tiêu đề <span>*</span></label>
+                                    <input type="text" placeholder="Nhập tiêu đề">
+                                </div>
+                                <div class="form-item">
+                                    <label for="#">Nội dung <span>*</span></label>
+                                    <textarea name="" id="" rows="7" placeholder="Nhập nội dung"></textarea>
+                                </div>
+                                <div class="actions">
+                                    <button>Gửi ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.390911970171!2d105.77160787594019!3d21.017039088179743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454a97c1c1975%3A0x532cccdee5e0898b!2zMTgwIMSQLiDEkMOsbmggVGjDtG4sIE3hu7kgxJDDrG5oLCBOYW0gVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1731402709328!5m2!1sen!2s"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="footer__item">
+                        <a href="/" class="logo">
+                            <img src="./dist/images/logo-ka.png" alt="">
+                        </a>
+                        <div class="footer__item__row">
+                            <span class="value">Số 01 ngõ 180 Đình Thôn - Nam Từ Liêm, Hà Nội </span>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="tel:0866321992" class="hotline">
+                                <ion-icon name="call-outline"></ion-icon>
+                                086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                Giờ làm việc:
+                            </div>
+                            <span class="value">08h00 - 17h30</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Liên hệ hợp tác
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="call-outline"></ion-icon>
+                                Hotline:
+                            </div>
+                            <a href="tel:0866321992" class="value">086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                Facebook:
+                            </div>
+                            <a href="https://facebook.com/khanhan-travel" class="value">Khánh An Travel</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                                Zalo:
+                            </div>
+                            <a href="tel:0866321992" class="value">086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                Email:
+                            </div>
+                            <a href="mailto:khanhantraval01@gmail.com" class="value">khanhantraval01@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Dịch vụ
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Tour trong nước</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Tour nước ngoài</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Dịch vụ du lịch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Thông tin
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Giới thiệu</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Liên hệ</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Điều khoản chung</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Quy định thanh toán</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Chính sách chất lượng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__policy">
+            © 2024 Design by Khanh An Travel
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/moment.min.js"
+        integrity="sha512-i2CVnAiguN6SnJ3d2ChOOddMWQyvgQTzm0qSgiKhOqBMGCx4fGU5BtzXEybnKatWPDkXPFyCI0lbG42BnVjr/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.js
+    "></script>
+    <script src="./dist/vendors/owl/js/owl.carousel.min.js"></script>
+    <script src="./dist/vendors/vselect/vSelect.js"></script>
+    <script src="./dist/js/detail-tour.js"></script>
+
+</body>
+
+</html>

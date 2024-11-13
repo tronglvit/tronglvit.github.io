@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Travel</title>
+    <!-- Main styles for this application-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="
+  https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.css
+  " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/vendors/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/vendors/owl/css/owl.theme.default.min.css">
+    <link href="dist/css/style.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__top__detail">
+                            <div class="left">
+                                <div class="phone">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <a href="tel:19008493">086 632 1992</a>
+                                </div>
+                                <span> - Từ 08:00 -
+                                    17:30 hằng ngày
+                                </span>
+                            </div>
+                            <div class="right">
+                                <div class="socials">
+                                    <div class="socials__item">
+                                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href=""><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__bottom">
+                        <div class="logo">
+                            <a href="/"><img src="./dist/images/logo-ka.png" alt="Travel Logo"></a>
+                        </div>
+                        <div class="header__bottom__right">
+                            <div class="menu">
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Tour trong nước
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền bắc</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Hà Nội</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hạ Long</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sapa</span>
+                                                </li>
+                                                <li>
+                                                    <span>Ninh Bình</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền Trung</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Phan Thiết</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nha Trang</span>
+                                                </li>
+                                                <li>
+                                                    <span>Đà Lạt</span>
+                                                </li>
+                                                <li>
+                                                    <span>Tây Nguyên</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền Nam</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Phú Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Miền Tây</span>
+                                                </li>
+                                                <li>
+                                                    <span>Côn Đảo</span>
+                                                </li>
+                                                <li>
+                                                    <span>TP. Hồ Chí Minh</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Chùm tour</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Mùa Vu Lan</span>
+                                                </li>
+                                                <li>
+                                                    <span>Team Building</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sinh Nhật Công Ty</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hộ nghị khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Tour nước ngoài
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Á</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Trung Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nhật Bản</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hàn Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Singapore</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Âu</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Anh</span>
+                                                </li>
+                                                <li>
+                                                    <span>Châu Âu</span>
+                                                </li>
+                                                <li>
+                                                    <span>Thổ Nhĩ Kỳ</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Mỹ</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Úc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Mỹ</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nam Phi</span>
+                                                </li>
+                                                <li>
+                                                    <span>Canada</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Chùm tour</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Mùa Vu Lan</span>
+                                                </li>
+                                                <li>
+                                                    <span>Team Building</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sinh Nhật Công Ty</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hộ nghị khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Dịch vụ du lịch
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Thuê xe</div>
+                                            <ul>
+                                                <li>
+                                                    <span>4 chỗ</span>
+                                                </li>
+                                                <li>
+                                                    <span>7 chỗ</span>
+                                                </li>
+                                                <li>
+                                                    <span>Limousine</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Vé máy bay</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Vé nội địa</span>
+                                                </li>
+                                                <li>
+                                                    <span>Vé quốc tế</span>
+                                                </li>
+                                                <li>
+                                                    <span>Đổi vé</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Bảo hiểm du lịch</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Bảo hiểm khách lẻ</span>
+                                                </li>
+                                                <li>
+                                                    <span>Bảo hiểm khách đoàn</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Visa</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Visa ngắn ngày</span>
+                                                </li>
+                                                <li>
+                                                    <span>Visa dài ngày</span>
+                                                </li>
+                                                <li>
+                                                    <span>Visa công tác</span>
+                                                </li>
+                                                <li>
+                                                    <span>Visa thăm thân</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="contact.html" class="menu__item__link">
+                                        Liên hệ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn-menu-toggle" id="toggle-menu">
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </div>
+                            <div class="menu-mobile">
+                                <div class="menu-mobile__content">
+                                    <button id="close-menu">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </button>
+                                    <ul>
+                                        <li>
+                                            <a href="filter-tour.html">Tour trong nước</a>
+                                        </li>
+                                        <li>
+                                            <a href="filter-tour.html">Tour nước ngoài</a>
+                                        </li>
+                                        <li>
+                                            <a href="filter-tour.html">Dịch vụ du lịch</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="order page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page__box-title">
+                        <h1 class="page__title">Đặt tour
+                        </h1>
+                    </div>
+
+                    <div class="order__detail">
+                        <div class="order__detail__form">
+                            <div class="order__form__block basic">
+                                <div class="order__title-block">
+                                    Thông tin liên lạc
+                                </div>
+                                <div class="basic__detail">
+                                    <div class="form-item">
+                                        <label for="">Họ tên <span>*</span></label>
+                                        <input type="text" placeholder="Nhập họ tên">
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="">Điện thoại <span>*</span></label>
+                                        <input type="text" placeholder="Nhập số điện thoại">
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="">Email <span>*</span></label>
+                                        <input type="text" placeholder="Nhập email">
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="">Địa chỉ <span>*</span></label>
+                                        <input type="text" placeholder="Nhập địa chỉ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__form__block customer">
+                                <div class="order__title-block">
+                                    Hành khách
+                                </div>
+                                <div class="customer__detail">
+                                    <div class="customer__detail__item">
+                                        <div class="label">
+                                            <p>Người lớn</p>
+                                            <div class="description">
+                                                <span>Từ 12 trở lên</span>
+                                            </div>
+                                        </div>
+                                        <div class="customer__input">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="customer__detail__item">
+                                        <div class="label">
+                                            <p>Trẻ nhỏ</p>
+                                            <div class="description">
+                                                <span>Từ 2 - 4 tuổi</span>
+                                            </div>
+                                        </div>
+                                        <div class="customer__input">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="customer__detail__item">
+                                        <div class="label">
+                                            <p>Trẻ em</p>
+                                            <div class="description">
+                                                <span>Từ 5 - 11 tuổi</span>
+                                            </div>
+                                        </div>
+                                        <div class="customer__input">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="customer__detail__item">
+                                        <div class="label">
+                                            <p>Em bé</p>
+                                            <div class="description">
+                                                <span>Dưới 2 tuổi</span>
+                                            </div>
+                                        </div>
+                                        <div class="customer__input">
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__form__block note">
+                                <div class="order__title-block">
+                                    Ghi chú
+                                </div>
+                                <div class="note__description">
+                                    Quý khách có ghi chú lưu ý gì, hãy nói với chúng tôi
+                                </div>
+                                <textarea name="" id="" rows="7"
+                                    placeholder="Vui lòng nhập nội dung lời nhắn"></textarea>
+                            </div>
+                            <div class="order__form__block policy">
+                                <div class="order__title-block">
+                                    điều khoản bắt buộc khi đăng ký online
+                                </div>
+                                <div class="policy__detail">
+                                    ĐIỀU KHOẢN THỎA THUẬN SỬ DỤNG DỊCH VỤ DU LỊCH NỘI ĐỊA
+
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                    <br>
+                                    <br>
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                                    going through the cites of the word in classical literature, discovered the
+                                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                                    Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+                                    BC. This book is a treatise on the theory of ethics, very popular during the
+                                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+                                    from a line in section 1.10.32.
+
+                                    <br>
+                                    <br>
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and web page editors now use Lorem Ipsum as their default model text, and a
+                                    search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                                    versions have evolved over the years, sometimes by accident, sometimes on purpose
+                                    (injected humour and the like).
+                                    <br><br>
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
+                                    text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                    chunks as necessary, making this the first true generator on the Internet. It uses a
+                                    dictionary of over 200 Latin words, combined with a handful of model sentence
+                                    structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
+                                    Ipsum is therefore always free from repetition, injected humour, or
+                                    non-characteristic words etc.
+
+                                    <br>
+                                    <br>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                                    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                                    voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+                                    iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+                                </div>
+                            </div>
+                            <div class="order__form__block accept-policy">
+                                <input type="checkbox" id="accept-policy">
+                                Tôi đồng ý với <a href="#">Chính sách</a> bảo vệ dữ liệu cá nhân và <label
+                                    for="accept-policy">các điều
+                                    khoản trên.</label>
+
+                            </div>
+                        </div>
+                        <div class="order__detail__info">
+                            <div class="order__title-block">
+                                Tóm tắt chuyến đi
+                            </div>
+                            <div class="info-detail">
+                                <div class="info-detail__common__mobile">
+                                    Tóm tắt chuyến đi
+                                    <ion-icon name="chevron-up-outline"></ion-icon>
+                                </div>
+                                <div class="info-detail__common">
+                                    <img src="./dist/images/td-2.png" alt="" class="tour-img">
+                                    <div class="tour-title">
+                                        Dubai: Du Thuyền Vịnh Marina Bay – Bữa tối trên không – Cafe bánh phủ vàng –
+                                        Buffet
+                                        tại khách sạn 5* - Tham quan vườn hoa Miracle
+                                    </div>
+                                    <div class="tour-code">
+                                        <div class="label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                                <path fill="#000"
+                                                    d="M21.704 12.393h-.383a.58.58 0 0 1-.58-.577.58.58 0 0 1 .58-.577h.383a.295.295 0 0 0 .296-.294V9.18a.295.295 0 0 0-.296-.294h-.383a.58.58 0 0 1-.58-.577v-.107l.433-.395A.29.29 0 0 0 21.2 7.4l-1.155-1.339a.297.297 0 0 0-.418-.032l-.29.247a.585.585 0 0 1-.82-.062.57.57 0 0 1 .064-.814l.29-.247a.29.29 0 0 0 .032-.414l-1.155-1.34a.3.3 0 0 0-.418-.032l-.29.248a.58.58 0 0 1-.423.137.58.58 0 0 1-.397-.2l-.388-.45a.297.297 0 0 0-.417-.031l-5.118 4.354H9.45a.295.295 0 0 0-.296.294c0 .162.132.294.296.294h10.697v.297a1.17 1.17 0 0 0 1.173 1.165h.087v1.176h-.087a1.17 1.17 0 0 0-1.173 1.165 1.17 1.17 0 0 0 1.173 1.164h.087v1.176h-.087a1.17 1.17 0 0 0-1.173 1.165v.666h-2.047a.295.295 0 0 0-.296.294c0 .163.133.294.296.294h2.343a.295.295 0 0 0 .296-.294v-.96a.58.58 0 0 1 .581-.577h.383A.295.295 0 0 0 22 14.45v-1.763a.295.295 0 0 0-.296-.294M11.206 7.425l4.368-3.717.195.226c.204.237.489.38.801.404s.616-.074.854-.277l.066-.056.77.893-.066.056a1.16 1.16 0 0 0-.127 1.642 1.18 1.18 0 0 0 1.654.127l.066-.056.654.758zM15.503 15.987H3.852v-.297a1.17 1.17 0 0 0-1.173-1.165h-.087v-1.176h.087a1.17 1.17 0 0 0 1.173-1.165 1.17 1.17 0 0 0-1.173-1.164h-.087V9.844h.087a1.17 1.17 0 0 0 1.173-1.165v-.666H7.23a.295.295 0 0 0 .296-.294.295.295 0 0 0-.296-.294H3.556a.295.295 0 0 0-.296.294v.96a.58.58 0 0 1-.581.577h-.383A.295.295 0 0 0 2 9.55v1.763c0 .163.132.294.296.294h.383a.58.58 0 0 1 .58.577.58.58 0 0 1-.58.577h-.383a.295.295 0 0 0-.296.294v1.764c0 .162.132.294.296.294h.383a.58.58 0 0 1 .58.577v.159l-.417.33a.293.293 0 0 0-.041.42l1.155 1.34a.296.296 0 0 0 .418.032l.29-.247c.118-.1.268-.15.423-.138A.575.575 0 0 1 5.42 18.6l-.29.247a.29.29 0 0 0-.032.415L6.253 20.6a.297.297 0 0 0 .418.032l.29-.248a.58.58 0 0 1 .82.063l.387.45a.296.296 0 0 0 .418.031l5.11-4.346.007-.008h1.8a.295.295 0 0 0 .295-.294.295.295 0 0 0-.295-.294m-7.077 4.304-.195-.225a1.17 1.17 0 0 0-.801-.404 1.17 1.17 0 0 0-.854.277l-.065.056-.77-.893.065-.056c.238-.202.382-.485.406-.795A1.168 1.168 0 0 0 5.132 17a1.17 1.17 0 0 0-.853.277l-.066.056-.654-.758h9.235z">
+                                                </path>
+                                                <path fill="#000"
+                                                    d="M18.715 8.803h-8.433a.295.295 0 0 0-.297.294c0 .162.133.294.297.294h8.137v5.218H5.58V9.391H8.02a.295.295 0 0 0 .296-.294.295.295 0 0 0-.296-.294H5.285a.295.295 0 0 0-.296.294v5.806c0 .163.133.294.296.294h13.43a.295.295 0 0 0 .296-.294V9.097a.295.295 0 0 0-.296-.294">
+                                                </path>
+                                                <path fill="#000"
+                                                    d="M8.12 10.713H6.485c-.108 0-.158.116-.158.223 0 .123.058.226.158.226h.568v2.2c0 .103.124.157.252.157.123 0 .25-.054.25-.158v-2.199h.565c.1 0 .159-.107.159-.226 0-.107-.05-.223-.159-.223M8.804 10.713c-.127 0-.251.046-.251.154v2.494c0 .104.124.158.251.158.124 0 .251-.054.251-.158v-2.494c0-.108-.127-.154-.25-.154M11.05 12.536c-.132 0-.24.039-.248.158-.011.16-.042.41-.394.41-.266 0-.413-.142-.413-.441v-1.07c0-.3.147-.442.406-.442.367 0 .394.26.401.38.004.115.109.157.252.157.17 0 .25-.046.25-.245 0-.446-.382-.73-.92-.73-.486 0-.892.238-.892.88v1.07c0 .64.402.879.89.879.54 0 .923-.296.923-.76 0-.196-.081-.246-.255-.246M13.531 13.2l-.843-1.274.692-.86a.15.15 0 0 0 .031-.095c0-.127-.162-.258-.29-.258a.16.16 0 0 0-.139.073l-.835 1.129v-1.048c0-.108-.127-.154-.25-.154-.129 0-.252.046-.252.154v2.494c0 .104.124.158.251.158.124 0 .251-.054.251-.158v-.752l.21-.26.726 1.093a.2.2 0 0 0 .174.096c.146 0 .301-.127.301-.25a.15.15 0 0 0-.027-.088M15.375 13.081H14.28v-.771h.587c.108 0 .159-.104.159-.192 0-.104-.058-.2-.159-.2h-.587v-.767h1.094c.1 0 .158-.104.158-.223 0-.103-.05-.215-.158-.215h-1.376c-.113 0-.22.054-.22.158v2.49c0 .104.107.158.22.158h1.376c.108 0 .158-.112.158-.215 0-.12-.058-.223-.158-.223M17.435 10.713H15.8c-.109 0-.159.116-.159.223 0 .123.058.226.159.226h.568v2.2c0 .103.124.157.251.157.124 0 .251-.054.251-.158v-2.199h.565c.1 0 .158-.107.158-.226 0-.107-.05-.223-.158-.223">
+                                                </path>
+                                            </svg>
+                                            <span>Mã tour:</span>
+                                        </div>
+                                        <span class="value">NNSGN94-061-201224EK-P</span>
+                                    </div>
+                                    <div class="more-info">
+                                        <div class="more-info__group">
+                                            <div class="more-info__item">
+                                                <div class="label">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        fill="none">
+                                                        <path fill="#000"
+                                                            d="M12.04 3.563a.4.4 0 0 0-.415.388.4.4 0 0 0 .41.393.4.4 0 0 0 .414-.388.4.4 0 0 0-.409-.393M12.022 5.906c-1.59-.01-2.892 1.206-2.904 2.714s1.271 2.744 2.86 2.755h.023c1.579 0 2.87-1.213 2.881-2.714.012-1.507-1.271-2.743-2.86-2.755M12 10.594h-.015c-1.136-.008-2.052-.891-2.044-1.968.009-1.072.93-1.938 2.059-1.938h.015c1.136.008 2.052.89 2.044 1.967-.009 1.072-.93 1.939-2.059 1.939M13.797 3.859a.42.42 0 0 0-.526.238.386.386 0 0 0 .25.498c1.814.61 3.023 2.249 3.008 4.078a.4.4 0 0 0 .409.394h.003c.226 0 .41-.173.412-.388.017-2.162-1.412-4.1-3.556-4.82">
+                                                        </path>
+                                                        <path fill="#000"
+                                                            d="M14.526 16.705c2.74-3.344 4.45-5.088 4.474-8.014C19.029 5.009 15.88 2 12 2 8.163 2 5.03 4.946 5 8.59c-.023 3.006 1.72 4.748 4.478 8.114C6.734 17.094 5 18.07 5 19.266c0 .8.78 1.519 2.197 2.023 1.29.458 2.995.711 4.803.711s3.514-.253 4.803-.711C18.22 20.785 19 20.066 19 19.266c0-1.195-1.733-2.172-4.474-2.561M5.824 8.597C5.849 5.38 8.615 2.78 11.999 2.78c3.425 0 6.203 2.656 6.177 5.904-.022 2.778-1.837 4.49-4.734 8.074A77 77 0 0 0 12 18.594a74 74 0 0 0-1.438-1.834c-3.018-3.734-4.762-5.316-4.74-8.162M12 21.219c-3.535 0-6.176-1.031-6.176-1.953 0-.684 1.579-1.548 4.234-1.847.587.73 1.101 1.394 1.606 2.072a.42.42 0 0 0 .336.165.42.42 0 0 0 .336-.164c.5-.67 1.028-1.35 1.61-2.073 2.653.3 4.23 1.163 4.23 1.847 0 .922-2.641 1.953-6.176 1.953">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Khởi hành:</span>
+                                                </div>
+                                                <span class="value">TP. Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="more-info__item">
+                                                <div class="label">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        fill="none">
+                                                        <path fill="#000"
+                                                            d="M6.572 7.057a.36.36 0 0 0-.505.05 7.66 7.66 0 0 0-1.742 4.85c.42 10.142 14.93 10.142 15.35 0a7.6 7.6 0 0 0-1.188-4.093 7.66 7.66 0 0 0-3.203-2.823A7.7 7.7 0 0 0 7.13 6.046a.357.357 0 0 0 .193.631.36.36 0 0 0 .263-.079c4.46-3.712 11.414-.435 11.37 5.359a6.93 6.93 0 0 1-2.04 4.899A6.98 6.98 0 0 1 12 18.888c-5.815.04-9.097-6.882-5.378-11.328a.356.356 0 0 0-.05-.503">
+                                                        </path>
+                                                        <path fill="#000"
+                                                            d="M12 6.642a.36.36 0 0 0 .359-.357V5.88A.356.356 0 0 0 12 5.522a.36.36 0 0 0-.359.358v.405a.355.355 0 0 0 .222.33.4.4 0 0 0 .137.027M7.722 8.198a.36.36 0 0 0 .607-.254.36.36 0 0 0-.1-.251l-.288-.287a.36.36 0 0 0-.607.254c0 .094.035.184.1.252zM6.308 11.598h-.406a.36.36 0 0 0-.352.357.356.356 0 0 0 .352.357h.406a.36.36 0 0 0 .352-.357.357.357 0 0 0-.352-.357M7.434 16.503a.36.36 0 0 0 .507 0l.288-.286a.357.357 0 1 0-.507-.505l-.288.286a.357.357 0 0 0 0 .505M11.641 17.625v.405a.357.357 0 0 0 .359.35.36.36 0 0 0 .359-.35v-.405a.358.358 0 0 0-.61-.248.36.36 0 0 0-.108.248M15.771 16.217c.133.113.34.415.541.39a.362.362 0 0 0 .35-.426.36.36 0 0 0-.096-.183l-.288-.287a.36.36 0 0 0-.607.255c-.001.093.035.184.1.251M18.099 12.312a.36.36 0 0 0 .351-.357.357.357 0 0 0-.352-.357h-.406a.36.36 0 0 0-.352.357.357.357 0 0 0 .352.357zM16.025 8.303c.2.024.41-.279.54-.391a.357.357 0 0 0-.253-.61.36.36 0 0 0-.253.104l-.288.287a.36.36 0 0 0 .254.61">
+                                                        </path>
+                                                        <path fill="#000"
+                                                            d="M20.502 6.349a.36.36 0 0 0 .507 0l.292-.29a2.38 2.38 0 0 0 0-3.37 2.46 2.46 0 0 0-1.903-.681 2.46 2.46 0 0 0-1.77.972.355.355 0 0 0-.001.505l1.184 1.18-.503.5c-3.42-3.278-9.215-3.274-12.623-.006l-.496-.494 1.184-1.18a.357.357 0 0 0 0-.505 2.45 2.45 0 0 0-1.771-.972 2.46 2.46 0 0 0-1.903.681 2.38 2.38 0 0 0 0 3.37c.153.127.33.409.546.395a.36.36 0 0 0 .254-.105l1.183-1.18.496.495C1.68 9.28 1.953 15.488 5.725 18.79l-.974 2.733a.356.356 0 0 0 .338.477h1.624a.36.36 0 0 0 .29-.147l1.09-1.492a9.27 9.27 0 0 0 7.81-.006l1.094 1.498a.36.36 0 0 0 .29.147h1.624a.362.362 0 0 0 .338-.477l-.978-2.744a9.2 9.2 0 0 0 2.999-6.08.356.356 0 0 0-.33-.384.36.36 0 0 0-.385.328c-1.28 10.829-16.743 10.234-17.141-.687 0-2.208.857-4.332 2.393-5.925a8.604 8.604 0 0 1 11.885-.476 8.54 8.54 0 0 1 2.863 5.715.357.357 0 0 0 .385.328.36.36 0 0 0 .33-.384 9.18 9.18 0 0 0-2.455-5.543l.503-.501zM3.244 5.591c-1.611-1.605.756-3.962 2.367-2.358zm15.158 15.694h-.934l-.92-1.26a9.4 9.4 0 0 0 1.136-.754zm-11.872 0h-.934l.715-2.005q.54.417 1.135.751zm11.895-18.09c1.632-1.534 3.92.821 2.329 2.396l-2.367-2.358z">
+                                                        </path>
+                                                        <path fill="#000"
+                                                            d="M11.641 10.85a1.17 1.17 0 0 0-.75.748H8.77a.36.36 0 0 0-.35.357.357.357 0 0 0 .35.357h2.12a1.16 1.16 0 0 0 .837.777 1.173 1.173 0 0 0 1.4-.816 1.16 1.16 0 0 0-.77-1.424V7.905a.357.357 0 0 0-.358-.35.36.36 0 0 0-.359.35zM12 12.407a.455.455 0 0 1-.448-.453.45.45 0 0 1 .448-.453.455.455 0 0 1 .448.453.45.45 0 0 1-.448.453">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Thời gian:</span>
+                                                </div>
+                                                <span class="value">5N4Đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="more-info__group">
+                                            <div class="more-info__group__title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    fill="none">
+                                                    <path fill="#000"
+                                                        d="M19.492 6.373c-.099-1.162-.845-1.914-1.996-2.013a.29.29 0 0 0-.315.267.29.29 0 0 0 .265.316c.871.076 1.392.601 1.467 1.48a.293.293 0 0 0 .314.266.29.29 0 0 0 .265-.316">
+                                                    </path>
+                                                    <path fill="#000"
+                                                        d="M20.99 2.849a1.29 1.29 0 0 0-1.038-.379l-.451.042a6.67 6.67 0 0 0-4.467 2.312l-.693.808-1.6-.669.085-.086a.664.664 0 0 0 0-.932l-.485-.49a.65.65 0 0 0-.924 0l-.67.675-.769-.321.193-.195a.664.664 0 0 0 0-.932l-.485-.49a.65.65 0 0 0-.924 0l-.776.784-1.308-.547a1.64 1.64 0 0 0-1.802.361l-.871.878a.91.91 0 0 0 .098 1.369l6.528 4.914-2.179 2.537a.295.295 0 0 0 .03.413.29.29 0 0 0 .41-.03l2.383-2.774 4.199-4.89a6.1 6.1 0 0 1 4.08-2.111l.45-.042a.71.71 0 0 1 .575.21.73.73 0 0 1 .207.578l-.04.455a6.24 6.24 0 0 1-1.055 2.942.295.295 0 0 0 .074.408.29.29 0 0 0 .404-.076 6.8 6.8 0 0 0 1.155-3.22l.041-.455a1.31 1.31 0 0 0-.375-1.047m-9.162 1.02a.07.07 0 0 1 .102 0l.485.49a.074.074 0 0 1 0 .103l-.255.258-.831-.347zM9.173 2.608a.07.07 0 0 1 .102 0l.485.49a.074.074 0 0 1 0 .103l-.363.366-.83-.348zm1.84 6.9L4.45 4.567a.32.32 0 0 1-.128-.234.32.32 0 0 1 .093-.25l.87-.878a1.065 1.065 0 0 1 1.17-.235L13.94 6.1z">
+                                                    </path>
+                                                    <path fill="#000"
+                                                        d="m21.809 14.419-.485-.49a.65.65 0 0 0-.925 0l-.24.242-.368-.896.597-.602a.664.664 0 0 0 0-.932l-.485-.49a.65.65 0 0 0-.924 0l-.014.015-.711-1.732.777-.68q.087-.075.17-.153a.295.295 0 0 0 .016-.414.29.29 0 0 0-.41-.016l-.156.14-8.488 7.415a18 18 0 0 1-3.458 2.37q-.278.147-.56.282a.48.48 0 0 1-.557-.096.49.49 0 0 1-.096-.562 18 18 0 0 1 .416-.824l.027-.05.12-.217.025-.045q.062-.11.126-.22l.024-.04q.065-.113.131-.222l.024-.04.135-.218.027-.044a19 19 0 0 1 .469-.705q.466-.67.993-1.295a.295.295 0 0 0-.034-.412.29.29 0 0 0-.41.033q-.45.537-.86 1.106L4.078 13.43a1.31 1.31 0 0 0-1.47.27l-.447.45a.56.56 0 0 0 .058.839l2.924 2.218q-.09.18-.176.362c-.198.418-.116.9.209 1.228a1.06 1.06 0 0 0 1.218.211q.18-.087.359-.178l2.2 2.949a.55.55 0 0 0 .83.059l.447-.45a1.34 1.34 0 0 0 .268-1.484l-1.188-2.647q.636-.466 1.232-.987l3.413-2.98 4.918 6.645a.897.897 0 0 0 1.358.099l.87-.878a1.67 1.67 0 0 0 .358-1.818l-.475-1.156.824-.83a.664.664 0 0 0 0-.933m-19.213.12.423-.426a.73.73 0 0 1 .82-.15l2.525 1.152-.016.024-.094.142-.045.069q-.16.243-.31.492l-.038.062-.089.148-.045.078-.085.145-.042.075q-.07.122-.136.245l-.047.085zm7.374 5.606a.75.75 0 0 1-.15.827l-.423.427-2.122-2.845.137-.076.194-.11.092-.054.145-.085.072-.044q.25-.15.495-.309l.064-.041.151-.1.06-.04q.072-.047.142-.096zm9.42-8.479a.07.07 0 0 1 .102 0l.485.49a.074.074 0 0 1 0 .103l-.427.43-.344-.838zm1.301 7.074-.87.878a.31.31 0 0 1-.249.094.31.31 0 0 1-.232-.129l-4.944-6.68 3.395-2.965 3.133 7.624c.166.405.075.868-.233 1.178m.707-3.804-.654.66-.344-.839.41-.413a.07.07 0 0 1 .103 0l.485.489a.074.074 0 0 1 0 .103">
+                                                    </path>
+                                                </svg>
+                                                <span>Thông tin chuyến bay</span>
+                                            </div>
+                                            <div class="air-plan">
+                                                <div class="air-plan__item">
+                                                    <div class="time">Ngày đi - <span>29-10-2024</span></div>
+                                                    <div class="time__detail">
+                                                        <span>10:00</span>
+                                                        <span>12:10</span>
+                                                    </div>
+                                                    <div class="flight-line"></div>
+                                                    <div class="airline">
+                                                        <img src="./dist/images/logo_VietNamAir.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="air-plan__item">
+                                                    <div class="time">Ngày về - <span>31-10-2024</span></div>
+                                                    <div class="time__detail">
+                                                        <span>21:00</span>
+                                                        <span>23:10</span>
+                                                    </div>
+                                                    <div class="flight-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="more-info__group price">
+                                            <div class="price__title">
+                                                <div class="more-info__group__title">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        fill="none" class="icon">
+                                                        <path fill="#000"
+                                                            d="M8.242 18.838a.35.35 0 0 0-.351.344v1.473c0 .19.157.345.351.345a.35.35 0 0 0 .352-.345v-1.473a.35.35 0 0 0-.352-.344M15.758 18.838a.35.35 0 0 0-.352.344v1.473c0 .19.157.345.351.345a.35.35 0 0 0 .352-.345v-1.473a.35.35 0 0 0-.352-.344M5.394 11.508c-.817-.4-2.347-.405-2.412-.405a.35.35 0 0 0-.352.344c0 .19.158.345.352.345.395 0 1.543.06 2.097.332a.356.356 0 0 0 .472-.154.34.34 0 0 0-.157-.462M1.855 18.1a.35.35 0 0 0-.352.345v2.21c0 .19.157.345.352.345a.35.35 0 0 0 .351-.345v-2.21a.35.35 0 0 0-.351-.344">
+                                                        </path>
+                                                        <path fill="#000"
+                                                            d="m23.183 16.814-1.424-.698a.02.02 0 0 1-.014-.021v-.701a2.54 2.54 0 0 0 1.102-1.75 2.87 2.87 0 0 0 .401-1.46c0-.953-.468-1.802-1.191-2.335q.063-.209.064-.427c0-.901-.832-1.634-1.854-1.634s-1.855.733-1.855 1.634q0 .219.064.427a2.95 2.95 0 0 0-.976 1.246c-.087-.84-.177-1.832-.265-2.988-.114-1.525-.674-2.813-1.618-3.724C14.681 3.478 13.43 3 12 3s-2.68.478-3.617 1.383c-.944.911-1.504 2.2-1.618 3.724q-.046.607-.093 1.154H3.358c-1.23 0-2.23.981-2.23 2.187v.02c0 .28.067.562.195.813l.18.353v.563c0 .891.448 1.691 1.127 2.173v.497c0 .064-.043.121-.106.139l-1.451.406A1.46 1.46 0 0 0 0 17.806v2.85c0 .19.157.344.352.344a.35.35 0 0 0 .351-.345v-2.85c0-.337.231-.638.563-.73l1.451-.407a1 1 0 0 0 .15-.058l.89.873v3.172c0 .19.158.345.352.345a.35.35 0 0 0 .352-.345v-3.172l.897-.88c.12.058.24.092.327.117l.356.1c-.483.336-.78.885-.78 1.48v2.355c0 .19.157.345.351.345a.35.35 0 0 0 .352-.345V18.3c0-.446.27-.852.686-1.032l2.01-.87A3.74 3.74 0 0 0 12 18.422a3.73 3.73 0 0 0 3.34-2.024l2.01.87c.417.18.686.586.686 1.032v2.355c0 .19.158.345.352.345a.35.35 0 0 0 .351-.345V18.3c0-.44-.163-.856-.444-1.178l.544-.267.409.38c.286.266.652.4 1.019.4s.733-.134 1.018-.4l.409-.38 1.174.575c.265.13.429.39.429.68v2.545c0 .19.157.345.351.345a.35.35 0 0 0 .352-.345V18.11a1.44 1.44 0 0 0-.817-1.296m-2.916-8.337c.634 0 1.151.424 1.151.945l-.003.065a3.02 3.02 0 0 0-2.296 0q-.003-.032-.004-.065c0-.521.517-.945 1.152-.945M4.109 16.853l-.8-.785a.8.8 0 0 0 .024-.2v-.146a2.5 2.5 0 0 0 .777.122q.402-.001.775-.115v.138q0 .112.021.205zm-.059-1.7c-1.017-.03-1.844-.907-1.844-1.957v-.643a.34.34 0 0 0-.037-.155l-.217-.425a1.1 1.1 0 0 1-.122-.505v-.02c0-.826.685-1.497 1.528-1.497h3.03v1.43c0 .231-.056.463-.161.67l-.178.347a.34.34 0 0 0-.037.155v.736c0 .509-.205.984-.578 1.339a1.9 1.9 0 0 1-1.384.525m2.939 1.215-1.111-.311c-.29-.081-.29-.113-.29-.19v-.475a2.6 2.6 0 0 0 .535-.481c.056.112.143.21.255.28a7.8 7.8 0 0 0 1.595.75zM12 17.733a3.04 3.04 0 0 1-2.696-1.614l.511-.221c.4-.173.658-.562.658-.99v-.826A4.2 4.2 0 0 0 12 14.37a4.2 4.2 0 0 0 1.527-.288v.827c0 .427.258.816.658.989l.511.221A3.03 3.03 0 0 1 12 17.733m3.048-2.215-.58-.25a.39.39 0 0 1-.238-.36v-1.184c1.13-.719 1.88-1.966 1.88-3.381v-.647c0-.42-.183-.816-.5-1.086-.707-.603-2.306-1.653-5.078-1.925a.35.35 0 0 0-.385.308c-.02.19.122.359.315.378 2.578.252 4.043 1.21 4.686 1.759.164.14.258.346.258.566v.647c0 1.84-1.528 3.338-3.406 3.338s-3.406-1.498-3.406-3.338v-.289c0-.132.075-.253.2-.324.44-.248 1.02-.708 1.285-1.488a.343.343 0 0 0-.222-.436.353.353 0 0 0-.445.218c-.196.575-.635.92-.968 1.109-.341.192-.553.545-.553.921v.289c0 1.415.749 2.662 1.879 3.38v1.186a.39.39 0 0 1-.239.358l-.58.251c-1.132-.297-1.857-.693-2.191-.905q-.01-.005-.009-.02c.123-.71.438-2.76.715-6.435.102-1.356.59-2.492 1.41-3.284C9.68 4.099 10.76 3.689 12 3.689s2.321.41 3.124 1.185c.82.792 1.308 1.928 1.41 3.284.277 3.675.592 5.725.715 6.436q.002.014-.009.02c-.334.212-1.06.607-2.192.904m3.74.577q0 .015-.014.021l-1.101.54-.039-.018-1.607-.696a7.8 7.8 0 0 0 1.595-.75.7.7 0 0 0 .32-.713l-.008-.05c.197.39.493.721.854.965zm2.013.64c-.3.28-.77.28-1.069 0l-.326-.304a.7.7 0 0 0 .085-.336v-.367a2.66 2.66 0 0 0 1.551 0v.367c0 .12.03.235.086.336zm-.534-1.58c-.974 0-1.787-.715-1.892-1.663a.34.34 0 0 0-.05-.143 2.2 2.2 0 0 1-.337-1.165c0-1.231 1.022-2.233 2.279-2.233s2.278 1.002 2.278 2.233c0 .238-.04.473-.115.697-.998-.994-2.755-1.383-2.84-1.402a.36.36 0 0 0-.295.068.34.34 0 0 0-.132.269c0 .002-.015.241-.272.493a.34.34 0 0 0 0 .487c.137.135.36.135.497 0 .198-.194.314-.39.382-.556.591.172 1.82.607 2.37 1.37a1.89 1.89 0 0 1-1.873 1.544">
+                                                        </path>
+                                                        <path fill="#000"
+                                                            d="M22.146 18.51a.35.35 0 0 0-.352.352v1.79a.352.352 0 0 0 .703 0v-1.79a.35.35 0 0 0-.352-.352">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Khách hàng + phụ thu</span>
+                                                </div>
+                                                <div class="price-number">
+                                                    53.890.000 ₫
+                                                </div>
+                                            </div>
+
+                                            <div class="price__detail">
+                                                <div class="price__detail__item">
+                                                    <span>Người lớn</span>
+                                                    <span> 1 x 42.000.000 đ</span>
+                                                </div>
+                                                <div class="price__detail__item">
+                                                    <span>Phụ thu phòng đơn</span>
+                                                    <span> 1 x 2.000.000 đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="total-price">
+                                        <span>Tổng tiền</span>
+                                        <p>53.000.000 đ</p>
+                                    </div>
+                                    <button>Đặt tour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade modal-show-image" id="modalImages" tabindex="-1" role="dialog"
+        aria-labelledby="modalImagesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" id="close-modal" data-dismiss="modal" aria-label="Close">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="box-image">
+                        <img src="./dist/images/td-1.jpg" alt="">
+                        <button class="btn--slide prev" id="lasthour-slide-prev">
+                            <i class="gg-arrow-long-left"></i>
+                        </button>
+                        <button class="btn--slide next" id="lasthour-slide-next">
+                            <i class="gg-arrow-long-right"></i>
+                        </button>
+                    </div>
+                    <div class="list-image">
+                        <span>Tất cả ảnh (5)</span>
+                        <div class="list-image__detail">
+                            <img src="./dist/images/td-1.jpg" alt="" class="active">
+                            <img src="./dist/images/td-2.png" alt="">
+                            <img src="./dist/images/td-3.png" alt="">
+                            <img src="./dist/images/td-primary.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="footer__item">
+                        <a href="/" class="logo">
+                            <img src="./dist/images/logo-ka.png" alt="">
+                        </a>
+                        <div class="footer__item__row">
+                            <span class="value">Số 01 ngõ 180 Đình Thôn - Nam Từ Liêm, Hà Nội </span>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="tel:0866321992" class="hotline">
+                                <ion-icon name="call-outline"></ion-icon>
+                                086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                Giờ làm việc:
+                            </div>
+                            <span class="value">08h00 - 17h30</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Liên hệ hợp tác
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="call-outline"></ion-icon>
+                                Hotline:
+                            </div>
+                            <a href="tel:0866321992" class="value">086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                Facebook:
+                            </div>
+                            <a href="https://facebook.com/khanhan-travel" class="value">Khánh An Travel</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                                Zalo:
+                            </div>
+                            <a href="tel:0866321992" class="value">086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                Email:
+                            </div>
+                            <a href="mailto:khanhantraval01@gmail.com" class="value">khanhantraval01@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Dịch vụ
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Tour trong nước</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Tour nước ngoài</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Dịch vụ du lịch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Thông tin
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Giới thiệu</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Liên hệ</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Điều khoản chung</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Quy định thanh toán</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="#" class="value">Chính sách chất lượng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__policy">
+            © 2024 Design by Khanh An Travel
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/moment.min.js"
+        integrity="sha512-i2CVnAiguN6SnJ3d2ChOOddMWQyvgQTzm0qSgiKhOqBMGCx4fGU5BtzXEybnKatWPDkXPFyCI0lbG42BnVjr/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.js
+    "></script>
+    <script src="./dist/vendors/owl/js/owl.carousel.min.js"></script>
+    <script src="./dist/vendors/vselect/vSelect.js"></script>
+    <script src="./dist/js/order.js"></script>
+
+</body>
+
+</html>
