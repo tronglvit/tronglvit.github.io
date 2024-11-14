@@ -1,20 +1,51 @@
 $(document).ready(function () {
-  $('#change-date').daterangepicker(
-    {
-      singleDatePicker: true,
-      showDropdowns: false,
-      minYear: 1901,
-      maxYear: parseInt(moment().format('YYYY'), 10),
-      autoApply: true,
-      locale: {
-        format: 'DD-MM-YYYY',
+  function setupDateRangePicker() {
+    var inputOffset = $('#change-date').offset().top
+    var inputHeight = $('#change-date').outerHeight()
+    var scrollTop = $(window).scrollTop()
+    var viewportHeight = $(window).height()
+    var pickerHeight = 250 // Chiều cao ước tính của picker (có thể điều chỉnh)
+
+    // Kiểm tra nếu có đủ không gian bên dưới, nếu không mở lên trên
+    var drops =
+      inputOffset - scrollTop + inputHeight + pickerHeight > viewportHeight
+        ? 'up'
+        : 'down'
+
+    // Khởi tạo `daterangepicker` với `drops` theo vị trí
+    $('#change-date').daterangepicker(
+      {
+        singleDatePicker: true,
+        showDropdowns: false,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'), 10),
+        autoApply: true,
+        drops: drops,
+        opens: 'left',
+        locale: {
+          format: 'DD-MM-YYYY',
+        },
       },
-    },
-    function (start, end, label) {
-      var years = moment().diff(start, 'years')
-      alert('You are ' + years + ' years old!')
-    }
-  )
+      function (start, end, label) {
+        var years = moment().diff(start, 'years')
+        alert('You are ' + years + ' years old!')
+      }
+    )
+  }
+
+  // Thiết lập picker khi trang đã tải
+  setupDateRangePicker()
+
+  // Gỡ bỏ picker và thiết lập lại khi hiển thị để cập nhật vị trí động
+  $('#change-date').on('show.daterangepicker', function (ev, picker) {
+    picker.remove()
+    setupDateRangePicker()
+  })
+  $(window).on('scroll', function () {
+    $('#change-date').data('daterangepicker').remove() // Gỡ bỏ picker
+    setupDateRangePicker() // Thiết lập lại picker với vị trí mới
+  })
+
   $('.other-tour__carousel').owlCarousel({
     autoplay: true,
     loop: true,
