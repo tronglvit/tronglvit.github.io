@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Travel</title>
+    <!-- Main styles for this application-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="
+  https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.css
+  " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/vendors/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/vendors/owl/css/owl.theme.default.min.css">
+    <link href="dist/css/style.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__top__detail">
+                            <div class="left">
+                                <div class="phone">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <a href="tel:19008493">086 632 1992</a>
+                                </div>
+                                <span> - Từ 08:00 -
+                                    24:00 hằng ngày
+                                </span>
+                            </div>
+                            <div class="right">
+                                <div class="socials">
+                                    <div class="socials__item">
+                                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href=""><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__bottom">
+                        <div class="logo">
+                            <a href="/"><img src="./dist/images/logo-2.png" alt="Travel Logo"></a>
+                        </div>
+                        <div class="header__bottom__right">
+                            <div class="menu">
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Tour trong nước
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền bắc</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Hà Nội</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hạ Long</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sapa</span>
+                                                </li>
+                                                <li>
+                                                    <span>Ninh Bình</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền Trung</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Phan Thiết</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nha Trang</span>
+                                                </li>
+                                                <li>
+                                                    <span>Đà Lạt</span>
+                                                </li>
+                                                <li>
+                                                    <span>Tây Nguyên</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền Nam</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Phú Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Miền Tây</span>
+                                                </li>
+                                                <li>
+                                                    <span>Côn Đảo</span>
+                                                </li>
+                                                <li>
+                                                    <span>TP. Hồ Chí Minh</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Chùm tour</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Mùa Vu Lan</span>
+                                                </li>
+                                                <li>
+                                                    <span>Team Building</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sinh Nhật Công Ty</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hội nghị khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Tour nước ngoài
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Á</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Trung Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nhật Bản</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hàn Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Singapore</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Âu</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Anh</span>
+                                                </li>
+                                                <li>
+                                                    <span>Châu Âu</span>
+                                                </li>
+                                                <li>
+                                                    <span>Thổ Nhĩ Kỳ</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Mỹ</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Úc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Mỹ</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nam Phi</span>
+                                                </li>
+                                                <li>
+                                                    <span>Canada</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Chùm tour</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Mùa Vu Lan</span>
+                                                </li>
+                                                <li>
+                                                    <span>Team Building</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sinh Nhật Công Ty</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hội nghị khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item active">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Cẩm nang du lịch
+                                    </a>
+                                    <div class="menu__item__sub travel-guide">
+                                        <div class="menu__item__sub__item">
+                                            <ul>
+                                                <li>
+                                                    <a href="list-post.html">Du lịch Trung Quốc</a>
+                                                </li>
+                                                <li>
+                                                    <a href="list-post.html">Kinh nghiệm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="list-post.html">Review</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="list-post.html">Ẩm thực</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="list-post.html">Điểm đến</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="contact.html" class="menu__item__link">
+                                        Liên hệ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn-menu-toggle" id="toggle-menu">
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </div>
+                            <div class="menu-mobile">
+                                <div class="menu-mobile__content">
+                                    <button id="close-menu">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </button>
+                                    <ul>
+                                        <li>
+                                            <a href="filter-tour.html">Tour trong nước</a>
+                                        </li>
+                                        <li>
+                                            <a href="filter-tour.html">Tour nước ngoài</a>
+                                        </li>
+                                        <li>
+                                            <a href="list-post.html" class="active">Cẩm nang du lịch</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="list-post page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="t-breadcrumb">
+                        <li class="t-breadcrumb__item">
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="t-breadcrumb__item">
+                            Cẩm nang du lịch
+                        </li>
+                    </ul>
+                    <div class="page__box-title">
+                        <h1 class="page__title">Cẩm nang du lịch</h1>
+
+                    </div>
+                    <div class="list-post__content">
+                        <div class="list-post__content__top">
+                            <div class="result">
+                                <div class="result__sort">
+                                    <div class="box-sort">
+                                        <div class="select-category-mobile">
+                                            <select name="" id="sort-category" class="vselect" data-search="true"
+                                                data-multi-select="false" data-placeholder="Select sort"
+                                                data-display="values" style="display: none">
+                                                <option value="all" selected>
+                                                    Tất cả
+                                                </option>
+                                                <option value="tq">
+                                                    Du lịch Trung Quốc
+                                                </option>
+                                                <option value="kn">
+                                                    Kinh nghiệm
+                                                </option>
+                                                <option value="rv">
+                                                    Review
+                                                </option>
+                                                <option value="at">
+                                                    Ẩm thực
+                                                </option>
+                                                <option value="dd">
+                                                    Điểm đến
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="box-sort">
+                                        <select name="" id="sort-post" class="vselect" data-search="true"
+                                            data-multi-select="false" data-placeholder="Select sort"
+                                            data-display="values" style="display: none">
+                                            <option value="decrease" selected>
+                                                Mới nhất
+                                            </option>
+                                            <option value="increase">
+                                                Cũ nhất
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-post__content__detail">
+                            <div class="box-category">
+                                <div class="category">
+                                    <ul>
+                                        <li class="active">Tất cả</li>
+                                        <li>Du lịch Trung Quốc</li>
+                                        <li>Kinh nghiệm</li>
+                                        <li>Review</li>
+                                        <li>Ẩm thực</li>
+                                        <li>
+                                            Điểm đến
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-post__result">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <article class="post">
+                                            <a href="post-detail.html" class="post__link">
+                                                <div class="post__detail">
+                                                    <div class="box-top">
+                                                        <div class="box-img">
+                                                            <img src="./dist/images/pd-hour-01.png" alt="">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-info">
+                                                        <div class="box-info__top">
+                                                            <div class="time">
+                                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                                <span>16/10/2024</span>
+                                                            </div>
+                                                            <div class="category">
+                                                                <ion-icon name="bookmark-outline"></ion-icon>
+                                                                <span>Du lịch Trung Quốc</span>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="title">
+                                                            Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                        </h3>
+                                                        <div class="box-description">
+                                                            <p>
+                                                                Thung lũng anh đào Yuan Zhu, tọa lạc tại thành phố Vô
+                                                                Tích, tỉnh Giang Tô, Trung Quốc, là một trong những điểm
+                                                                đến nổi bật nhất cho những người yêu thích hoa anh đào
+                                                            </p>
+                                                        </div>
+                                                        <div class="read-more">
+                                                            Xem thêm
+                                                            <i class="gg-arrow-long-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <article class="post">
+                                            <a href="post-detail.html" class="post__link">
+                                                <div class="post__detail">
+                                                    <div class="box-top">
+                                                        <div class="box-img">
+                                                            <img src="./dist/images/pd-hour-02.png" alt="">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-info">
+                                                        <div class="box-info__top">
+                                                            <div class="time">
+                                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                                <span>16/10/2024</span>
+                                                            </div>
+                                                            <div class="category">
+                                                                <ion-icon name="bookmark-outline"></ion-icon>
+                                                                <span>Du lịch Trung Quốc</span>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="title">
+                                                            Trung Quốc tháng 10: Mùa thu vàng rực rỡ, chờ bạn khám phá!
+                                                        </h3>
+                                                        <div class="box-description">
+                                                            <p>
+                                                                Vô Tích, thành phố xinh đẹp nằm bên bờ hồ lớn nhất Trung
+                                                                Quốc, không chỉ nổi tiếng với cảnh sắc thiên nhiên hữu
+                                                                tình
+                                                                mà còn là điểm đến lý tưởng cho những tín đồ yêu thích
+                                                                ẩm
+                                                                thực. Đặc sản Vô Tích không chỉ đa dạng mà còn mang
+                                                                trong
+                                                                mình hương vị đặc trưng của văn hóa và lịch sử lâu đời.
+                                                                Hãy
+                                                                cùng Kim Lien Travel khám phá những món ăn đặc sắc nhất
+                                                                của
+                                                                vùng đất này!
+                                                            </p>
+                                                        </div>
+                                                        <div class="read-more">
+                                                            Xem thêm
+                                                            <i class="gg-arrow-long-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <article class="post">
+                                            <a href="post-detail.html" class="post__link">
+                                                <div class="post__detail">
+                                                    <div class="box-top">
+                                                        <div class="box-img">
+                                                            <img src="./dist/images/pd-hour-03.png" alt="">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-info">
+                                                        <div class="box-info__top">
+                                                            <div class="time">
+                                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                                <span>16/10/2024</span>
+                                                            </div>
+                                                            <div class="category">
+                                                                <ion-icon name="bookmark-outline"></ion-icon>
+                                                                <span>Du lịch Trung Quốc</span>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="title">
+                                                            Bắc Kinh mùa thu: Khi lá vàng nhuộm kín phố
+                                                        </h3>
+                                                        <div class="box-description">
+                                                            <p>
+                                                                Vô Tích, thành phố xinh đẹp nằm bên bờ hồ lớn nhất Trung
+                                                                Quốc, không chỉ nổi tiếng với cảnh sắc thiên nhiên hữu
+                                                                tình
+                                                                mà còn là điểm đến lý tưởng cho những tín đồ yêu thích
+                                                                ẩm
+                                                                thực. Đặc sản Vô Tích không chỉ đa dạng mà còn mang
+                                                                trong
+                                                                mình hương vị đặc trưng của văn hóa và lịch sử lâu đời.
+                                                                Hãy
+                                                                cùng Kim Lien Travel khám phá những món ăn đặc sắc nhất
+                                                                của
+                                                                vùng đất này!
+                                                            </p>
+                                                        </div>
+                                                        <div class="read-more">
+                                                            Xem thêm
+                                                            <i class="gg-arrow-long-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <article class="post">
+                                            <a href="post-detail.html" class="post__link">
+                                                <div class="post__detail">
+                                                    <div class="box-top">
+                                                        <div class="box-img">
+                                                            <img src="./dist/images/explore-1.jpg" alt="">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-info">
+                                                        <div class="box-info__top">
+                                                            <div class="time">
+                                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                                <span>16/10/2024</span>
+                                                            </div>
+                                                            <div class="category">
+                                                                <ion-icon name="bookmark-outline"></ion-icon>
+                                                                <span>Review</span>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="title">
+                                                            Du Lịch Tết Âm
+                                                        </h3>
+                                                        <div class="box-description">
+                                                            <p>
+                                                                Vô Tích, thành phố xinh đẹp nằm bên bờ hồ lớn nhất Trung
+                                                                Quốc,
+                                                            </p>
+                                                        </div>
+                                                        <div class="read-more">
+                                                            Xem thêm
+                                                            <i class="gg-arrow-long-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <article class="post">
+                                            <a href="post-detail.html" class="post__link">
+                                                <div class="post__detail">
+                                                    <div class="box-top">
+                                                        <div class="box-img">
+                                                            <img src="./dist/images/explore-2.png" alt="">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-info">
+                                                        <div class="box-info__top">
+                                                            <div class="time">
+                                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                                <span>16/10/2024</span>
+                                                            </div>
+                                                            <div class="category">
+                                                                <ion-icon name="bookmark-outline"></ion-icon>
+                                                                <span>Ẩm thực</span>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="title">
+                                                            Nhà Hát Lớn Cáp Nhĩ Tân: Nơi Giao Thoa Văn Hóa Nghệ Thuật
+                                                        </h3>
+                                                        <div class="box-description">
+                                                            <p>
+                                                                Vô Tích, thành phố xinh đẹp nằm bên bờ hồ lớn nhất Trung
+                                                                Quốc, không chỉ nổi tiếng với cảnh sắc thiên nhiên hữu
+                                                                tình
+                                                                mà còn là điểm đến lý tưởng cho những tín đồ yêu thích
+                                                                ẩm
+                                                                thực. Đặc sản Vô Tích không chỉ đa dạng mà còn mang
+                                                                trong
+                                                                mình hương vị đặc trưng của văn hóa và lịch sử lâu đời.
+                                                                Hãy
+                                                                cùng Kim Lien Travel khám phá những món ăn đặc sắc nhất
+                                                                của
+                                                                vùng đất này!
+                                                            </p>
+                                                        </div>
+                                                        <div class="read-more">
+                                                            Xem thêm
+                                                            <i class="gg-arrow-long-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <article class="post">
+                                            <a href="post-detail.html" class="post__link">
+                                                <div class="post__detail">
+                                                    <div class="box-top">
+                                                        <div class="box-img">
+                                                            <img src="./dist/images/explore-3.jpg" alt="">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="box-info">
+                                                        <div class="box-info__top">
+                                                            <div class="time">
+                                                                <ion-icon name="calendar-outline"></ion-icon>
+                                                                <span>16/10/2024</span>
+                                                            </div>
+                                                            <div class="category">
+                                                                <ion-icon name="bookmark-outline"></ion-icon>
+                                                                <span>Review</span>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="title">
+                                                            Đặc Sản Vô Tích: Hành Trình Khám Phá Ẩm Thực Độc Đáo
+                                                        </h3>
+                                                        <div class="box-description">
+                                                            <p>
+                                                                Vô Tích, thành phố xinh đẹp nằm bên bờ hồ lớn nhất Trung
+                                                                Quốc, không chỉ nổi tiếng với cảnh sắc thiên nhiên hữu
+                                                                tình
+                                                                mà còn là điểm đến lý tưởng cho những tín đồ yêu thích
+                                                                ẩm
+                                                                thực. Đặc sản Vô Tích không chỉ đa dạng mà còn mang
+                                                                trong
+                                                                mình hương vị đặc trưng của văn hóa và lịch sử lâu đời.
+                                                                Hãy
+                                                                cùng Kim Lien Travel khám phá những món ăn đặc sắc nhất
+                                                                của
+                                                                vùng đất này!
+                                                            </p>
+                                                        </div>
+                                                        <div class="read-more">
+                                                            Xem thêm
+                                                            <i class="gg-arrow-long-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="footer__item">
+                        <a href="/" class="logo">
+                            <img src="./dist/images/logo-2.png" alt="">
+                        </a>
+                        <div class="footer__item__row">
+                            <span class="value">Số 01 ngõ 180 Đình Thôn - Mỹ Đình - Nam Từ Liêm, Hà Nội </span>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="tel:0866321992" class="hotline">
+                                <ion-icon name="call-outline"></ion-icon>
+                                086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                Giờ làm việc:
+                            </div>
+                            <span class="value">08h00 - 24h00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Liên hệ hợp tác
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="call-outline"></ion-icon>
+                                Hotline:
+                            </div>
+                            <a href="tel:0866321992" class="value">086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                Facebook:
+                            </div>
+                            <a href="https://facebook.com/khanhan-travel" class="value">Khánh An Travel</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                                Zalo:
+                            </div>
+                            <a href="tel:0866321992" class="value">086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                Email:
+                            </div>
+                            <a href="mailto:khanhantraval01@gmail.com" class="value">khanhantraval01@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Dịch vụ
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="filter-tour.html" class="value">Tour trong nước</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="filter-tour.html" class="value">Tour nước ngoài</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="list-post.html" class="value">Cẩm nang du lịch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Thông tin
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value">Giới thiệu</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="contact.html" class="value">Liên hệ</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value">Điều khoản chung</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value">Quy định thanh toán</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value">Chính sách chất lượng</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value"><img src="./dist/images/bct.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__policy">
+            © 2024 - Bản quyền thuộc về Khánh An Travel
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/moment.min.js"
+        integrity="sha512-i2CVnAiguN6SnJ3d2ChOOddMWQyvgQTzm0qSgiKhOqBMGCx4fGU5BtzXEybnKatWPDkXPFyCI0lbG42BnVjr/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.js
+    "></script>
+    <script src="./dist/vendors/owl/js/owl.carousel.min.js"></script>
+    <script src="./dist/vendors/vselect/vSelect.js"></script>
+    <script src="./dist/js/common.js"></script>
+    <script src="./dist/js/list-post.js"></script>
+
+</body>
+
+</html>

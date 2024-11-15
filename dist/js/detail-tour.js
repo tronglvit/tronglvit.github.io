@@ -58,7 +58,8 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        stagePadding: 50,
+        stagePadding: 30,
+        margin: 16,
       },
       600: {
         items: 2,
@@ -97,20 +98,5 @@ $(document).ready(function () {
   })
   $('#close-modal').on('click', function () {
     $('#modalImages').modal('hide')
-  })
-
-  $('#toggle-menu').click(function () {
-    $('.menu-mobile').addClass('active') // Hiển thị với hiệu ứng mờ dần
-  })
-
-  // Khi click vào #close-menu, ẩn .menu-mobile
-  $('#close-menu').click(function () {
-    $('.menu-mobile').removeClass('active') // Ẩn với hiệu ứng mờ dần
-  })
-  $('.menu-mobile').click(function (event) {
-    // Kiểm tra nếu click không nằm trong .menu-mobile__content
-    if (!$(event.target).closest('.menu-mobile__content').length) {
-      $('.menu-mobile').removeClass('active')
-    }
   })
 })

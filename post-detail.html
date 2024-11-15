@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Travel</title>
+    <!-- Main styles for this application-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="
+  https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.css
+  " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/vendors/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/vendors/owl/css/owl.theme.default.min.css">
+    <link href="dist/css/style.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__top__detail">
+                            <div class="left">
+                                <div class="phone">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <a href="tel:19008493">086 632 1992</a>
+                                </div>
+                                <span> - Từ 08:00 -
+                                    24:00 hằng ngày
+                                </span>
+                            </div>
+                            <div class="right">
+                                <div class="socials">
+                                    <div class="socials__item">
+                                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href=""><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__bottom">
+                        <div class="logo">
+                            <a href="/"><img src="./dist/images/logo-2.png" alt="Travel Logo"></a>
+                        </div>
+                        <div class="header__bottom__right">
+                            <div class="menu">
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Tour trong nước
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền bắc</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Hà Nội</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hạ Long</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sapa</span>
+                                                </li>
+                                                <li>
+                                                    <span>Ninh Bình</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền Trung</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Phan Thiết</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nha Trang</span>
+                                                </li>
+                                                <li>
+                                                    <span>Đà Lạt</span>
+                                                </li>
+                                                <li>
+                                                    <span>Tây Nguyên</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Miền Nam</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Phú Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Miền Tây</span>
+                                                </li>
+                                                <li>
+                                                    <span>Côn Đảo</span>
+                                                </li>
+                                                <li>
+                                                    <span>TP. Hồ Chí Minh</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Chùm tour</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Mùa Vu Lan</span>
+                                                </li>
+                                                <li>
+                                                    <span>Team Building</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sinh Nhật Công Ty</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hội nghị khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Tour nước ngoài
+                                    </a>
+                                    <div class="menu__item__sub">
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Á</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Trung Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nhật Bản</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hàn Quốc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Singapore</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Âu</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Anh</span>
+                                                </li>
+                                                <li>
+                                                    <span>Châu Âu</span>
+                                                </li>
+                                                <li>
+                                                    <span>Thổ Nhĩ Kỳ</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Châu Mỹ</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Úc</span>
+                                                </li>
+                                                <li>
+                                                    <span>Mỹ</span>
+                                                </li>
+                                                <li>
+                                                    <span>Nam Phi</span>
+                                                </li>
+                                                <li>
+                                                    <span>Canada</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__item__sub__item">
+                                            <div class="title">Chùm tour</div>
+                                            <ul>
+                                                <li>
+                                                    <span>Mùa Vu Lan</span>
+                                                </li>
+                                                <li>
+                                                    <span>Team Building</span>
+                                                </li>
+                                                <li>
+                                                    <span>Sinh Nhật Công Ty</span>
+                                                </li>
+                                                <li>
+                                                    <span>Hội nghị khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item active">
+                                    <a href="filter-tour.html" class="menu__item__link">
+                                        Cẩm nang du lịch
+                                    </a>
+                                    <div class="menu__item__sub travel-guide">
+                                        <div class="menu__item__sub__item">
+                                            <ul>
+                                                <li>
+                                                    <a href="list-post.html">Du lịch Trung Quốc</a>
+                                                </li>
+                                                <li>
+                                                    <a href="list-post.html">Kinh nghiệm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="list-post.html">Review</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="list-post.html">Ẩm thực</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="list-post.html">Điểm đến</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="contact.html" class="menu__item__link">
+                                        Liên hệ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn-menu-toggle" id="toggle-menu">
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </div>
+                            <div class="menu-mobile">
+                                <div class="menu-mobile__content">
+                                    <button id="close-menu">
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </button>
+                                    <ul>
+                                        <li>
+                                            <a href="filter-tour.html">Tour trong nước</a>
+                                        </li>
+                                        <li>
+                                            <a href="filter-tour.html">Tour nước ngoài</a>
+                                        </li>
+                                        <li>
+                                            <a href="list-post.html">Cẩm nang du lịch</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="post-detail page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="t-breadcrumb">
+                        <li class="t-breadcrumb__item">
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="t-breadcrumb__item">
+                            <a href="list-post.html">Cẩm nang du lịch</a>
+                        </li>
+                        <li class="t-breadcrumb__item">
+                            <a href="list-post.html">Du lịch Trung Quốc</a>
+                        </li>
+                        <li class="t-breadcrumb__item">
+                            Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                        </li>
+
+
+                    </ul>
+                    <div class="post-detail__content">
+
+                        <div class="post-detail__content__info">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="title">
+                                        Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+
+                                    </h1>
+                                    <div class="box-sub-info">
+                                        <div class="time">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span>16/10/2024</span>
+                                        </div>
+                                        <div class="category">
+                                            <ion-icon name="bookmark-outline"></ion-icon>
+                                            <a href="./list-post.html">Du lịch Trung Quốc</a>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        Mùa thu Trung Quốc không chỉ là thời điểm để ngắm lá đỏ mà còn là dịp để khám
+                                        phá những nét văn hóa độc đáo, những lễ hội truyền thống và thưởng thức ẩm thực
+                                        đặc trưng. Cùng Kim Lien Travel khám phá những địa điểm du lịch hấp dẫn nhất,
+                                        nơi bạn sẽ được hòa mình vào không khí lễ hội sôi động và chiêm ngưỡng những
+                                        cảnh quan thiên nhiên tuyệt đẹp trong bài viết ngay sau đây. <br>
+                                        <br>
+                                        <img src="./dist/images/explore-1.jpg" alt="">
+                                        <br>
+                                        Vạn Lý Trường Thành
+                                        Vạn Lý Trường Thành một trong bảy kỳ quan của thế giới, không chỉ là biểu tượng
+                                        của sức mạnh và sự kiên cường của dân tộc Trung Hoa mà còn là một công trình
+                                        kiến trúc vĩ đại kéo dài hàng nghìn km. Vào mùa thu, cảnh vật xung quanh trở nên
+                                        huyền ảo với những tán cây thay lá, tạo nên khung cảnh tuyệt đẹp cho du khách.
+
+                                        <br><br>
+                                        Du khách có thể đi bộ trên những đoạn tường thành dài uốn lượn, khám phá các
+                                        tháp canh cổ xưa và tìm hiểu về lịch sử phong phú của công trình này. Ngoài ra,
+                                        các tour du lịch có hướng dẫn viên sẽ giúp du khách hiểu rõ hơn về các câu
+                                        chuyện lịch sử và văn hóa liên quan đến Vạn Lý Trường Thành. Nhiều đoạn của
+                                        tường thành được bảo tồn tốt, cho phép du khách trải nghiệm cảm giác như đang
+                                        sống trong quá khứ huy hoàng.
+                                        <br><br>
+                                        Cửu Trại Câu
+                                        Cửu Trại Câu là khu du lịch thiên nhiên nổi tiếng với hệ thống hồ nước trong
+                                        xanh và những thác nước hùng vĩ. Nơi đây được UNESCO công nhận là Di sản Thế
+                                        giới và nổi bật với cảnh sắc tuyệt đẹp của rừng cây thay lá vào mùa thu.
+                                        <br><br>
+
+                                        Du khách có thể tham gia các hoạt động như tản bộ qua những con đường mòn giữa
+                                        thiên nhiên, chụp ảnh và thưởng thức phong cảnh tuyệt đẹp của thung lũng. Cửu
+                                        Trại Câu không chỉ là điểm đến lý tưởng cho những người yêu thiên nhiên mà còn
+                                        là nơi để tìm hiểu về văn hóa của các dân tộc thiểu số địa phương, như người
+                                        Tạng và người Nạp Tây. Du khách có thể tham gia vào các buổi lễ hội truyền thống
+                                        của các dân tộc này, trải nghiệm âm nhạc và vũ điệu đặc sắc.
+                                        <br><br>
+                                        Hàng Châu
+                                        Hàng Châu được biết đến với Tây Hồ, nơi có cảnh sắc thơ mộng và lịch sử lâu đời.
+                                        Mùa thu là thời điểm lý tưởng để khám phá vẻ đẹp của vùng đất này, khi những
+                                        hàng cây ngô đồng chuyển sang màu vàng rực rỡ.
+                                        <img src="./dist/images/explore-3.jpg" alt="">
+
+                                        <br><br>
+
+                                        Du khách có thể đi thuyền trên Tây Hồ, tham quan các ngôi chùa cổ như chùa Linh
+                                        Ẩn và thưởng thức trà Long Tỉnh nổi tiếng. Hàng Châu cũng là nơi lý tưởng để tìm
+                                        hiểu về nghệ thuật làm trà truyền thống của Trung Quốc, với các tour trải nghiệm
+                                        thú vị như tham gia vào quá trình thu hoạch và chế biến trà.
+                                        <br><br>
+                                        Lệ Giang
+                                        Lệ Giang là một thành phố cổ với kiến trúc độc đáo và phong cảnh thiên nhiên
+                                        tuyệt đẹp. Nơi đây nổi tiếng với Núi tuyết Ngọc Long và Công viên Hắc Long Đàm,
+                                        là điểm đến lý tưởng cho những ai yêu thích khám phá văn hóa và lịch sử.
+                                        <br><br>
+
+                                        Du khách có thể tham quan thành cổ Lệ Giang, nơi được UNESCO công nhận là Di sản
+                                        Thế giới, thưởng thức ẩm thực địa phương như thịt cừu nướng và bánh bao. Ngoài
+                                        ra, bạn cũng có thể tìm hiểu về đời sống của người Naxi, một dân tộc thiểu số ở
+                                        đây. Hoạt động này hứa hẹn sẽ mang đến cho du khách những trải nghiệm văn hóa
+                                        phong phú. Vào mùa thu, cảnh sắc nơi đây càng thêm phần lãng mạn với những cánh
+                                        rừng phong thay lá. Du khách cũng có thể tham gia vào các lễ hội truyền thống
+                                        của người Naxi, như lễ hội đua thuyền hoặc lễ hội cồng chiêng.
+                                        <br><br>
+                                        Shangri-La
+                                        Shangri-La với bầu không khí trong lành và cảnh sắc thiên nhiên hùng vĩ, được
+                                        coi là "vùng đất bất tử". Nơi đây nổi bật với những ngọn đồi xanh thẳm, hồ nước
+                                        đẹp và các tu viện cổ kính, mang đến cho du khách cảm giác như đang lạc vào một
+                                        thế giới huyền bí.
+
+                                        Du khách có thể tham quan phố cổ Dukezong và tu viện Songzanlin, nơi mang đậm
+                                        bản sắc văn hóa của người Tạng. Mùa thu tại Shangri-La là thời điểm lý tưởng để
+                                        tận hưởng vẻ đẹp của thiên nhiên và tham gia vào các hoạt động văn hóa, như lễ
+                                        hội cồng chiêng và các buổi biểu diễn nghệ thuật truyền thống. Du khách cũng có
+                                        thể tham gia vào các hoạt động như cưỡi ngựa hoặc đi bộ đường dài để khám phá
+                                        những cảnh đẹp hoang sơ của vùng núi.
+                                        <br><br>
+                                        Tô Châu
+                                        Tô Châu được biết đến là "Venice phương Đông", nổi bật với những kênh rạch và
+                                        cảnh sắc bình yên. Thành phố này có lịch sử hơn 2.500 năm và nổi tiếng với sản
+                                        phẩm tơ lụa chất lượng cao.
+                                        <br>
+                                        <img src="./dist/images/explore-4.png" alt="">
+
+                                        Tô Châu được biết đến là
+                                        <br>
+                                        Tô Châu được biết đến là "Venice phương Đông"
+                                        <br>
+                                        Du khách có thể đi thuyền trên dòng Trường Giang, tham quan các khu vườn cổ kính
+                                        như Vườn Hạnh Phúc và Vườn Tôn Giả, thưởng thức các món ăn đặc sản địa phương
+                                        như bánh bao Tô Châu và mì sợi. Tô Châu cũng là nơi lý tưởng để tìm hiểu về nghệ
+                                        thuật làm tơ lụa, với các buổi trình diễn quy trình sản xuất từ kén tơ đến sản
+                                        phẩm hoàn thiện. Du khách cũng có thể tham gia vào các lớp học thủ công để tự
+                                        tay làm những sản phẩm từ tơ lụa.
+                                        <br>
+                                        Lý do nên du lịch Trung Quốc vào mùa thu
+                                        Mùa thu mang đến thời tiết mát mẻ, dễ chịu, không quá nóng như mùa hè hay lạnh
+                                        giá như mùa đông. Điều này giúp du khách dễ dàng tham quan và tham gia các hoạt
+                                        động ngoài trời mà không bị ảnh hưởng bởi thời tiết khắc nghiệt.
+                                        <br>
+                                        Những bức tranh thiên nhiên với lá vàng, lá đỏ tạo nên khung cảnh thơ mộng, lãng
+                                        mạn. Các địa điểm du lịch trở nên sống động hơn bao giờ hết, thu hút du khách
+                                        đến chiêm ngưỡng và chụp ảnh. Đặc biệt, các công viên và khu vực tự nhiên như
+                                        Cửu Trại Câu hay Vạn Lý Trường Thành sẽ mang đến những khung cảnh tuyệt đẹp cho
+                                        những ai yêu thích nhiếp ảnh.
+                                        <br><br>
+                                        Mùa thu là thời điểm diễn ra nhiều lễ hội truyền thống, như Tết Trung Thu và
+                                        Quốc Khánh, mang đến không khí vui tươi và nhiều hoạt động thú vị. Du khách có
+                                        cơ hội tham gia vào các hoạt động văn hóa đặc sắc, thưởng thức các món ăn truyền
+                                        thống và trải nghiệm không khí lễ hội sôi động. Đây cũng là thời điểm để thưởng
+                                        thức các món bánh trung thu đặc trưng và tham gia các hoạt động như ngắm trăng,
+                                        thả đèn trời.
+                                        <br>
+                                        Chuẩn bị cho chuyến du lịch Trung Quốc
+                                        Tiền tệ và thẻ thanh toán: Nên chuẩn bị Nhân dân tệ (CNY) và thẻ thanh toán quốc
+                                        tế để thuận tiện trong việc chi tiêu. Người Trung Quốc chủ yếu thanh toán bằng
+                                        thẻ, nhưng bạn cũng nên mang theo một ít tiền mặt để sử dụng ở những nơi không
+                                        chấp nhận thẻ. Hãy kiểm tra tỷ giá hối đoái trước khi đi để có sự chuẩn bị tốt
+                                        nhất.
+                                        <br><br>
+                                        Những lưu ý khi đi du lịch Trung Quốc
+                                        <br>
+                                        Quần áo phù hợp: Nên mang theo trang phục ấm áp và thoải mái, phù hợp với khí
+                                        hậu từng vùng. Đặc biệt, nếu tham quan các khu vực núi cao, nên mang theo áo
+                                        khoác dày và giày đi bộ thoải mái. Hãy chú ý đến thời tiết dự báo để có sự chuẩn
+                                        bị tốt nhất cho trang phục.
+                                        Thông tin du lịch: Nên nghiên cứu trước về văn hóa, ẩm thực và phong tục tập
+                                        quán của Trung Quốc để có chuyến đi trọn vẹn. Các ứng dụng bản đồ và dịch thuật
+                                        cũng rất hữu ích trong việc di chuyển và giao tiếp. Ngoài ra, việc tìm hiểu về
+                                        các quy định an ninh và văn hóa địa phương sẽ giúp du khách tránh được những
+                                        tình huống không mong muốn. Hãy chuẩn bị một số cụm từ cơ bản bằng tiếng Trung
+                                        để giao tiếp với người dân địa phương.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-post">
+                            <div class="related-post__item">
+                                <div class="related-post__item__title">Bài viết liên quan</div>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/pd-hour-01.png" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/explore-1.jpg" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/explore-2.png" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/explore-3.jpg" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/pd-hour-02.png" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="related-post__item">
+                                <div class="related-post__item__title">Bài viết nổi bật</div>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/pd-hour-01.png" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/explore-1.jpg" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/explore-2.png" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/explore-3.jpg" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="post">
+                                    <a href="post-detail.html" class="post__link">
+                                        <div class="post__detail">
+                                            <div class="box-top">
+                                                <div class="box-img">
+                                                    <img src="./dist/images/pd-hour-02.png" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="box-info">
+                                                <h3 class="title">
+                                                    Khám phá ngay biển hoa anh đào Yuan Zhu Vô Tích
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="footer__item">
+                        <a href="/" class="logo">
+                            <img src="./dist/images/logo-2.png" alt="">
+                        </a>
+                        <div class="footer__item__row">
+                            <span class="value">Số 01 ngõ 180 Đình Thôn - Mỹ Đình - Nam Từ Liêm, Hà Nội </span>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="tel:0866321992" class="hotline">
+                                <ion-icon name="call-outline"></ion-icon>
+                                086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                Giờ làm việc:
+                            </div>
+                            <span class="value">08h00 - 24h00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Liên hệ hợp tác
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="call-outline"></ion-icon>
+                                Hotline:
+                            </div>
+                            <a href="tel:0866321992" class="value">086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                Facebook:
+                            </div>
+                            <a href="https://facebook.com/khanhan-travel" class="value">Khánh An Travel</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                                Zalo:
+                            </div>
+                            <a href="tel:0866321992" class="value">086 632 1992</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <div class="label">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                Email:
+                            </div>
+                            <a href="mailto:khanhantraval01@gmail.com" class="value">khanhantraval01@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Dịch vụ
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="filter-tour.html" class="value">Tour trong nước</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="filter-tour.html" class="value">Tour nước ngoài</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="filter-tour.html" class="value">Cẩm nang du lịch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <div class="footer__item">
+                        <div class="footer__item__title">
+                            Thông tin
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value">Giới thiệu</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="contact.html" class="value">Liên hệ</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value">Điều khoản chung</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value">Quy định thanh toán</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value">Chính sách chất lượng</a>
+                        </div>
+                        <div class="footer__item__row">
+                            <a href="/" class="value"><img src="./dist/images/bct.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__policy">
+            © 2024 - Bản quyền thuộc về Khánh An Travel
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/moment.min.js"
+        integrity="sha512-i2CVnAiguN6SnJ3d2ChOOddMWQyvgQTzm0qSgiKhOqBMGCx4fGU5BtzXEybnKatWPDkXPFyCI0lbG42BnVjr/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.js
+    "></script>
+    <script src="./dist/vendors/owl/js/owl.carousel.min.js"></script>
+    <script src="./dist/vendors/vselect/vSelect.js"></script>
+    <script src="./dist/js/common.js"></script>
+    <script src="./dist/js/list-post.js"></script>
+
+</body>
+
+</html>
